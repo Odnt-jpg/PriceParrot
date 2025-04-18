@@ -36,23 +36,21 @@ button {
   border-radius: 10px;
   font-family: 'ubuntu', sans-serif;
   border: none;
+  color: white;
   font-weight:450; 
   width: 314px;
   height: 50px;
 }
 #register-button {
   background-color: #54BD5C;
-  color: white;
   transition: background-color 0.3s ease;
 }
 #login-button {
   background-color: #94CB63;
-  color: white;
   transition: background-color 0.3s ease;
 }
 #guest-button {
   background-color: #8E8E93;
-  color: white;
   transition: background-color 0.3s ease;
 }
 .logo{
