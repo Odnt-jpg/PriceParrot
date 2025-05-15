@@ -44,7 +44,7 @@ router.post('/login', async (req, res) => {
 
 // Registration endpoint
 router.post('/register', async (req, res) => {
-  const { first_name, last_name, email, password, phone_number } = req.body;
+  const { first_name, last_name, email, password } = req.body;
 
   if (!first_name || !last_name || !email || !password) {
     return res.status(400).json({ error: 'All fields are required.' });
@@ -52,8 +52,8 @@ router.post('/register', async (req, res) => {
 
   try {
     const hashedPassword = await bcrypt.hash(password, 10);
-    const query = 'INSERT INTO users (first_name, last_name, email, password, phone_number) VALUES (?, ?, ?, ?, ?)';
-    db.query(query, [first_name, last_name, email, hashedPassword, phone_number], (err, results) => {
+    const query = 'INSERT INTO users (first_name, last_name, email, password) VALUES (?, ?, ?, ?, ?)';
+    db.query(query, [first_name, last_name, email, hashedPassword], (err, results) => {
       if (err) {
         console.error('Database error:', err);
         return res.status(500).json({ error: 'Internal server error.' });

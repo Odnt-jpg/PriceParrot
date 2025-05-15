@@ -1,0 +1,37 @@
+.item-card {
+    border: 1px solid #ddd;
+    border-radius: 9px;
+    padding: 16px;
+    max-width: 200px;
+    background-color: #ffffff;
+    max-height: 50%;
+}
+.item-card-image {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+.item-card-details {
+    margin-top: 8px;
+}
+.item-card-name {
+    text-align: center;
+    font-size: 1.2em;
+    margin: 8px 0;
+}
+.item-card-price {
+    text-align: left;
+    color: #555;
+    margin: 8px 0;
+}
+.item-card-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.item-card-button:hover {
+    background-color: #0056b3;
+}

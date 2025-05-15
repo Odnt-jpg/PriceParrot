@@ -19,7 +19,7 @@ function Landing() {
   const handleLoginSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('/api/login', { email, password });
+      const response = await axios.post('/api/auth/login', { email, password });
       if (response.status === 200) {
         alert('Login successful!');
         navigate('/home');
@@ -33,12 +33,11 @@ function Landing() {
   const handleRegisterSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('/api/register', {
+      const response = await axios.post('/api/auth/register', {
         first_name: e.target.first_name.value,
         last_name: e.target.last_name.value,
         email: e.target.email.value,
         password: e.target.password.value,
-        phone_number: e.target.phone_number.value,
       });
       if (response.status === 201) {
         alert('Registration successful!');
@@ -118,12 +117,6 @@ function Landing() {
                 name="password"
                 placeholder="Password"
                 required
-                className="registerbox"
-              />
-              <input
-                type="text"
-                name="phone_number"
-                placeholder="Phone Number (Optional)"
                 className="registerbox"
               />
               <button type="submit" id="register">Register</button>
