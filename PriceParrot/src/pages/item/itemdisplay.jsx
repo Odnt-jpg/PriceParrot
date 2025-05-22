@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
+import Navbar from '../../components/navbar/navbar';
+import '../../App.css';
+import '../../index.css';
 // import './itemdisplay.css';
 
 const ItemDisplay = () => {
@@ -20,6 +23,7 @@ const ItemDisplay = () => {
                 }
                 const data = await response.json();
                 setItem(data);
+                console.log("Fetched item:", data);
             } catch (err) {
                 setError(err.message);
             } finally {
@@ -44,21 +48,49 @@ const ItemDisplay = () => {
 
     return (
         <div className="item-display-page">
+            <Navbar/>
             <button
                 onClick={() => navigate(-1)}
                 className="back-button bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
             >
                 Back
             </button>
-            <div className="item-details-container bg-white shadow rounded p-6">
-                <img
-                    src={item.image_url}
-                    alt={item.name}
-                    className="item-image w-full max-w-md mx-auto mb-4"
-                />
-                <h1 className="item-name text-3xl font-bold mb-2">{item.name}</h1>
-                <p className="item-price text-xl text-gray-700 mb-4">${item.price.toFixed(2)}</p>
-                <p className="item-description text-gray-600">{item.description || 'No description available.'}</p>
+            <div className="item-details-container bg-white shadow rounded p-6 flex flex-col md:flex-row gap-8">
+                {/* Left Side: Image and Name */}
+                <div className="flex-1 flex flex-col items-center mb-6 md:mb-0">
+                    <img
+                        src={item.image_url}
+                        alt={item.name}
+                        className="item-image w-full max-w-md mx-auto mb-4"
+                    />
+                    <h1 className="item-name text-3xl font-bold mb-2 text-center">{item.name}</h1>
+                </div>
+                
+                {/* Right Side: Retailer Prices - now aligned to the right */}
+                <div className="flex-1 flex flex-col items-end">
+                    {Array.isArray(item.prices) && item.prices.length > 0 ? (
+                        <div className="item-prices mb-4 w-full max-w-md">
+                            <h2 className="text-lg font-semibold mb-2 text-right">Prices from Retailers:</h2>
+                            <ul className="w-full">
+                                {item.prices.map((p, idx) => (
+                                    <li key={idx} className="text-xl text-gray-700 mb-1 flex justify-between">
+                                        <span>{p.retailer_id ? `Retailer ${p.retailer_id}` : 'Retailer'}</span>
+                                        <span>${typeof p.price === 'number' ? p.price.toFixed(2) : p.price}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    ) : (
+                        <p className="item-price text-xl text-gray-700 mb-4 text-right">
+                            {typeof item.price === 'number' ? `$${item.price.toFixed(2)}` : 'Price unavailable'}
+                        </p>
+                    )}
+                </div>
+            </div>
+            {/* Comments at the bottom */}
+            <div className="item-comments mt-8">
+                <h2 className="text-lg font-semibold mb-2">Comments</h2>
+                <p className="item-description text-gray-600 text-center">{item.description || 'No description available.'}</p>
             </div>
         </div>
     );

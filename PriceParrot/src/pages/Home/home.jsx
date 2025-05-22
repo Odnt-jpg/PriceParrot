@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Navbar from '../../components/navbar/navbar.jsx';
-import './home.css';
 import Carousel from '../../components/carousel/Carousel.jsx';
 import ItemCard from '../../components/itemcard/itemcard.jsx';
 
@@ -41,35 +40,41 @@ function Home() {
     };
 
     return (
-        <div className="home-page">
+        <div className="min-h-screen flex flex-col">
             <Navbar />
-            <div className="home-content">
-                <h1>Welcome to PriceParrot</h1>
-                <p>Your one-stop solution for price comparison.</p>
+            <main className="flex-grow container mx-auto px-4 py-8">
+                {/* Hero Section */}
+                <section className="text-center mb-12">
+                    <h1 className="text-4xl font-bold text-gray-800 mb-4">Welcome to PriceParrot</h1>
+                    <p className="text-xl text-gray-600 mb-8">Your one-stop solution for price comparison.</p>
 
-                <div className="search-bar">
-                    <input
-                        type="text"
-                        placeholder="Search for products..."
-                        value={searchQuery}
-                        onChange={(e) => setSearchQuery(e.target.value)}
-                        onKeyPress={(e) => e.key === 'Enter' && handleSearch()}
-                        className="search-input"
-                    />
-                    <button onClick={handleSearch} className="search-button">
-                        Search
-                    </button>
-                </div>
+                    {/* Search Bar */}
+                    <div className="max-w-2xl mx-auto flex shadow-md rounded-lg overflow-hidden bg-white p-6 ">
+                        <input
+                            type="text"
+                            placeholder="Search for products..."
+                            value={searchQuery}
+                            onChange={(e) => setSearchQuery(e.target.value)}
+                            onKeyPress={(e) => e.key === 'Enter' && handleSearch()}
+                            className="flex-grow px-4 py-3 focus:outline-none p-5"
+                        />
+                        <button 
+                            onClick={handleSearch} 
+                            className="bg-rose-600 hover:bg-rose-500 text-white px-3 py-2 transition-colors duration-200"
+                        >
+                            Search
+                        </button>
+                    </div>
+                </section>
 
-                <div className="featured-section">
-                    <h2>Featured Products</h2>
+                {/* Featured Products */}
+                <section className="mb-12">
+                    <h2 className="text-2xl font-semibold text-gray-800 mb-6">Featured Products</h2>
                     {error ? (
-                        <div className="error-message">Error: {error}</div>
-                    ) 
-                    // : isLoading ? (
-                    //     <div className="loading">Loading products...</div>
-                    // ) 
-                    : items.length > 0 ? (
+                        <div className="bg-red-100 border-l-4 border-red-500 text-red-700 p-4">
+                            <p>Error: {error}</p>
+                        </div>
+                    ) : items.length > 0 ? (
                         <Carousel
                             items={items}
                             itemsPerView={4}
@@ -79,45 +84,60 @@ function Home() {
                                     id={item.id}
                                     image={item.image_url}
                                     name={item.name}
-                                    price={item.price}
-                                />)}
+                                    price={item.price ?? 0}
+                                />
+                            )}
                         />
-                        
                     ) : (
-                        <div>No featured products available</div>
+                        <div className="text-center text-gray-500 py-8">No featured products available</div>
                     )}
-                </div>
+                </section>
+
                 {/* Recently Viewed Products */}
-                <div className="recently-viewed">
-                    <h2>Recently Viewed Products</h2>
-                    <div className="product-grid">
-                        <div className="product-card">Product A</div>
-                        <div className="product-card">Product B</div>
-                        <div className="product-card">Product C</div>
+                <section className="mb-12">
+                    <h2 className="text-2xl font-semibold text-gray-800 mb-6">Recently Viewed Products</h2>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                        <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                            <h3 className="text-lg font-medium text-gray-800">Product A</h3>
+                        </div>
+                        <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                            <h3 className="text-lg font-medium text-gray-800">Product B</h3>
+                        </div>
+                        <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                            <h3 className="text-lg font-medium text-gray-800">Product C</h3>
+                        </div>
                     </div>
-                </div>
+                </section>
 
                 {/* Trending Products */}
-                <div className="trending-products">
-                    <h2>Trending Products</h2>
-                    <div className="product-grid">
-                        <div className="product-card">Trending 1</div>
-                        <div className="product-card">Trending 2</div>
-                        <div className="product-card">Trending 3</div>
+                <section className="mb-12">
+                    <h2 className="text-2xl font-semibold text-gray-800 mb-6">Trending Products</h2>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                        <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                            <h3 className="text-lg font-medium text-gray-800">Trending 1</h3>
+                        </div>
+                        <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                            <h3 className="text-lg font-medium text-gray-800">Trending 2</h3>
+                        </div>
+                        <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                            <h3 className="text-lg font-medium text-gray-800">Trending 3</h3>
+                        </div>
                     </div>
-                </div>
-
-                
-            </div>
+                </section>
+            </main>
 
             {/* Footer */}
-            <footer className="footer">
-                <p>&copy; 2025 PriceParrot. All rights reserved.</p>
-                <ul className="footer-links">
-                    <li><a href="/about">About Us</a></li>
-                    <li><a href="/contact">Contact</a></li>
-                    <li><a href="/privacy">Privacy Policy</a></li>
-                </ul>
+            <footer className="bg-gray-800 text-white py-8">
+                <div className="container mx-auto px-4">
+                    <div className="flex flex-col md:flex-row justify-between items-center">
+                        <p className="mb-4 md:mb-0">&copy; 2025 PriceParrot. All rights reserved.</p>
+                        <ul className="flex space-x-6">
+                            <li><a href="/about" className="hover:text-blue-300 transition-colors">About Us</a></li>
+                            <li><a href="/contact" className="hover:text-blue-300 transition-colors">Contact</a></li>
+                            <li><a href="/privacy" className="hover:text-blue-300 transition-colors">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
             </footer>
         </div>
     );
