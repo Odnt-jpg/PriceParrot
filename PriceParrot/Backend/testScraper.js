@@ -1,6 +1,7 @@
-import { scrapeProducts, normalizeProductName } from './utils/webscraper.js';
+import { scrapeProducts, normalizeProductName } from './utils/extract_products.js';
 import mysql from 'mysql2/promise';
 import path from 'path';
+import fs from 'fs';
 
 const pool = mysql.createPool({
   host: 'localhost',
@@ -12,7 +13,6 @@ const pool = mysql.createPool({
 const retailerProfiles = [
   {
     name: 'HiLo',
-    url: path.resolve('./utils/Html files/hilo_food_stores.htm'),
     addresses: [
       'Mannor Park, Kingston 8',
       '87 ¾ Barbican Road, Kingston 8',
@@ -25,7 +25,6 @@ const retailerProfiles = [
   },
   {
     name: 'PriceSmart',
-    url: 'https://www.pricesmart.com/en-jm/category/Groceries/G10D03?page=?',
     addresses: [
       'Red Hills Road, Kingston',
     ],
@@ -33,80 +32,54 @@ const retailerProfiles = [
   },
   {
     name: 'CoolMarket',
-    url: 'https://www.coolmarket.com/groceries.html?p=2',
     addresses: [
       'Kingston, Jamaica',
-      // Add more addresses as needed
+     
     ],
     categoryId: 8 
   }
 ];
 
-// Add new supermarket profiles
-const supermarkets = [
-  {
-    name: 'General Foods Supermarket',
-    addresses: [
-      '134 Old Hope Road, Kingston 6',
-      'Shop 53, Ocho Rios, St. Ann',
-      'Ocean Village Shopping Centre'
-    ]
-  },
-  {
-    name: 'Sovereign Supermarket',
-    addresses: [
-      '106 Hope Road, Kingston 6',
-      '1 Barbican Road, Kingston 6'
-    ]
+function copyImageToPublicFolder(imagePath) {
+  if (!imagePath) return null;
+  const fileName = imagePath.split(/[\\/]/).pop();
+  const srcPath = path.resolve(imagePath);
+  const destDir = path.resolve('./public/Product_Images');
+  const destPath = path.join(destDir, fileName);
+  try {
+    if (!fs.existsSync(destDir)) {
+      fs.mkdirSync(destDir, { recursive: true });
+    }
+    if (fs.existsSync(srcPath)) {
+      fs.copyFileSync(srcPath, destPath);
+      return `/Product_Images/${fileName}`;
+    }
+  } catch (e) {
+    console.error('Failed to copy image:', srcPath, e);
   }
-];
+  return null;
+}
 
-async function addSupermarketsWithRandomProducts(connection) {
-  // Get all product ids and prices
-  const [products] = await connection.execute('SELECT id, price FROM products');
-  for (const market of supermarkets) {
-    // Insert or fetch retailer
-    let retailerId;
-    const [retailerRow] = await connection.execute(
-      `SELECT id FROM retailers WHERE name = ?`,
-      [market.name]
-    );
-    if (retailerRow.length > 0) {
-      retailerId = retailerRow[0].id;
-    } else {
-      const [insertResult] = await connection.execute(
-        `INSERT INTO retailers (name) VALUES (?)`,
-        [market.name]
-      );
-      retailerId = insertResult.insertId;
+function copyHiloImageToPublicFolder(imagePath) {
+  if (!imagePath) return null;
+  // Only handle local HiLo images
+  if (!imagePath.includes('Hi Lo Food Stores_files')) return imagePath;
+  const fileName = imagePath.split(/[\\/]/).pop();
+  const srcPath = path.resolve(imagePath);
+  const destDir = path.resolve('./public/Product_Images');
+  const destPath = path.join(destDir, fileName);
+  try {
+    if (!fs.existsSync(destDir)) {
+      fs.mkdirSync(destDir, { recursive: true });
     }
-    // Insert addresses
-    for (const address of market.addresses) {
-      const [addressRows] = await connection.execute(
-        `SELECT id FROM retailer_addresses WHERE retailer_id = ? AND address = ?`,
-        [retailerId, address]
-      );
-      if (addressRows.length === 0) {
-        await connection.execute(
-          `INSERT INTO retailer_addresses (retailer_id, address) VALUES (?, ?)`,
-          [retailerId, address]
-        );
-      }
+    if (fs.existsSync(srcPath)) {
+      fs.copyFileSync(srcPath, destPath);
+      return `/Product_Images/${fileName}`;
     }
-    // Assign 10 random products to this retailer
-    for (let i = 0; i < 10 && products.length > 0; i++) {
-      const randomIdx = Math.floor(Math.random() * products.length);
-      const product = products[randomIdx];
-      // Slightly alter the price (±5-15%)
-      const priceMultiplier = 1 + (Math.random() * 0.2 - 0.1); // -10% to +10%
-      const newPrice = product.price ? (parseFloat(product.price) * priceMultiplier).toFixed(2) : (10 + Math.random() * 20).toFixed(2);
-      // Insert into product_retailers
-      await connection.execute(
-        `INSERT INTO product_retailers (product_id, retailer_id, price) VALUES (?, ?, ?)`,
-        [product.id, retailerId, newPrice]
-      );
-    }
+  } catch (e) {
+    console.error('Failed to copy HiLo image:', srcPath, e);
   }
+  return imagePath;
 }
 
 async function testAndSave() {
@@ -147,7 +120,6 @@ async function testAndSave() {
               }
             }
 
-            // Insert or fetch retailer (avoid duplicate insert)
             let retailerId;
             const [retailerRow] = await connection.execute(
               `SELECT id FROM retailers WHERE name = ?`,
@@ -235,6 +207,14 @@ async function testAndSave() {
                 );
                 console.log(`Linked new retailer product: ${normalizedName}`);
               }
+
+              if (profile.name === 'HiLo' && product.image_url) {
+                const newImageUrl = copyHiloImageToPublicFolder(product.image_url);
+                if (newImageUrl) product.image_url = newImageUrl;
+              } else {
+                const newImageUrl = copyImageToPublicFolder(product.image_url);
+                if (newImageUrl) product.image_url = newImageUrl;
+              }
             }
 
             if (profile.name === 'PriceSmart') {
@@ -253,10 +233,8 @@ async function testAndSave() {
           }
         }
       }
-      // Add supermarkets and random products after main scraping loop
-      await addSupermarketsWithRandomProducts(connection);
     } finally {
-      connection.release(); // Ensure connection is released properly
+      connection.release();
     }
 
     console.log('Successfully saved products for all retailers.');

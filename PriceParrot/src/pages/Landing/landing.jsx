@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './landing.css';
@@ -23,6 +22,11 @@ function Landing() {
       const response = await axios.post('/api/auth/login', { email, password });
       if (response.status === 200) {
         alert('Login successful!');
+        localStorage.setItem('user', JSON.stringify(response.data.user || { email }));
+        if (response.data.token) {
+          localStorage.setItem('token', response.data.token);
+        }
+        localStorage.setItem('loginTime', Date.now().toString());
         navigate('/home');
       }
     } catch (error) {
@@ -42,6 +46,7 @@ function Landing() {
       });
       if (response.status === 201) {
         alert('Registration successful!');
+        localStorage.setItem('user', JSON.stringify({ email: e.target.email.value, first_name: e.target.first_name.value, last_name: e.target.last_name.value }));
         setShowRegister(false);
       }
     } catch (error) {
@@ -62,7 +67,12 @@ function Landing() {
           <div className="auth-options">
             <button onClick={() => setShowRegister(true)} id="register-button">Register</button>
             <button onClick={() => setShowLogin(true)} id="login-button">Login</button>
-            <button onClick={() => navigate('/home')} id="guest-button">Continue as Guest</button>
+            <button onClick={() => {
+              // Remove any user session if present
+              localStorage.removeItem('user');
+              localStorage.removeItem('loginTime');
+              navigate('/home');
+            }} id="guest-button">Continue as Guest</button>
           </div>
         ) : showLogin ? (
           <div className="auth-form">

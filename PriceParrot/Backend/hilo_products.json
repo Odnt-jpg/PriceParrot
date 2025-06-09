@@ -1,0 +1,3523 @@
+[
+  {
+    "name": "hilo macaroni cheese",
+    "original_name": "HI-LO MACARONI & CHEESE",
+    "price": "202.30",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0071344929290.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "hilo spaghetti",
+    "original_name": "HI-LO SPAGHETTI",
+    "price": "248.45",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0071344929332.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "hilo vegetable oil",
+    "original_name": "HI-LO VEGETABLE OIL",
+    "price": "399.00",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0071344934242.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "hilo franks",
+    "original_name": "HI-LO FRANKS",
+    "price": "897.29",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0071344958309.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "hilo macaroni cheese spiral",
+    "original_name": "HI-LO MACARONI & CHEESE SPIRAL",
+    "price": "188.17",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0071344988301.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "lu blu twin pk",
+    "original_name": "LU BLU TWIN PK",
+    "price": "351.36",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0061213700032.JPG",
+    "product_url": ""
+  },
+  {
+    "name": "always extra heavy overnight pads",
+    "original_name": "ALWAYS EXTRA HEAVY OVERNIGHT PADS",
+    "price": "1403.98",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0003700088930.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "always overnight max with wings pads",
+    "original_name": "ALWAYS OVERNIGHT MAX WITH WINGS PADS",
+    "price": "726.41",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0003077203399.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "always ultra thin overnight max with wings pads",
+    "original_name": "ALWAYS ULTRA THIN OVERNIGHT MAX WITH WINGS PADS",
+    "price": "726.41",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0003700030165.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "always ultra thin overnight wings pads",
+    "original_name": "ALWAYS ULTRA THIN OVERNIGHT WINGS PADS",
+    "price": "1476.71",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0003700088917.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "always ultra thin pads extra heavy overnight",
+    "original_name": "ALWAYS ULTRA THIN PADS EXTRA HEAVY OVERNIGHT",
+    "price": "1788.74",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/DEPT7.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "banrock station crimson cabernet wine",
+    "original_name": "BANROCK STATION CRIMSON CABERNET WINE",
+    "price": "1779.71",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0931104300350.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "banrock station moscato wine",
+    "original_name": "BANROCK STATION MOSCATO WINE",
+    "price": "1779.71",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0931104309366.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "banrock station pink moscato wine",
+    "original_name": "BANROCK STATION PINK MOSCATO WINE",
+    "price": "1779.71",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0931104309659.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "caprisun fruit punch drink",
+    "original_name": "CAPRI-SUN  FRUIT PUNCH DRINK",
+    "price": "74.19",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0005527096050.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "caprisun apple drink",
+    "original_name": "CAPRI-SUN APPLE DRINK",
+    "price": "74.19",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0005527096063.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "caprisun berry cooler drink",
+    "original_name": "CAPRI-SUN BERRY COOLER DRINK",
+    "price": "74.19",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0005527096052.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "caprisun mystic dragon drink",
+    "original_name": "CAPRI-SUN MYSTIC DRAGON DRINK",
+    "price": "74.19",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0005527096049.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "caprisun orange drink",
+    "original_name": "CAPRI-SUN ORANGE DRINK",
+    "price": "74.19",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0005527096054.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "casamigos tequila blanco",
+    "original_name": "CASAMIGOS TEQUILA BLANCO",
+    "price": "16085.92",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0085672400611.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "charmin strong mega",
+    "original_name": "CHARMIN STRONG MEGA",
+    "price": "3605.80",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0003700061071.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "charmin ultra soft mega tissue",
+    "original_name": "CHARMIN ULTRA SOFT MEGA TISSUE",
+    "price": "1996.92",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0003700052778.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "charmin ultra soft mega tissue",
+    "original_name": "CHARMIN ULTRA SOFT MEGA TISSUE",
+    "price": "3566.51",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0003700079546.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "charmin ultra strong",
+    "original_name": "CHARMIN ULTRA STRONG",
+    "price": "2000.12",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0003700061111.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "clorox cleanup bleach spray",
+    "original_name": "CLOROX CLEAN-UP BLEACH SPRAY",
+    "price": "1164.82",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0004460001204.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "clorox cleanup fresh scent spray",
+    "original_name": "CLOROX CLEAN-UP FRESH SCENT SPRAY",
+    "price": "1164.82",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0004460030058.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "clorox clinging gel crisp lemon",
+    "original_name": "CLOROX CLINGING GEL CRISP LEMON",
+    "price": "656.06",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0004460031664.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "clorox disinfectant wipes fresh scent",
+    "original_name": "CLOROX DISINFECTANT WIPES FRESH SCENT",
+    "price": "827.92",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0004460001593.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "clorox disinfecting wipes crisp lemon",
+    "original_name": "CLOROX DISINFECTING WIPES CRISP LEMON",
+    "price": "1149.63",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0004460001628.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "clorox disinfecting wipes lemon",
+    "original_name": "CLOROX DISINFECTING WIPES LEMON",
+    "price": "827.92",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0004460001594.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "clorox rain clean toilet bowl cleaner",
+    "original_name": "CLOROX RAIN CLEAN TOILET BOWL CLEANER",
+    "price": "656.06",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0004460000938.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "clorox toilet bowl cleaner cleaning bleach",
+    "original_name": "CLOROX TOILET BOWL CLEANER CLEANING BLEACH",
+    "price": "656.06",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0004460030619.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "clorox toilet bowl cleaner man fresh scent",
+    "original_name": "CLOROX TOILET BOWL CLEANER MAN FRESH SCENT",
+    "price": "656.06",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0004460000933.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "clorox toilet bowl cleaner man tough stain",
+    "original_name": "CLOROX TOILET BOWL CLEANER MAN TOUGH STAIN",
+    "price": "656.06",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0004460000275.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "club social crackers",
+    "original_name": "CLUB SOCIAL CRACKERS",
+    "price": "297.17",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0759001110510.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "colgate 360 adult medium full head toothbrush",
+    "original_name": "COLGATE 360 ADULT MEDIUM FULL HEAD TOOTHBRUSH",
+    "price": "522.44",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0003500068688.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "colgate 360 adult soft full head toothbrush",
+    "original_name": "COLGATE 360 ADULT SOFT FULL HEAD TOOTHBRUSH",
+    "price": "522.44",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0003500068687.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "colgate 360 advanced floss tip toothbrush",
+    "original_name": "COLGATE 360 ADVANCED FLOSS TIP TOOTHBRUSH",
+    "price": "574.43",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0003500097219.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "colgate total clean mint toothpaste",
+    "original_name": "COLGATE TOTAL CLEAN MINT TOOTHPASTE",
+    "price": "529.02",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0003500046377.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "colgate total fresh mint stripe toothpaste",
+    "original_name": "COLGATE TOTAL FRESH MINT STRIPE TOOTHPASTE",
+    "price": "529.02",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0003500046383.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "colgate total peppermint mouthwash",
+    "original_name": "COLGATE TOTAL PEPPERMINT MOUTHWASH",
+    "price": "988.29",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0003500067122.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "colgate total spearmint mouthwash",
+    "original_name": "COLGATE TOTAL SPEARMINT MOUTHWASH",
+    "price": "988.29",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0003500067125.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "colgate total whitening toothpaste",
+    "original_name": "COLGATE TOTAL WHITENING TOOTHPASTE",
+    "price": "503.80",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0003500046384.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "complete nut chicken rice vegetables",
+    "original_name": "COMPLETE NUT CHICKEN, RICE & VEGETABLES",
+    "price": "1685.91",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0002310010363.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "cubbies baby wipes",
+    "original_name": "CUBBIES BABY WIPES",
+    "price": "375.84",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0079340620126.JPG",
+    "product_url": ""
+  },
+  {
+    "name": "dawn ultra apple ezsqueeze",
+    "original_name": "DAWN ULTRA APPLE EZ-SQUEEZE",
+    "price": "985.78",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/DEPT1.png",
+    "product_url": ""
+  },
+  {
+    "name": "desitin creamy diaper rash ointment",
+    "original_name": "DESITIN CREAMY DIAPER RASH OINTMENT",
+    "price": "881.27",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0007430001008.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "diamond cling wrap",
+    "original_name": "DIAMOND CLING WRAP",
+    "price": "441.59",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0001090030281.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "diamond freezer bags large",
+    "original_name": "DIAMOND FREEZER BAGS LARGE",
+    "price": "506.92",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0001090003421.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "1lb oblong foil baking container",
+    "original_name": "1LB OBLONG FOIL BAKING CONTAINER",
+    "price": "24.30",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000001272.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "2 comp 9x6 16oz container",
+    "original_name": "2 COMP (9\"X6\") 16OZ CONTAINER",
+    "price": "644.28",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000005884.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "225lb oblong foil baking container",
+    "original_name": "2.25LB OBLONG FOIL BAKING CONTAINER",
+    "price": "57.39",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000001276.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "7in round foil baking container",
+    "original_name": "7IN ROUND FOIL BAKING CONTAINER",
+    "price": "33.47",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000001268.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "8 round foil container",
+    "original_name": "8\" ROUND FOIL CONTAINER",
+    "price": "53.36",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000006751.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "8oz paper soup container lid",
+    "original_name": "8OZ PAPER SOUP CONTAINER + LID",
+    "price": "1831.60",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000005899.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "8x8 3 comp 14oz",
+    "original_name": "8X8 3 COMP 14OZ",
+    "price": "1248.29",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000005887.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "9x9 3 comp 18oz",
+    "original_name": "9X9 3 COMP 18OZ",
+    "price": "872.46",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000005891.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "abrasive scrubber brush with grip",
+    "original_name": "ABRASIVE SCRUBBER BRUSH WITH GRIP",
+    "price": "323.26",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000006967.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "ada baby wipes small",
+    "original_name": "ADA BABY WIPES SMALL",
+    "price": "68.25",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000007715.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "altoids arctic strawberry",
+    "original_name": "ALTOIDS ARCTIC STRAWBERRY",
+    "price": "521.01",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000229950.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "altoids artic peppermint",
+    "original_name": "ALTOIDS ARTIC PEPPERMINT",
+    "price": "521.01",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000227690.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "altoids artic wintergreen",
+    "original_name": "ALTOIDS ARTIC WINTERGREEN",
+    "price": "521.01",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000227680.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "andrews salts",
+    "original_name": "ANDREWS SALTS",
+    "price": "378.24",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000007441033.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "andrews salts original",
+    "original_name": "ANDREWS SALTS ORIGINAL",
+    "price": "31.24",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000336.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "apple eve juice fruit punch",
+    "original_name": "APPLE & EVE JUICE FRUIT PUNCH",
+    "price": "134.65",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000008141.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "apple rings bulk dried 227",
+    "original_name": "APPLE RINGS BULK - DRIED 2.27",
+    "price": "5745.56",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000008269.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "apples golden delicious",
+    "original_name": "APPLES - GOLDEN DELICIOUS",
+    "price": "226.01",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000901.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "apples gala large",
+    "original_name": "APPLES - GALA - LARGE",
+    "price": "320.01",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000288.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "apples fuji",
+    "original_name": "APPLES FUJI",
+    "price": "340.91",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000476.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "apples fuji xfancy",
+    "original_name": "APPLES FUJI X-FANCY",
+    "price": "273.01",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000447.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "apples gala medium",
+    "original_name": "APPLES GALA - MEDIUM",
+    "price": "242.01",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000866.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "apples gala small",
+    "original_name": "APPLES GALA - SMALL",
+    "price": "135.06",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000701.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "apples gold large 72ct",
+    "original_name": "APPLES GOLD LARGE 72CT",
+    "price": "199.01",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000869.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "apples granny smith",
+    "original_name": "APPLES GRANNY SMITH",
+    "price": "274.01",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000981.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "apples red",
+    "original_name": "APPLES RED",
+    "price": "241.35",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000999.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "apples washi st red",
+    "original_name": "APPLES WASHI ST RED",
+    "price": "341.01",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000872.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "asparagus pencil",
+    "original_name": "ASPARAGUS PENCIL",
+    "price": "3272.73",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000985.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "athenos garlic roast hummus",
+    "original_name": "ATHENOS GARLIC ROAST HUMMUS",
+    "price": "927.12",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000254163.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "athenos original hummus",
+    "original_name": "ATHENOS ORIGINAL HUMMUS",
+    "price": "1129.29",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000254123.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "athenos roast red pepper hummus",
+    "original_name": "ATHENOS ROAST RED PEPPER HUMMUS",
+    "price": "1010.42",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000254143.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "avon roll on assorted",
+    "original_name": "AVON ROLL ON ASSORTED",
+    "price": "321.21",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000448.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "axe deodorant stick dark temptation",
+    "original_name": "AXE DEODORANT STICK DARK TEMPTATION",
+    "price": "330.49",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000007502592.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "axe shower gel dark temptation",
+    "original_name": "AXE SHOWER GEL DARK TEMPTATION",
+    "price": "889.48",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000004215315.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "axe shower gel dark temptation",
+    "original_name": "AXE SHOWER GEL DARK TEMPTATION",
+    "price": "759.79",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000007432.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "badia organic celery seeds",
+    "original_name": "BADIA ORGANIC CELERY SEEDS",
+    "price": "550.69",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000007716.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "of lemons",
+    "original_name": "BAG OF LEMONS",
+    "price": "877.19",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000888.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "of limes",
+    "original_name": "BAG OF LIMES",
+    "price": "931.03",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000938.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "of local apples",
+    "original_name": "BAG OF LOCAL APPLES",
+    "price": "789.47",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000852.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "of parsley",
+    "original_name": "BAG OF PARSLEY",
+    "price": "307.02",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000276.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "best dressed cut in 9 large",
+    "original_name": "BDF A GRADE CUT IN 9 CHILLED LARGE",
+    "price": "1231.26",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000008190.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "best dressed chicken leg quarter resealable",
+    "original_name": "BDF CHICKEN LEG QUARTER RESEALABLE",
+    "price": "1057.71",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000008304.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "best dressed drumstick",
+    "original_name": "BDF DRUMSTICK TRAY PACK CHILLED",
+    "price": "944.15",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000008198.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "best dressed mixed parts",
+    "original_name": "BDF MIXED PARTS TRAY",
+    "price": "1115.92",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000008182.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "belgian white beer",
+    "original_name": "BELGIAN WHITE BEER",
+    "price": "557.75",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000878733.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "besan chick pea flour",
+    "original_name": "BESAN CHICK PEA FLOUR",
+    "price": "832.69",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000511791708.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "best dressed deboned breast resealable",
+    "original_name": "BEST DRESSED DEBONED BREAST RESEALABLE",
+    "price": "2012.20",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000008307.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "best dressed drumsticks resealable",
+    "original_name": "BEST DRESSED DRUMSTICKS RESEALABLE",
+    "price": "1193.47",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000008306.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "best dressed wings resealable",
+    "original_name": "BEST DRESSED WINGS RE-SEALABLE",
+    "price": "1695.97",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000008305.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "betty sweetened condensed milk",
+    "original_name": "BETTY SWEETENED CONDENSED MILK",
+    "price": "192.63",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000938853200.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "betty sweetened condensed milk tin 388g",
+    "original_name": "BETTY SWEETENED CONDENSED MILK TIN 388G",
+    "price": "314.16",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000938801225.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "black plums",
+    "original_name": "BLACK PLUMS",
+    "price": "3030.01",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000804.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "black salt",
+    "original_name": "BLACK SALT",
+    "price": "458.34",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000511793409.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "blue bomber detergent bar",
+    "original_name": "BLUE BOMBER DETERGENT BAR",
+    "price": "98.27",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000009944201.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "borden extra sharp cheddar cheese chunk",
+    "original_name": "BORDEN EXTRA SHARP CHEDDAR CHEESE CHUNK",
+    "price": "1081.03",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000530540.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "brisk lemon iced tea",
+    "original_name": "BRISK LEMON ICED TEA",
+    "price": "173.05",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000127590.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "broccoli crown imported",
+    "original_name": "BROCCOLI CROWN IMPORTED",
+    "price": "3292.19",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000885.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "brussels sprouts",
+    "original_name": "BRUSSELS SPROUTS",
+    "price": "3148.15",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000008200.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "buckingham cookies cream ice cream",
+    "original_name": "BUCKINGHAM COOKIES & CREAM ICE CREAM",
+    "price": "1194.31",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000938852970.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "buckingham grapenut ice cream",
+    "original_name": "BUCKINGHAM GRAPENUT ICE CREAM",
+    "price": "1194.31",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000938852960.JPG",
+    "product_url": ""
+  },
+  {
+    "name": "buckingham rum raisin ice cream",
+    "original_name": "BUCKINGHAM RUM & RAISIN ICE CREAM",
+    "price": "761.22",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000938820180.JPG",
+    "product_url": ""
+  },
+  {
+    "name": "buckingham strawberry ripple ice cream",
+    "original_name": "BUCKINGHAM STRAWBERRY RIPPLE ICE CREAM",
+    "price": "1194.31",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000938853000.JPG",
+    "product_url": ""
+  },
+  {
+    "name": "buckingham vanilla ice cream",
+    "original_name": "BUCKINGHAM VANILLA ICE CREAM",
+    "price": "1194.31",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000938852980.JPG",
+    "product_url": ""
+  },
+  {
+    "name": "bud light beer",
+    "original_name": "BUD LIGHT BEER",
+    "price": "382.06",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000181112.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "bullas 4 per",
+    "original_name": "BULLAS (4 PER PACK)",
+    "price": "263.00",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/DEPT4.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "bumble bee chunk white tuna in water",
+    "original_name": "BUMBLE BEE CHUNK WHITE TUNA IN WATER",
+    "price": "430.20",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000866253.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "bumble bee chunks albacore in oil",
+    "original_name": "BUMBLE BEE CHUNKS ALBACORE IN OIL",
+    "price": "430.20",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000866263.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "bumble bee pink salmon",
+    "original_name": "BUMBLE BEE PINK SALMON",
+    "price": "815.34",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000866733.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "bumble bee pink salmon tails",
+    "original_name": "BUMBLE BEE PINK SALMON TAILS",
+    "price": "1265.53",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000866703.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "bumble bee sockeye red salmon",
+    "original_name": "BUMBLE BEE SOCKEYE RED SALMON",
+    "price": "1859.27",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000866673.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "bumble bee solid tuna low sodium in water",
+    "original_name": "BUMBLE BEE SOLID TUNA LOW SODIUM IN WATER",
+    "price": "606.20",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000866123.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "bumble bee solid white albacore in water",
+    "original_name": "BUMBLE BEE SOLID WHITE ALBACORE IN WATER",
+    "price": "510.27",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000866053.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "bumble bee solid white albacore tuna",
+    "original_name": "BUMBLE BEE SOLID WHITE ALBACORE TUNA",
+    "price": "510.27",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000866083.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "cadbury easter creme egg",
+    "original_name": "CADBURY EASTER CREME EGG",
+    "price": "137.22",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000005020160.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "cadbury easter milk caramel egg",
+    "original_name": "CADBURY EASTER MILK CARAMEL EGG",
+    "price": "122.62",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000005020196.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "callaloo shredded",
+    "original_name": "CALLALOO - SHREDDED",
+    "price": "351.00",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000479.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "camerons tamarind balls",
+    "original_name": "CAMERONS TAMARIND BALLS",
+    "price": "334.43",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000009921600.JPG",
+    "product_url": ""
+  },
+  {
+    "name": "cascade dishwashing gel lemon",
+    "original_name": "CASCADE DISHWASHING GEL LEMON",
+    "price": "2162.77",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000007861.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "cashew peices bulk",
+    "original_name": "CASHEW PEICES BULK",
+    "price": "4029.57",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000008298.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "catherines peak bottle deposit",
+    "original_name": "CATHERINE'S PEAK BOTTLE DEPOSIT",
+    "price": "560.00",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000401.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "catherines peak spring water",
+    "original_name": "CATHERINE'S PEAK SPRING WATER",
+    "price": "799.69",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000003000.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "caustic soda",
+    "original_name": "CAUSTIC SODA",
+    "price": "534.47",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000009950761.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "caustic soda",
+    "original_name": "CAUSTIC SODA",
+    "price": "689.18",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000009952182.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "chamois yellow duster",
+    "original_name": "CHAMOIS - YELLOW DUSTER",
+    "price": "265.55",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000009941711.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "charles rum raisin chocolate",
+    "original_name": "CHARLES RUM & RAISIN CHOCOLATE",
+    "price": "161.14",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000400325004.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "chases citrus scent disinfectant spray",
+    "original_name": "CHASES CITRUS SCENT DISINFECTANT SPRAY",
+    "price": "446.60",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0001022810423.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "chases linen disinfectant spray",
+    "original_name": "CHASES LINEN DISINFECTANT SPRAY",
+    "price": "446.60",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0001022810403.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "cheetos crunchy king size usa",
+    "original_name": "CHEETOS CRUNCHY KING SIZE USA",
+    "price": "357.84",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000008127.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "cherryman marashino cherries",
+    "original_name": "CHERRYMAN MARASHINO CHERRIES",
+    "price": "942.06",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000415834.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "chewy dipps chocchip",
+    "original_name": "CHEWY DIPPS CHOC/CHIP",
+    "price": "123.70",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000309590.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "chippies cheese kurl large",
+    "original_name": "CHIPPIES CHEESE KURL LARGE",
+    "price": "96.87",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000001038.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "chippies onion bits",
+    "original_name": "CHIPPIES ONION BITS",
+    "price": "142.31",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000001042.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "chlorodo blue laundry soap",
+    "original_name": "CHLORODO BLUE LAUNDRY SOAP",
+    "price": "54.06",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000001391.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "cilantro imported",
+    "original_name": "CILANTRO IMPORTED",
+    "price": "467.84",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000132.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "coca cola coke soda",
+    "original_name": "COCA COLA COKE SODA",
+    "price": "84.35",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000495480.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "cockburns port wine",
+    "original_name": "COCKBURN'S PORT WINE",
+    "price": "8420.40",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0001027802110.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "coco local",
+    "original_name": "COCO LOCAL",
+    "price": "1157.89",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000915.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "coke light soda",
+    "original_name": "COKE LIGHT SODA",
+    "price": "113.66",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000499490.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "coloured mop 14 dry",
+    "original_name": "COLOURED MOP #14 (DRY)",
+    "price": "517.81",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000009943569.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "coloured mops dry 16",
+    "original_name": "COLOURED MOPS - DRY #16",
+    "price": "427.94",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000009943684.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "coloured sweet pepper",
+    "original_name": "COLOURED SWEET PEPPER",
+    "price": "3454.55",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000897.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "copperwood pork hock value 4p",
+    "original_name": "COPPERWOOD PORK HOCK VALUE PACK 4P",
+    "price": "1218.05",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000008251.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "copperwood pork shoulder roast 4p",
+    "original_name": "COPPERWOOD PORK SHOULDER ROAST 4P",
+    "price": "2158.69",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000008260%20.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "copperwood pork spare ribs fp 4p",
+    "original_name": "COPPERWOOD PORK SPARE RIBS (F/P) 4P",
+    "price": "4981.72",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000008256.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "copperwood porkloin chop 12 boneless value 4p",
+    "original_name": "COPPERWOOD PORKLOIN CHOP 1/2 BONELESS VALUE PACK 4P",
+    "price": "2499.53",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000008245.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "copperwood porkloin chop 12 bone in 4p",
+    "original_name": "COPPERWOOD PORKLOIN CHOP 1/2\"\" BONE IN 4P",
+    "price": "2329.12",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000008248.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "copperwood porkstew vp 4p",
+    "original_name": "COPPERWOOD PORKSTEW V/P 4P",
+    "price": "2026.13",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000008253.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "corona extra beer",
+    "original_name": "CORONA EXTRA BEER",
+    "price": "334.11",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000806614.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "coronita extra beer bottle",
+    "original_name": "CORONITA EXTRA BEER BOTTLE",
+    "price": "227.10",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000806684.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "cracker barrel extra sharp yellow cheddar cheese",
+    "original_name": "CRACKER BARREL EXTRA SHARP YELLOW CHEDDAR CHEESE",
+    "price": "1190.48",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000215220.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "crush soda grape",
+    "original_name": "CRUSH SODA GRAPE",
+    "price": "219.31",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000789120.jpeg",
+    "product_url": ""
+  },
+  {
+    "name": "danjou pears small",
+    "original_name": "D'ANJOU PEARS SMALL",
+    "price": "290.91",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000903.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "daisy sour cream",
+    "original_name": "DAISY SOUR CREAM",
+    "price": "531.52",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000734264.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "dasani water",
+    "original_name": "DASANI WATER",
+    "price": "54.21",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000495550.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "dasheen local",
+    "original_name": "DASHEEN LOCAL",
+    "price": "1158.01",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000863.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "deck mop size 16",
+    "original_name": "DECK MOP SIZE 16",
+    "price": "590.56",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000009943685.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "del monte whole kernel corn no sugar",
+    "original_name": "DEL MONTE WHOLE KERNEL CORN NO SUGAR",
+    "price": "336.27",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000240950.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "dettol antiseptic liquid",
+    "original_name": "DETTOL ANTISEPTIC LIQUID",
+    "price": "677.46",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000005015807.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "dettol antiseptic liquid",
+    "original_name": "DETTOL ANTISEPTIC LIQUID",
+    "price": "1481.17",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000005015822.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "diamond aluminium foil heavy duty",
+    "original_name": "DIAMOND ALUMINIUM FOIL HEAVY DUTY",
+    "price": "298.34",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0001090000084.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "diamond alumium foil",
+    "original_name": "DIAMOND ALUMIUM FOIL",
+    "price": "1969.98",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0001090000086.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "diamond cling wrap",
+    "original_name": "DIAMOND CLING WRAP",
+    "price": "757.89",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0001090030283.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "diamond cooking baking paper",
+    "original_name": "DIAMOND COOKING & BAKING PAPER",
+    "price": "390.64",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0001090015593.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "diamond cooking baking paper",
+    "original_name": "DIAMOND COOKING & BAKING PAPER",
+    "price": "736.48",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0001090062022.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "diamond foil aluminum",
+    "original_name": "DIAMOND FOIL ALUMINUM",
+    "price": "796.43",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0001090000085.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "diamond freezer bags medium",
+    "original_name": "DIAMOND FREEZER BAGS MEDIUM",
+    "price": "580.67",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0001090003420.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "diamond heavy duty foil",
+    "original_name": "DIAMOND HEAVY DUTY FOIL",
+    "price": "571.80",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0001090000087.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "diamond slider bags large",
+    "original_name": "DIAMOND SLIDER BAGS LARGE",
+    "price": "609.01",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0001090003532.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "diamond slider bags medium",
+    "original_name": "DIAMOND SLIDER BAGS MEDIUM",
+    "price": "609.01",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0001090003531.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "diamond storage large",
+    "original_name": "DIAMOND STORAGE BAG LARGE",
+    "price": "506.92",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0001090003419.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "diamond storage medium",
+    "original_name": "DIAMOND STORAGE BAG MEDIUM",
+    "price": "580.67",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0001090003418.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "diamond zipper sandwich",
+    "original_name": "DIAMOND ZIPPER SANDWICH BAG",
+    "price": "543.28",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0001090003416.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "dole pineapple strawberry gel sugar free",
+    "original_name": "DOLE PINEAPPLE STRAWBERRY GEL SUGAR FREE",
+    "price": "1212.50",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000006421.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "dome transparent lid 7in foil container",
+    "original_name": "DOME TRANSPARENT LID 7IN FOIL CONTAINER",
+    "price": "19.00",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000001269.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "dome transparent lid 8 foil round container",
+    "original_name": "DOME TRANSPARENT LID 8\" FOIL ROUND CONTAINER",
+    "price": "26.66",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000006752.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "dome transparent lid for 15lb container",
+    "original_name": "DOME TRANSPARENT LID FOR 1.5LB CONTAINER",
+    "price": "17.50",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000001275.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "dome transparent lid for 1lb oblong",
+    "original_name": "DOME TRANSPARENT LID FOR 1LB OBLONG",
+    "price": "10.18",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000001273.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "dome transparent lid for 225 container",
+    "original_name": "DOME TRANSPARENT LID FOR 2.25 CONTAINER",
+    "price": "24.39",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000001277.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "dome transparent lid for 9 foil container",
+    "original_name": "DOME TRANSPARENT LID FOR 9\"\" FOIL CONTAINER",
+    "price": "26.07",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000001271.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "dove body cream shea butter",
+    "original_name": "DOVE BODY CREAM SHEA BUTTER",
+    "price": "1238.99",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000009607329.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "dove deo stick invisible dry",
+    "original_name": "DOVE DEO STICK INVISIBLE DRY",
+    "price": "702.56",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000005028706.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "dove go fresh cucumber green tea deodorant",
+    "original_name": "DOVE GO FRESH CUCUMBER & GREEN TEA DEODORANT",
+    "price": "628.85",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000005028566.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "dove original antiperspirant deodorant stick",
+    "original_name": "DOVE ORIGINAL ANTIPERSPIRANT DEODORANT STICK",
+    "price": "702.56",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000008046643.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "dove roll in invisble dry deodorant",
+    "original_name": "DOVE ROLL IN INVISBLE DRY DEODORANT",
+    "price": "521.61",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000005012000.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "dove roll on deodorant beauty finish",
+    "original_name": "DOVE ROLL ON DEODORANT BEAUTY FINISH",
+    "price": "521.61",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000009600707.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "dove roll on original deodorant",
+    "original_name": "DOVE ROLL ON ORIGINAL DEODORANT",
+    "price": "521.61",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000005009742.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "dr pepper soft drink",
+    "original_name": "DR. PEPPER SOFT DRINK",
+    "price": "219.31",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000783150.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "dried cranberry bulk 227",
+    "original_name": "DRIED CRANBERRY BULK 2.27",
+    "price": "4472.73",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000008271.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "dried gungo",
+    "original_name": "DRIED GUNGO",
+    "price": "1698.25",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000935.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "duralite led light bulb 5w",
+    "original_name": "DURALITE LED LIGHT BULB 5W",
+    "price": "1127.92",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000007672.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "easispice black pepper",
+    "original_name": "EASISPICE BLACK PEPPER",
+    "price": "359.34",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000008401.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "easispice season up black pepper",
+    "original_name": "EASISPICE SEASON UP BLACK PEPPER",
+    "price": "359.34",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000008402.JPG",
+    "product_url": ""
+  },
+  {
+    "name": "eco styling gel krystal white",
+    "original_name": "ECO STYLING GEL KRYSTAL WHITE",
+    "price": "739.99",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000007744.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "eden farms eggs",
+    "original_name": "EDEN FARMS EGGS",
+    "price": "320.00",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000417.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "eden restored almond nuts raw",
+    "original_name": "EDEN RESTORED ALMOND NUTS RAW",
+    "price": "1455.00",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000008117.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "eden restored cashew nuts raw",
+    "original_name": "EDEN RESTORED CASHEW NUTS RAW",
+    "price": "1524.29",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000008118.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "elle vire cooking cream",
+    "original_name": "ELLE & VIRE COOKING CREAM",
+    "price": "890.70",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000003000243.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "elle vire whipping cream",
+    "original_name": "ELLE & VIRE WHIPPING CREAM",
+    "price": "890.70",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000003002877.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "escallion local",
+    "original_name": "ESCALLION LOCAL",
+    "price": "1078.39",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000925.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "evian natural spring water",
+    "original_name": "EVIAN NATURAL SPRING WATER",
+    "price": "509.69",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000792987.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "fennelanise",
+    "original_name": "FENNEL/ANISE",
+    "price": "299.25",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000677.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "ferrero collection chocolate",
+    "original_name": "FERRERO COLLECTION CHOCOLATE",
+    "price": "430.83",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000980020300.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "ferrero rocher 3ct",
+    "original_name": "FERRERO ROCHER 3CT",
+    "price": "430.83",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000980012301.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "ferrero rocher chocolate 12ct",
+    "original_name": "FERRERO ROCHER CHOCOLATE 12CT",
+    "price": "1768.32",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000980000071.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "ferrero rocher collection cube 6ct",
+    "original_name": "FERRERO ROCHER COLLECTION CUBE 6CT",
+    "price": "1893.79",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000980020023.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "ferrero rocher diamond",
+    "original_name": "FERRERO ROCHER DIAMOND",
+    "price": "4038.77",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000980012401.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "ferrero rocher raffaello",
+    "original_name": "FERRERO ROCHER RAFFAELLO",
+    "price": "269.28",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000098223.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "foil baking",
+    "original_name": "FOIL BAKING TRAY",
+    "price": "439.63",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000001266.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "frenchs dijon mustard",
+    "original_name": "FRENCH'S DIJON MUSTARD",
+    "price": "1086.12",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000415993.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "frenchs honey mustard",
+    "original_name": "FRENCH'S HONEY MUSTARD",
+    "price": "1086.12",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000415523.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "fresh chives",
+    "original_name": "FRESH CHIVES",
+    "price": "299.25",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000002094.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "fresh dill",
+    "original_name": "FRESH DILL",
+    "price": "299.25",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000003003.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "fresh lemon grass",
+    "original_name": "FRESH LEMON GRASS",
+    "price": "299.25",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000003006.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "full size foil lid",
+    "original_name": "FULL SIZE FOIL LID",
+    "price": "208.57",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000001267.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "garlic local",
+    "original_name": "GARLIC LOCAL",
+    "price": "1350.88",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000926.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "ginger local",
+    "original_name": "GINGER LOCAL",
+    "price": "1933.33",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000919.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "glade air freshner clean linen",
+    "original_name": "GLADE AIR FRESHNER CLEAN LINEN",
+    "price": "1925.83",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000006532.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "glade air freshner hawaiian breeze",
+    "original_name": "GLADE AIR FRESHNER HAWAIIAN BREEZE",
+    "price": "1501.46",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000006533.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "golden waffles regular",
+    "original_name": "GOLDEN WAFFLES REGULAR",
+    "price": "661.30",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000003088.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "grapefruit",
+    "original_name": "GRAPEFRUIT",
+    "price": "789.00",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000929.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "grease paper",
+    "original_name": "GREASE PAPER",
+    "price": "157.19",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000528.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "green banana",
+    "original_name": "GREEN BANANA",
+    "price": "427.50",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000904.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "green hills coconut flour",
+    "original_name": "GREEN HILLS COCONUT FLOUR",
+    "price": "770.39",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000501101.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "green hills flaxseed meal",
+    "original_name": "GREEN HILLS FLAXSEED MEAL",
+    "price": "731.64",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000801249.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "green hills nutritional yeast",
+    "original_name": "GREEN HILLS NUTRITIONAL YEAST",
+    "price": "1217.14",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000601009.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "green hills vanilla powder",
+    "original_name": "GREEN HILLS VANILLA POWDER",
+    "price": "1956.88",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000701068.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "green hills veggie chunks",
+    "original_name": "GREEN HILLS VEGGIE CHUNKS",
+    "price": "751.99",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000601236.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "green hills veggie mince unflavoured",
+    "original_name": "GREEN HILLS VEGGIE MINCE UNFLAVOURED",
+    "price": "473.40",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000601160.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "green hills whole flaxseed",
+    "original_name": "GREEN HILLS WHOLE FLAXSEED",
+    "price": "780.03",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000801034.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "ground allspice 25g",
+    "original_name": "GROUND ALLSPICE 25G",
+    "price": "676.20",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000522121.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "ground tumeric 25g",
+    "original_name": "GROUND TUMERIC 25G",
+    "price": "868.30",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000522611.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "ground white pepper 57g",
+    "original_name": "GROUND WHITE PEPPER 57G",
+    "price": "967.91",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000528051.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "guzzler citrus punch",
+    "original_name": "GUZZLER CITRUS PUNCH",
+    "price": "266.67",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000006828.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "half size foil baking",
+    "original_name": "HALF SIZE FOIL BAKING TRAY",
+    "price": "184.41",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000001264.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "half size foil baking lid",
+    "original_name": "HALF SIZE FOIL BAKING TRAY LID",
+    "price": "85.21",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000001265.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "hamilton smoke house smoke ham slice muscle",
+    "original_name": "HAMILTON SMOKE HOUSE SMOKE HAM SLICE MUSCLE",
+    "price": "3801.81",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000008207.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "handy fuel",
+    "original_name": "HANDY FUEL",
+    "price": "203.59",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000009952805.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "happy snack sour fruit slice",
+    "original_name": "HAPPY SNACK SOUR FRUIT SLICE",
+    "price": "190.85",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0001005430400.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "hash brown kg",
+    "original_name": "HASH BROWN KG",
+    "price": "1069.01",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000008186.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "heinz apple toddler food",
+    "original_name": "HEINZ APPLE TODDLER FOOD",
+    "price": "238.14",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000007590056.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "heinz banana toddler food",
+    "original_name": "HEINZ BANANA TODDLER FOOD",
+    "price": "182.96",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000007591602.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "heinz fruit cocktail toddler food",
+    "original_name": "HEINZ FRUIT COCKTAIL TODDLER FOOD",
+    "price": "182.96",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000007591603.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "heinz fruit dessert toddler food",
+    "original_name": "HEINZ FRUIT DESSERT TODDLER FOOD",
+    "price": "238.14",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000007590058.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "heinz guava toddler food",
+    "original_name": "HEINZ GUAVA TODDLER FOOD",
+    "price": "182.96",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000007591959.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "heinz hot dog relish",
+    "original_name": "HEINZ HOT DOG RELISH",
+    "price": "958.73",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000136610.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "heinz ketchup squeeze pet",
+    "original_name": "HEINZ KETCHUP SQUEEZE PET",
+    "price": "1246.20",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000136400.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "heinz mango toddler food",
+    "original_name": "HEINZ MANGO TODDLER FOOD",
+    "price": "182.96",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000007592012.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "heinz peach toddler food",
+    "original_name": "HEINZ PEACH TODDLER FOOD",
+    "price": "182.96",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000007591690.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "heinz sweet gherkins",
+    "original_name": "HEINZ SWEET GHERKINS",
+    "price": "1129.50",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000135920.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "heinz tomato ketchup",
+    "original_name": "HEINZ TOMATO KETCHUP",
+    "price": "866.84",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000131240.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "heinz tropical fruits toddler food",
+    "original_name": "HEINZ TROPICAL FRUITS TODDLER FOOD",
+    "price": "182.96",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000006819.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "heinz yellow mustard",
+    "original_name": "HEINZ YELLOW MUSTARD",
+    "price": "504.81",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000132110.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "heinz yellow mustard",
+    "original_name": "HEINZ YELLOW MUSTARD",
+    "price": "748.10",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000132120.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "herbox boullion chicken sodium free",
+    "original_name": "HERB-OX BOULLION CHICKEN SODIUM FREE",
+    "price": "872.26",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000336343.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "hersheys almond joy",
+    "original_name": "HERSHEY'S ALMOND JOY",
+    "price": "335.64",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000343200.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "hersheys bar milk chocolate almond",
+    "original_name": "HERSHEY'S BAR MILK CHOCOLATE ALMOND",
+    "price": "335.64",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000342410.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "hersheys caramel syrup",
+    "original_name": "HERSHEY'S CARAMEL SYRUP",
+    "price": "1119.43",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000343660.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "hersheys chocolate syrup",
+    "original_name": "HERSHEY'S CHOCOLATE SYRUP",
+    "price": "1151.76",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000343120.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "hersheys milk chocolate king size",
+    "original_name": "HERSHEY'S MILK CHOCOLATE KING SIZE",
+    "price": "692.19",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000342200.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "hersheys reeses pieces",
+    "original_name": "HERSHEY'S REESE'S PIECES",
+    "price": "335.64",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000342480.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "hersheys reeses stick",
+    "original_name": "HERSHEY'S REESE'S STICK",
+    "price": "335.74",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000341520.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "hersheys reeses nutrageous",
+    "original_name": "HERSHEY'S REESES NUTRAGEOUS",
+    "price": "335.72",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000340050.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "hersheys reeses peanutbutter cup",
+    "original_name": "HERSHEY'S REESES PEANUTBUTTER CUP",
+    "price": "335.64",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000344400.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "hersheys strawberry syrup",
+    "original_name": "HERSHEY'S STRAWBERRY SYRUP",
+    "price": "1151.41",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000343180.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "hfa aluminium container for steamtable half size",
+    "original_name": "HFA ALUMINIUM CONTAINER FOR STEAMTABLE HALF SIZE",
+    "price": "136.18",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000001166.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "hfa aluminium container oval roaster",
+    "original_name": "HFA ALUMINIUM CONTAINER OVAL ROASTER",
+    "price": "449.21",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000001161.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "hilo drink single",
+    "original_name": "HI-LO BAG DRINK- SINGLE BAG",
+    "price": "26.00",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000006501.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "hilo blue soap",
+    "original_name": "HI-LO BLUE SOAP",
+    "price": "80.06",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000001822.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "hilo christmas cake",
+    "original_name": "HI-LO CHRISTMAS CAKE",
+    "price": "3640.01",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/DEPT0.gif",
+    "product_url": ""
+  },
+  {
+    "name": "hominy corn",
+    "original_name": "HOMINY CORN",
+    "price": "964.91",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000228.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "irish moss",
+    "original_name": "IRISH MOSS",
+    "price": "250.00",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000834.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "jf mills festival mix",
+    "original_name": "J.F. MILLS FESTIVAL MIX",
+    "price": "542.80",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000617.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "jd spice cinnamon leaf",
+    "original_name": "JD SPICE CINNAMON LEAF",
+    "price": "258.62",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000467.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "jello gelatin sugar free strawberry",
+    "original_name": "JELL-O GELATIN SUGAR FREE STRAWBERRY",
+    "price": "519.64",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000008133.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "joes brown unflavoured chunks",
+    "original_name": "JOE'S BROWN UNFLAVOURED CHUNKS",
+    "price": "329.80",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000005014.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "joes bulgar",
+    "original_name": "JOE'S BULGAR",
+    "price": "199.34",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000005011.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "joes wholesome semolina",
+    "original_name": "JOE'S WHOLESOME SEMOLINA",
+    "price": "276.18",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000005012.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "jolly assorted lollipops 17g",
+    "original_name": "JOLLY ASSORTED LOLLIPOPS BAG 17G",
+    "price": "57.30",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000107073.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "june plum",
+    "original_name": "JUNE PLUM",
+    "price": "206.01",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000950.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "keebler cheezit regular",
+    "original_name": "KEEBLER CHEEZ-IT REGULAR",
+    "price": "116.45",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000008126.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "kikkoman soy sauce",
+    "original_name": "KIKKOMAN SOY SAUCE",
+    "price": "444.58",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000413914.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "kikkoman soy sauce",
+    "original_name": "KIKKOMAN SOY SAUCE",
+    "price": "757.33",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000413924.JPG",
+    "product_url": ""
+  },
+  {
+    "name": "kikkoman teriyaki sauce",
+    "original_name": "KIKKOMAN TERIYAKI SAUCE",
+    "price": "464.17",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000413944.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "kikkoman teriyaki sauce",
+    "original_name": "KIKKOMAN TERIYAKI SAUCE",
+    "price": "757.33",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000413954.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "kinder bueno choclate bars",
+    "original_name": "KINDER BUENO CHOCLATE BARS",
+    "price": "322.03",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000980000055.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "king lighter",
+    "original_name": "KING LIGHTER",
+    "price": "71.36",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000933145.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "kleenex gentle clean white",
+    "original_name": "KLEENEX GENTLE CLEAN WHITE TRAY",
+    "price": "361.85",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000036000477.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "lasco lasoy lactose free strawberry beverage",
+    "original_name": "LASCO LASOY LACTOSE FREE STRAWBERRY BEVERAGE",
+    "price": "202.70",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000007674.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "lawrys garlic salt with parsley",
+    "original_name": "LAWRY'S GARLIC SALT WITH PARSLEY",
+    "price": "673.24",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000215563.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "lawrys seasoning salt",
+    "original_name": "LAWRY'S SEASONING SALT",
+    "price": "552.65",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000215573.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "lawrys seasoning salt",
+    "original_name": "LAWRY'S SEASONING SALT",
+    "price": "764.65",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000215523.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "lettuce iceberg imported",
+    "original_name": "LETTUCE ICEBERG - IMPORTED",
+    "price": "1711.01",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000907.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "lettuce mix",
+    "original_name": "LETTUCE MIX",
+    "price": "642.00",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000007513.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "lifespan water bottle deposit",
+    "original_name": "LIFESPAN WATER BOTTLE DEPOSIT",
+    "price": "800.00",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000006258.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "lipton iced tea lemon",
+    "original_name": "LIPTON ICED TEA LEMON",
+    "price": "1661.57",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000418450.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "local ackee",
+    "original_name": "LOCAL ACKEE",
+    "price": "398.00",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000900.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "local irish potato",
+    "original_name": "LOCAL IRISH POTATO",
+    "price": "929.82",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000958.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "local mango tommy atkins hayden",
+    "original_name": "LOCAL MANGO TOMMY ATKINS (HAYDEN)",
+    "price": "376.21",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000252.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "local round red peas",
+    "original_name": "LOCAL ROUND RED PEAS",
+    "price": "782.00",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000730.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "local sweet corn in husk",
+    "original_name": "LOCAL SWEET CORN IN HUSK",
+    "price": "303.57",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000005563.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "lysol all purpose cleaner lemon sunflower",
+    "original_name": "LYSOL ALL PURPOSE CLEANER LEMON & SUNFLOWER",
+    "price": "343.54",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000193032.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "mms mini tubes 24cnt",
+    "original_name": "M&M'S MINI TUBES 24CNT",
+    "price": "242.50",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000402370.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "mms peanuts king size",
+    "original_name": "M&M'S PEANUTS KING SIZE",
+    "price": "414.71",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000404320.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "maggi 2 min instant noodles masala",
+    "original_name": "MAGGI 2 MIN INSTANT NOODLES MASALA",
+    "price": "93.59",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000280003697.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "magic blue soap",
+    "original_name": "MAGIC (BLUE) SOAP",
+    "price": "81.66",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000009944226.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "mccormick basil leaves",
+    "original_name": "MCCORMICK BASIL LEAVES",
+    "price": "486.10",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000526961.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "mccormick bay leaveswhole 3g",
+    "original_name": "MCCORMICK BAY LEAVES-WHOLE 3G",
+    "price": "878.78",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000526981.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "mccormick celery flakes 14g",
+    "original_name": "MCCORMICK CELERY FLAKES 14G",
+    "price": "626.06",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000527061.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "mccormick celery salt",
+    "original_name": "MCCORMICK CELERY SALT",
+    "price": "737.21",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000525081.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "mccormick chili powder",
+    "original_name": "MCCORMICK CHILI POWDER",
+    "price": "888.22",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000524281.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "mccormick cinnamon sticks",
+    "original_name": "MCCORMICK CINNAMON STICKS",
+    "price": "1405.23",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000524421.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "mccormick cloves 17g",
+    "original_name": "MCCORMICK CLOVES 17G",
+    "price": "977.35",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000522341.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "mccormick crushed red pepper",
+    "original_name": "MCCORMICK CRUSHED RED PEPPER",
+    "price": "913.97",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000526761.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "mccormick fennel seed 24g",
+    "original_name": "MCCORMICK FENNEL SEED 24G",
+    "price": "411.08",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000522491.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "mccormick garlic salt",
+    "original_name": "MCCORMICK GARLIC SALT",
+    "price": "665.89",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000525931.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "mccormick ground cumin 56g",
+    "original_name": "MCCORMICK GROUND CUMIN 56G",
+    "price": "742.98",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000528101.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "mccormick ground mustard 24g",
+    "original_name": "MCCORMICK GROUND MUSTARD 24G",
+    "price": "444.36",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000522531.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "mccormick ground oregano",
+    "original_name": "MCCORMICK GROUND OREGANO",
+    "price": "472.95",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000523561.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "mccormick montreal chicken seasoning",
+    "original_name": "MCCORMICK MONTREAL CHICKEN SEASONING",
+    "price": "874.58",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000522461.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "mccormick onion powder",
+    "original_name": "MCCORMICK ONION POWDER",
+    "price": "877.72",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000526471.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "mccormick oregano leaves whole 21g",
+    "original_name": "MCCORMICK OREGANO LEAVES WHOLE 21G",
+    "price": "599.70",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000527161.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "mccormick paprika",
+    "original_name": "MCCORMICK PAPRIKA",
+    "price": "825.30",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000524481.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "mccormick perfect pinch lemon pepper 99g",
+    "original_name": "MCCORMICK PERFECT PINCH LEMON& PEPPER 99G",
+    "price": "606.92",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000525461.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "mccormick rubbed sage",
+    "original_name": "MCCORMICK RUBBED SAGE",
+    "price": "571.52",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000528841.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "mcvities digestive biscuits",
+    "original_name": "McVITIES DIGESTIVE BISCUITS",
+    "price": "425.92",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000005039623.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "melon cantaloupes",
+    "original_name": "MELON CANTALOUPES",
+    "price": "1233.33",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000876.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "melon yellow",
+    "original_name": "MELON YELLOW",
+    "price": "719.01",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000001008.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "mentos fruit 38g",
+    "original_name": "MENTOS FRUIT 38G",
+    "price": "164.16",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000008710802.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "mentos mint",
+    "original_name": "MENTOS MINT",
+    "price": "164.16",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000008710801.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "mentos rolls 40s rainbow",
+    "original_name": "MENTOS ROLLS 40:S RAINBOW",
+    "price": "164.16",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000008731139.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "mop stick",
+    "original_name": "MOP STICK",
+    "price": "309.54",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000009943586.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "motts sensation natural apple sauce",
+    "original_name": "MOTT'S SENSATION NATURAL APPLE SAUCE",
+    "price": "1091.25",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000148073.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "motts apple juice",
+    "original_name": "MOTTS APPLE JUICE",
+    "price": "300.32",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000148943.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "motts sberry apple sauce",
+    "original_name": "MOTTS S/BERRY APPLE SAUCE",
+    "price": "1020.46",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000148823.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "mountain dew",
+    "original_name": "MOUNTAIN DEW",
+    "price": "180.69",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000120850.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "mountain dew drink",
+    "original_name": "MOUNTAIN DEW DRINK",
+    "price": "141.28",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000121310.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "mtn dew code red",
+    "original_name": "MTN DEW CODE RED",
+    "price": "219.31",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000120620.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "munch peanut bar",
+    "original_name": "MUNCH PEANUT BAR",
+    "price": "242.50",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000401100.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "murray sugar free shortbread",
+    "original_name": "MURRAY SUGAR FREE SHORTBREAD",
+    "price": "165.20",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000301001041.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "mustard",
+    "original_name": "MUSTARD",
+    "price": "862.01",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000917.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "myerss original dark rum",
+    "original_name": "MYERS'S ORIGINAL DARK RUM",
+    "price": "4196.91",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000877130.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "nabisco oreo chocolate sandwich cookies",
+    "original_name": "NABISCO OREO CHOCOLATE SANDWICH COOKIES",
+    "price": "1552.08",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000448220.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "national healthy start multigrain sliced bread",
+    "original_name": "NATIONAL HEALTHY START MULTIGRAIN SLICED BREAD",
+    "price": "437.50",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000875651101.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "naturally almond original milk",
+    "original_name": "NATURALLY ALMOND ORIGINAL MILK",
+    "price": "757.60",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000007677.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "naturally almond vanilla milk",
+    "original_name": "NATURALLY ALMOND VANILLA MILK",
+    "price": "757.60",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000007678.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "natures best bustastagga back",
+    "original_name": "NATURES BEST BUSTA(STAGGA BACK)",
+    "price": "214.99",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000022569030.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "natures best tamarind balls",
+    "original_name": "NATURES BEST TAMARIND BALLS",
+    "price": "312.72",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000087808.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "negro yam local",
+    "original_name": "NEGRO YAM LOCAL",
+    "price": "1929.82",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000842.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "nestle full cream sweetened condensed milk",
+    "original_name": "NESTLE FULL CREAM SWEETENED CONDENSED MILK",
+    "price": "356.70",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000938853480.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "nestle gloria evaporated milk",
+    "original_name": "NESTLE GLORIA EVAPORATED MILK",
+    "price": "317.52",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000938853860.JPG",
+    "product_url": ""
+  },
+  {
+    "name": "nestle grapenut ice cream",
+    "original_name": "NESTLE GRAPENUT ICE CREAM",
+    "price": "761.22",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000938820170.JPG",
+    "product_url": ""
+  },
+  {
+    "name": "nestle kit kat 2 finger",
+    "original_name": "NESTLE KIT KAT 2 FINGER",
+    "price": "109.10",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000005025160.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "nestle kitkat 4 finger",
+    "original_name": "NESTLE KITKAT 4 FINGER",
+    "price": "218.19",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000005024983.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "nestle vanilla ice cream",
+    "original_name": "NESTLE VANILLA ICE CREAM",
+    "price": "761.22",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000938820030.JPG",
+    "product_url": ""
+  },
+  {
+    "name": "nuovo pasta fettucine spinach",
+    "original_name": "NUOVO PASTA FETTUCINE SPINACH",
+    "price": "926.04",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000800591519.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "nuovo pasta gnocchi classic potato gluten free",
+    "original_name": "NUOVO PASTA GNOCCHI CLASSIC POTATO GLUTEN FREE",
+    "price": "1609.55",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000800593001.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "nuovo pasta linguine",
+    "original_name": "NUOVO PASTA LINGUINE",
+    "price": "881.94",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000800591300.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "nuovo pasta linguine garlic herb",
+    "original_name": "NUOVO PASTA LINGUINE GARLIC & HERB",
+    "price": "948.09",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000800591365.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "nuovo pasta linguine hot red pepper",
+    "original_name": "NUOVO PASTA LINGUINE HOT RED PEPPER",
+    "price": "926.04",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000800591307.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "nuovo pasta ravioli pumpkin sage",
+    "original_name": "NUOVO PASTA RAVIOLI PUMPKIN & SAGE",
+    "price": "1741.84",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000800595840.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "nuovo pasta ravioli shrimp lobster",
+    "original_name": "NUOVO PASTA RAVIOLI SHRIMP & LOBSTER",
+    "price": "2226.91",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000800595893.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "nuovo pasta tortelloni tricolor mozzarella herb",
+    "original_name": "NUOVO PASTA TORTELLONI TRI-COLOR MOZZARELLA & HERB",
+    "price": "1609.55",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000800582501.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "nutella hazelnut spread",
+    "original_name": "NUTELLA HAZELNUT SPREAD",
+    "price": "1495.86",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/000980089500.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "nutella spread w pretzel 54g",
+    "original_name": "NUTELLA SPREAD W PRETZEL 54G",
+    "price": "560.04",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000980080009.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "nutmeg",
+    "original_name": "NUTMEG",
+    "price": "320.00",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000962.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "nuttela with breadsticks",
+    "original_name": "NUTTELA WITH BREADSTICKS",
+    "price": "567.58",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000980080005.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "odouls non alcoholic beer",
+    "original_name": "O'DOUL'S NON ALCOHOLIC BEER",
+    "price": "388.60",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000181572.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "oblong foil baking container",
+    "original_name": "OBLONG FOIL BAKING CONTAINER",
+    "price": "43.21",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000001274.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "ocean spray cranberry cocktail",
+    "original_name": "OCEAN SPRAY CRANBERRY COCKTAIL",
+    "price": "236.13",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000319902.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "ocean spray white cranberry peach",
+    "original_name": "OCEAN SPRAY WHITE CRANBERRY PEACH",
+    "price": "236.13",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000316692.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "ocean spray white cranberry strawberry",
+    "original_name": "OCEAN SPRAY WHITE CRANBERRY STRAWBERRY",
+    "price": "236.13",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000316682.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "onions",
+    "original_name": "ONIONS",
+    "price": "1052.63",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000943.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "orange",
+    "original_name": "ORANGE BAG",
+    "price": "1219.00",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000944.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "orbit bubblemint 14 tabs",
+    "original_name": "ORBIT BUBBLEMINT 14 TABS",
+    "price": "188.93",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000224890.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "orbit soft chews peppermint",
+    "original_name": "ORBIT SOFT CHEWS PEPPERMINT",
+    "price": "387.68",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000220890.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "orbit soft chews spearmint",
+    "original_name": "ORBIT SOFT CHEWS SPEARMINT",
+    "price": "387.68",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000220940.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "orbit spearmint 14tabs",
+    "original_name": "ORBIT SPEARMINT 14TABS",
+    "price": "188.93",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000224840.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "oregano",
+    "original_name": "OREGANO",
+    "price": "299.26",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000006468.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "ortanique",
+    "original_name": "ORTANIQUE",
+    "price": "1666.67",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000892.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "palmers olive oil gro therapy",
+    "original_name": "PALMER'S OLIVE OIL GRO THERAPY",
+    "price": "1678.84",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0001018102520.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "palmers olive oil shampoo",
+    "original_name": "PALMER'S OLIVE OIL SHAMPOO",
+    "price": "1696.54",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0001018102593.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "palmers cocoa butter jar",
+    "original_name": "PALMERS COCOA BUTTER JAR",
+    "price": "1505.44",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0001018104000.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "palmers cocoa butter jar 200g",
+    "original_name": "PALMERS COCOA BUTTER JAR 200G",
+    "price": "2687.65",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0001018104008.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "palmers cocoa butter soap 35z",
+    "original_name": "PALMERS COCOA BUTTER SOAP 3.5z",
+    "price": "1175.76",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0001018114555.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "panadol cold flu ms night",
+    "original_name": "PANADOL COLD & FLU MS NIGHT",
+    "price": "70.86",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000331.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "panadol cold flu non drowsy day",
+    "original_name": "PANADOL COLD & FLU NON DROWSY DAY",
+    "price": "68.05",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000480.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "panadol extra strength strip",
+    "original_name": "PANADOL EXTRA STRENGTH STRIP",
+    "price": "39.94",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000370.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "panadol ultra tabs",
+    "original_name": "PANADOL ULTRA TABS",
+    "price": "60.63",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000001316.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "papaya chunks",
+    "original_name": "PAPAYA CHUNKS",
+    "price": "4453.62",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000008267.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "papaya local",
+    "original_name": "PAPAYA LOCAL",
+    "price": "701.75",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000947.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "parmasean cheese bulk",
+    "original_name": "PARMASEAN CHEESE BULK",
+    "price": "3533.82",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000008312.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "passion fruit",
+    "original_name": "PASSION FRUIT",
+    "price": "342.01",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000948.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "peaches imported",
+    "original_name": "PEACHES IMPORTED",
+    "price": "3116.89",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000877.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "pears bosc small",
+    "original_name": "PEARS BOSC SMALL",
+    "price": "290.91",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000007623.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "peppers red large imported",
+    "original_name": "PEPPERS RED LARGE IMPORTED",
+    "price": "3297.86",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000809.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "pesto original basil genovese gluten free",
+    "original_name": "PESTO ORIGINAL BASIL GENOVESE GLUTEN FREE",
+    "price": "1610.51",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000800599011.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "pharmatex cold flu",
+    "original_name": "PHARMATEX COLD & FLU",
+    "price": "106.32",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000005947.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "phillips magnesia mint 120ml",
+    "original_name": "PHILLIPS MAGNESIA MINT 120ML",
+    "price": "801.87",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000007441026.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "pickapeppa sauce",
+    "original_name": "PICKAPEPPA SAUCE",
+    "price": "426.94",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000721555.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "pillsbury cinnamon roll",
+    "original_name": "PILLSBURY CINNAMON ROLL",
+    "price": "932.65",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000185070.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "pimento",
+    "original_name": "PIMENTO",
+    "price": "258.62",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000965.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "pistachio nut bulk 227",
+    "original_name": "PISTACHIO NUT BULK 2.27",
+    "price": "14172.00",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000008317.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "plantain local",
+    "original_name": "PLANTAIN LOCAL",
+    "price": "789.47",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000979.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "plums red 80",
+    "original_name": "PLUMS RED 80",
+    "price": "2929.29",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000996.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "power malt original recipe can",
+    "original_name": "POWER MALT ORIGINAL RECIPE CAN",
+    "price": "202.77",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000836100344.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "powermalt non alcoholic malt",
+    "original_name": "POWERMALT NON - ALCOHOLIC MALT",
+    "price": "214.55",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000836100357.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "pringles cheddar cheese snack",
+    "original_name": "PRINGLES CHEDDAR CHEESE SNACK",
+    "price": "112.52",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000380850.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "pringles original snack",
+    "original_name": "PRINGLES ORIGINAL SNACK",
+    "price": "112.52",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000380830.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "pringles sour cream onion",
+    "original_name": "PRINGLES SOUR CREAM & ONION",
+    "price": "112.52",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000380840.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "quaker chewy choc chunk 24g",
+    "original_name": "QUAKER CHEWY CHOC CHUNK 24G",
+    "price": "77.56",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000307790.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "quaker chocolate chip bars 24g",
+    "original_name": "QUAKER CHOCOLATE CHIP BARS 24G",
+    "price": "128.66",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000307750.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "quaker peanut butter bar sgle",
+    "original_name": "QUAKER PEANUT BUTTER BAR SGLE",
+    "price": "122.47",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000307760.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "radish",
+    "original_name": "RADISH",
+    "price": "1095.01",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000005504.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "rainforest ready jerk snapper burger",
+    "original_name": "RAINFOREST READY JERK SNAPPER BURGER",
+    "price": "1133.01",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000007555.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "rainforest red kidney beans",
+    "original_name": "RAINFOREST RED KIDNEY BEANS",
+    "price": "156.00",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/DEPT3.png",
+    "product_url": ""
+  },
+  {
+    "name": "ravioli goat cheese roasted tomato",
+    "original_name": "RAVIOLI GOAT CHEESE & ROASTED TOMATO",
+    "price": "1741.84",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000800598785.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "ravioli spinach asiago roasted garlic",
+    "original_name": "RAVIOLI SPINACH, ASIAGO & ROASTED GARLIC",
+    "price": "1741.84",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000800595919.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "red onion",
+    "original_name": "RED ONION",
+    "price": "1074.38",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000988.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "reynolds baking foil cups",
+    "original_name": "REYNOLDS BAKING FOIL CUPS",
+    "price": "439.50",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0001090000383.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "reynolds heavy duty foil wrap",
+    "original_name": "REYNOLDS HEAVY DUTY FOIL WRAP",
+    "price": "561.56",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0001090000021.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "reynolds wrap",
+    "original_name": "REYNOLDS WRAP",
+    "price": "327.66",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0001090000010.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "ripe banana",
+    "original_name": "RIPE BANANA",
+    "price": "663.81",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000905.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "roasted salted cashews",
+    "original_name": "ROASTED & SALTED CASHEWS",
+    "price": "623.58",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000002090861.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "round foil baking container 9in",
+    "original_name": "ROUND FOIL BAKING CONTAINER 9IN",
+    "price": "68.13",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000001270.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "schick grn men disp 24 sgl6",
+    "original_name": "SCHICK GRN MEN DISP 24 SGL/6",
+    "price": "86.83",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000007592003.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "schick pnkwmen disp 24sngl6",
+    "original_name": "SCHICK PNKW/MEN DISP 24SNGL/6",
+    "price": "86.83",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000007590055.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "skin success medicated complexion bar",
+    "original_name": "SKIN SUCCESS MEDICATED COMPLEXION BAR",
+    "price": "1156.69",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0001018107386.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "skittles king size",
+    "original_name": "SKITTLES KING SIZE",
+    "price": "416.17",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000404600.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "skittles original candy",
+    "original_name": "SKITTLES ORIGINAL CANDY",
+    "price": "242.02",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000401600.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "skittles sour candy",
+    "original_name": "SKITTLES SOUR CANDY",
+    "price": "242.02",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000402660.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "skittles tropical candy",
+    "original_name": "SKITTLES TROPICAL CANDY",
+    "price": "242.02",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000401630.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "skittles wildberry candy",
+    "original_name": "SKITTLES WILDBERRY CANDY",
+    "price": "242.02",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000401620.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "slimfast advanced caramel latte energy rtd",
+    "original_name": "SLIMFAST ADVANCED CARAMEL LATTE +ENERGY RTD",
+    "price": "659.02",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000834650010.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "slimfast advanced creamy chocolate rtd",
+    "original_name": "SLIMFAST ADVANCED CREAMY CHOCOLATE RTD",
+    "price": "659.02",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000834650008.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "slimfast advanced mocha cappuccino energy rtd",
+    "original_name": "SLIMFAST ADVANCED MOCHA CAPPUCCINO +ENERGY RTD",
+    "price": "659.02",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000834650050.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "slimfast advanced vanilla cream rtd",
+    "original_name": "SLIMFAST ADVANCED VANILLA CREAM RTD",
+    "price": "659.02",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000834650009.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "slimfast original creamy milk chocolate rtd",
+    "original_name": "SLIMFAST ORIGINAL CREAMY MILK CHOCOLATE RTD",
+    "price": "554.64",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000834650001.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "slimfast original french vanilla rtd",
+    "original_name": "SLIMFAST ORIGINAL FRENCH VANILLA RTD",
+    "price": "554.64",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000834650002.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "slimfast original strawberries cream rtd",
+    "original_name": "SLIMFAST ORIGINAL STRAWBERRIES & CREAM RTD",
+    "price": "554.64",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000834650006.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "smirnoff vodka",
+    "original_name": "SMIRNOFF VODKA",
+    "price": "903.56",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000820080.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "snickers almond bar",
+    "original_name": "SNICKERS ALMOND BAR",
+    "price": "242.50",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000401050.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "snickers almond king size",
+    "original_name": "SNICKERS ALMOND KING SIZE",
+    "price": "407.40",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000406270.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "snickers bar king size",
+    "original_name": "SNICKERS BAR KING SIZE",
+    "price": "437.09",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000402630.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "soursop local",
+    "original_name": "SOURSOP LOCAL",
+    "price": "753.01",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000963.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "spk protein shake choc 10oz",
+    "original_name": "SPK PROTEIN SHAKE CHOC 10OZ",
+    "price": "743.61",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000380390.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "spk protein shake sberry 10oz",
+    "original_name": "SPK PROTEIN SHAKE S/BERRY 10OZ",
+    "price": "743.61",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000380410.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "spk protein shake vanilla 10oz",
+    "original_name": "SPK PROTEIN SHAKE VANILLA 10OZ",
+    "price": "664.01",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000380420.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "star apple",
+    "original_name": "STAR APPLE",
+    "price": "684.01",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000891.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "star fruit",
+    "original_name": "STAR FRUIT",
+    "price": "120.01",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000001085.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "sugar cane",
+    "original_name": "SUGAR CANE",
+    "price": "345.01",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000001108.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "sun detergent bucket",
+    "original_name": "SUN DETERGENT BUCKET",
+    "price": "2575.84",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000691701023.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "sun powder detergent",
+    "original_name": "SUN POWDER DETERGENT",
+    "price": "117.91",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000691701020.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "sun powder detergent",
+    "original_name": "SUN POWDER DETERGENT",
+    "price": "194.73",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000691701021.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "sun powder detergent",
+    "original_name": "SUN POWDER DETERGENT",
+    "price": "486.83",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000691701022.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "sunkist soda cherry limeade",
+    "original_name": "SUNKIST SODA CHERRY LIMEADE",
+    "price": "172.44",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000789100.jpeg",
+    "product_url": ""
+  },
+  {
+    "name": "sunsweet pitted prunes",
+    "original_name": "SUNSWEET PITTED PRUNES BAG",
+    "price": "1280.86",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000006550.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "sweet basil",
+    "original_name": "SWEET BASIL",
+    "price": "299.25",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000006799.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "sweet potato fries",
+    "original_name": "SWEET POTATO FRIES",
+    "price": "10721.63",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000005493.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "sweet potato local",
+    "original_name": "SWEET POTATO LOCAL",
+    "price": "1232.96",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000959.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "sweet sop",
+    "original_name": "SWEET SOP",
+    "price": "280.01",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000967.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "tangerine",
+    "original_name": "TANGERINE - BAG",
+    "price": "789.00",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000972.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "tic tac freshmints",
+    "original_name": "TIC TAC FRESHMINTS",
+    "price": "376.66",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000006736.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "tic tac fruit adventure",
+    "original_name": "TIC TAC FRUIT ADVENTURE",
+    "price": "376.66",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000980000760.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "tic tac orange",
+    "original_name": "TIC TAC ORANGE",
+    "price": "376.66",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000980000763.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "tictac gum freshmint",
+    "original_name": "TIC-TAC GUM FRESHMINT",
+    "price": "344.69",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000980030001.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "tiger balm red lrg jar 19g",
+    "original_name": "TIGER BALM RED LRG JAR 19G",
+    "price": "1135.04",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000008882157.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "tomato salad imported",
+    "original_name": "TOMATO (SALAD) - IMPORTED",
+    "price": "2190.00",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000927.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "toufayan smart pocket wholewheat",
+    "original_name": "TOUFAYAN SMART POCKET WHOLEWHEAT",
+    "price": "821.81",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000007689.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "tropical fruit toddler food",
+    "original_name": "TROPICAL FRUIT TODDLER FOOD",
+    "price": "238.14",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000007590059.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "tunnocks caramel milk chocolate wafer",
+    "original_name": "TUNNOCK'S CARAMEL MILK CHOCOLATE WAFER",
+    "price": "72.19",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000369335.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "tunnocks cream milk chocolate wafer",
+    "original_name": "TUNNOCK'S CREAM MILK CHOCOLATE WAFER",
+    "price": "65.65",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000005073220.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "twix caramel singles 10",
+    "original_name": "TWIX CARAMEL SINGLES 10",
+    "price": "242.50",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000404350.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "vineyard spice all purpose",
+    "original_name": "VINEYARD SPICE ALL PURPOSE",
+    "price": "87.17",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000006861.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "vineyard spice bbq seasoning",
+    "original_name": "VINEYARD SPICE BBQ SEASONING",
+    "price": "87.17",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000006872.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "vineyard spice black pepper",
+    "original_name": "VINEYARD SPICE BLACK PEPPER",
+    "price": "214.97",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000006860.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "vineyard spice chicken seasoning",
+    "original_name": "VINEYARD SPICE CHICKEN SEASONING",
+    "price": "77.34",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000006870.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "vineyard spice chicken spice",
+    "original_name": "VINEYARD SPICE CHICKEN SPICE",
+    "price": "58.99",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000006863.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "vineyard spice fish seasoning",
+    "original_name": "VINEYARD SPICE FISH SEASONING",
+    "price": "87.17",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000006869.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "vineyard spice garlic powder",
+    "original_name": "VINEYARD SPICE GARLIC POWDER",
+    "price": "170.12",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000006867.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "vineyard spice indian curry",
+    "original_name": "VINEYARD SPICE INDIAN CURRY",
+    "price": "110.96",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000006865.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "vineyard spice jerk",
+    "original_name": "VINEYARD SPICE JERK",
+    "price": "99.49",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000006862.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "vineyard spice msg",
+    "original_name": "VINEYARD SPICE MSG",
+    "price": "59.09",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000006864.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "vineyard spice oxtail seasoning",
+    "original_name": "VINEYARD SPICE OXTAIL SEASONING",
+    "price": "99.49",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000006871.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "vineyard spice paprika",
+    "original_name": "VINEYARD SPICE PAPRIKA",
+    "price": "116.53",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000006868.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "vineyard spice pork seasoning",
+    "original_name": "VINEYARD SPICE PORK SEASONING",
+    "price": "87.17",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000006873.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "vineyard spice seasoning bulk hot wings",
+    "original_name": "VINEYARD SPICE SEASONING BULK HOT WINGS",
+    "price": "83.24",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000006000.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "vineyard spice seasoning meat",
+    "original_name": "VINEYARD SPICE SEASONING MEAT",
+    "price": "58.99",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000006866.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "vineyard spice seasoning spicy to bone",
+    "original_name": "VINEYARD SPICE SEASONING SPICY TO THE BONE",
+    "price": "99.49",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000005999.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "vitamalt acai berry can",
+    "original_name": "VITAMALT ACAI BERRY CAN",
+    "price": "253.49",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000836186010.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "welchs mix fruit snack",
+    "original_name": "WELCH'S MIX FRUIT SNACK",
+    "price": "93.78",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000007510.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "white mop wet 18",
+    "original_name": "WHITE MOP WET #18",
+    "price": "684.43",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000009950857.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "whole pineapple",
+    "original_name": "WHOLE PINEAPPLE",
+    "price": "825.00",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000000000975.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "womans touch all natural feminine wash",
+    "original_name": "WOMAN'S TOUCH ALL NATURAL FEMININE WASH",
+    "price": "1035.20",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000011011856.jpg",
+    "product_url": ""
+  },
+  {
+    "name": "woodbridge cabernet sauvignon",
+    "original_name": "WOODBRIDGE CABERNET SAUVIGNON",
+    "price": "1795.50",
+    "image_url": "file:///C:/Users/remya/Documents/SWEN%20Capstone/PriceParrot%20-%20App/PriceParrot/PriceParrot/Backend/utils/Html-files/Hi%20Lo%20Food%20Stores_files/0000860381185.jpg",
+    "product_url": ""
+  }
+]

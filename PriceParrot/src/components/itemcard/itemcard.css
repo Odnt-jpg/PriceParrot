@@ -1,37 +1,44 @@
+/* ItemCard Styles */
 .item-card {
-    border: 1px solid #ddd;
-    border-radius: 9px;
-    padding: 16px;
-    max-width: 200px;
-    background-color: #ffffff;
-    max-height: 50%;
+  width: 100%;
+  max-width: 18rem;
+  background: #fff;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  overflow: hidden;
+  transition: box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
 }
-.item-card-image {
-    width: 100%;
-    height: auto;
-    border-radius: 4px;
+.item-card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.16);
 }
-.item-card-details {
-    margin-top: 8px;
+.item-card img {
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+  background: #f3f4f6;
 }
-.item-card-name {
-    text-align: center;
-    font-size: 1.2em;
-    margin: 8px 0;
+.item-card .item-card-content {
+  padding: 1rem;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.item-card-price {
-    text-align: left;
-    color: #555;
-    margin: 8px 0;
+.item-card .item-card-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+  transition: color 0.2s;
 }
-.item-card-button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 4px;
-    cursor: pointer;
+.item-card .item-card-title:hover {
+  color: #2563eb;
 }
-.item-card-button:hover {
-    background-color: #0056b3;
+.item-card .item-card-price {
+  color: #374151;
+  font-weight: 500;
+  font-size: 1rem;
 }

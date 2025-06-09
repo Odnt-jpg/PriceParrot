@@ -9,6 +9,8 @@ function Home() {
     const [items, setItems] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
     const [error, setError] = useState(null);
+    const [showDropdown, setShowDropdown] = useState(false);
+    const [dropdownResults, setDropdownResults] = useState([]);
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -21,7 +23,7 @@ function Home() {
                     throw new Error('Failed to fetch products');
                 }
                 const data = await response.json();
-                console.log(data);
+                console.log('Featured products data:', data); // <-- Added console log
                 setItems(data);
             } catch (err) {
                 setError(err.message);
@@ -33,11 +35,56 @@ function Home() {
         fetchItems();
     }, []);
 
+    useEffect(() => {
+        const sessionTimeout = 60 * 60 * 1000; // 1 hour in ms
+        const user = localStorage.getItem('user');
+        const loginTime = localStorage.getItem('loginTime');
+        if (user && loginTime) {
+            const now = Date.now();
+            if (now - Number(loginTime) > sessionTimeout) {
+                localStorage.removeItem('user');
+                localStorage.removeItem('loginTime');
+                window.location.href = '/';
+            }
+        }
+        const interval = setInterval(() => {
+            const user = localStorage.getItem('user');
+            const loginTime = localStorage.getItem('loginTime');
+            if (user && loginTime && Date.now() - Number(loginTime) > sessionTimeout) {
+                localStorage.removeItem('user');
+                localStorage.removeItem('loginTime');
+                window.location.href = '/';
+            }
+        }, 60000);
+        return () => clearInterval(interval);
+    }, []);
+
     const handleSearch = () => {
         if (searchQuery.trim()) {
             navigate(`/search?q=${encodeURIComponent(searchQuery)}`);
         }
     };
+
+    useEffect(() => {
+        if (searchQuery.trim()) {
+            fetch(`/api/products/search?q=${encodeURIComponent(searchQuery)}`)
+                .then(res => res.json())
+                .then(data => setDropdownResults(data.slice(0, 6))) 
+                .catch(() => setDropdownResults([]));
+        } else {
+            setDropdownResults([]);
+        }
+    }, [searchQuery]);
+
+    // Show login status and account details
+    useEffect(() => {
+        const user = JSON.parse(localStorage.getItem('user'));
+        if (user && user.id) {
+            console.log('Home: Logged in as', user.email || user.first_name || user.id, user);
+        } else {
+            console.log('Home: Not logged in');
+        }
+    }, []);
 
     return (
         <div className="min-h-screen flex flex-col">
@@ -45,25 +92,53 @@ function Home() {
             <main className="flex-grow container mx-auto px-4 py-8">
                 {/* Hero Section */}
                 <section className="text-center mb-12">
-                    <h1 className="text-4xl font-bold text-gray-800 mb-4">Welcome to PriceParrot</h1>
+                    <div className="flex items-center justify-center mb-4 gap-2">
+                        
+                        <h1 className="text-4xl font-bold text-gray-800 m-0">Welcome to PriceParrot</h1>
+                    </div>
                     <p className="text-xl text-gray-600 mb-8">Your one-stop solution for price comparison.</p>
 
                     {/* Search Bar */}
-                    <div className="max-w-2xl mx-auto flex shadow-md rounded-lg overflow-hidden bg-white p-6 ">
-                        <input
-                            type="text"
-                            placeholder="Search for products..."
-                            value={searchQuery}
-                            onChange={(e) => setSearchQuery(e.target.value)}
-                            onKeyPress={(e) => e.key === 'Enter' && handleSearch()}
-                            className="flex-grow px-4 py-3 focus:outline-none p-5"
-                        />
-                        <button 
-                            onClick={handleSearch} 
-                            className="bg-rose-600 hover:bg-rose-500 text-white px-3 py-2 transition-colors duration-200"
-                        >
-                            Search
-                        </button>
+                    <div className="max-w-2xl mx-auto flex flex-col relative shadow-md rounded-lg overflow-visible bg-white p-6 ">
+                        <div className="flex">
+                            <input
+                                type="text"
+                                placeholder="Search for products..."
+                                value={searchQuery}
+                                onChange={(e) => {
+                                    setSearchQuery(e.target.value);
+                                    setShowDropdown(true);
+                                }}
+                                onFocus={() => setShowDropdown(true)}
+                                onBlur={() => setTimeout(() => setShowDropdown(false), 150)}
+                                onKeyPress={(e) => e.key === 'Enter' && handleSearch()}
+                                className="flex-grow px-4 py-3 focus:outline-none p-5"
+                                autoComplete="off"
+                            />
+                            <button 
+                                onClick={handleSearch} 
+                                className="bg-rose-600 hover:bg-rose-500 text-white px-3 py-2 transition-colors duration-200"
+                            >
+                                Search
+                            </button>
+                        </div>
+                        {showDropdown && dropdownResults.length > 0 && (
+                            <ul className="absolute left-0 right-0 top-full z-10 bg-white border border-gray-200 rounded-b-lg shadow-lg max-h-72 overflow-y-auto mt-1">
+                                {dropdownResults.map(item => (
+                                    <li
+                                        key={item.id}
+                                        className="px-4 py-2 hover:bg-gray-100 cursor-pointer text-left"
+                                        onMouseDown={() => {
+                                            setShowDropdown(false);
+                                            setSearchQuery(item.name);
+                                            navigate(`/item/${item.id}`);
+                                        }}
+                                    >
+                                        {item.name}
+                                    </li>
+                                ))}
+                            </ul>
+                        )}
                     </div>
                 </section>
 
@@ -78,15 +153,21 @@ function Home() {
                         <Carousel
                             items={items}
                             itemsPerView={4}
-                            renderItem={item => (
-                                <ItemCard
-                                    key={item.id}
-                                    id={item.id}
-                                    image={item.image_url}
-                                    name={item.name}
-                                    price={item.price ?? 0}
-                                />
-                            )}
+                            renderItem={item => {
+                                let cheapest = item.price;
+                                if (Array.isArray(item.prices) && item.prices.length > 0) {
+                                    cheapest = Math.min(...item.prices.map(p => p.price));
+                                }
+                                return (
+                                    <ItemCard
+                                        key={item.id}
+                                        id={item.id}
+                                        image={item.image_url}
+                                        name={item.name}
+                                        price={cheapest ?? 0}
+                                    />
+                                );
+                            }}
                         />
                     ) : (
                         <div className="text-center text-gray-500 py-8">No featured products available</div>
