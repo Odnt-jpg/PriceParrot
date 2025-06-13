@@ -10,7 +10,7 @@ const Wishlist = () => {
   const [wishlist, setWishlist] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [selected, setSelected] = useState([]); // Track selected items
+  const [selected, setSelected] = useState([]); 
 
   useEffect(() => {
     const sessionTimeout = 60 * 60 * 1000; // 1 hour in ms

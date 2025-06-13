@@ -201,7 +201,6 @@ router.get('/wishlist/:productId', authenticateToken, async (req, res) => {
 router.get('/cart', authenticateToken, async (req, res) => {
   const userId = req.user.id;
   try {
-    // Get cart items with product info
     const [cart] = await db.query(
       `SELECT c.product_id, p.name, p.image_url
        FROM cart c
@@ -212,9 +211,8 @@ router.get('/cart', authenticateToken, async (req, res) => {
     if (!cart.length) return res.json([]);
 
     const productIds = cart.map(item => item.product_id);
-    // Get competitor offers for products in cart
     const [offers] = await db.query(
-      `SELECT pr.product_id, pr.price, r.name as retailer_name, pr.product_url
+      `SELECT pr.product_id, pr.price, r.id as retailer_id, r.name as retailer_name, pr.product_url
        FROM product_retailers pr
        JOIN retailers r ON pr.retailer_id = r.id
        WHERE pr.product_id IN (?)

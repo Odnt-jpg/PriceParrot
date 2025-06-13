@@ -36,14 +36,6 @@ const profiles = [
     addresses: ['Online Only'],
     categoryId: 1
   },
-  // {
-  //   name: 'CPJ Market',
-  //   url: 'https://www.cpjmarket.com',
-  //   input: 'https://www.cpjmarket.com/shop/-/o/category/2CF4BA7A-8E1A-4AE8-9A0E-4C1682C654E9/ecom-product-page/1',
-  //   output: 'cpjmarket_products.json',
-  //   addresses: ['71 Lady Musgrave Road, Kingston, Jamaica'],
-  //   categoryId: 4
-  // }
 ];
 
 // MySQL pool config

@@ -12,6 +12,7 @@ const Cart = () => {
   const [error, setError] = useState(null);
   const [recommendedStores, setRecommendedStores] = useState([]);
   const [selectedStore, setSelectedStore] = useState(null);
+  const [sortMode, setSortMode] = useState('price'); // 'price' or 'proximity'
 
   // Auto-logout if session expired (e.g., after 1 hour)
   useEffect(() => {
@@ -60,8 +61,8 @@ const Cart = () => {
         }
         const data = await fetchCart(user.id);
         setCartItems(data);
-        // Aggregate store recommendations
         const stores = aggregateCartByStore(data);
+        console.log('Aggregated stores:', stores);
         setRecommendedStores(stores);
         if (stores.length > 0) setSelectedStore(stores[0].name); // Default to first store
       } catch (err) {
@@ -81,6 +82,53 @@ const Cart = () => {
     );
     return offer ? Number(offer.price) : null;
   };
+
+  // Helper: Haversine formula for distance in km
+  function haversine(lat1, lon1, lat2, lon2) {
+    function toRad(x) { return x * Math.PI / 180; }
+    const R = 6371;
+    const dLat = toRad(lat2 - lat1);
+    const dLon = toRad(lon2 - lon1);
+    const a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+      Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) *
+      Math.sin(dLon / 2) * Math.sin(dLon / 2);
+    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+    return R * c;
+  }
+
+  // Sort recommended stores by price or proximity
+  useEffect(() => {
+    if (!recommendedStores.length) return;
+    if (sortMode === 'proximity') {
+      navigator.geolocation?.getCurrentPosition(
+        pos => {
+          const { latitude, longitude } = pos.coords;
+          const storesWithDistance = recommendedStores.map(store => {
+            if (store.latitude && store.longitude) {
+              return { ...store, distance: haversine(latitude, longitude, store.latitude, store.longitude) };
+            }
+            return { ...store, distance: null };
+          });
+          storesWithDistance.sort((a, b) => {
+            if (a.distance != null && b.distance != null) return a.distance - b.distance;
+            if (a.distance != null) return -1;
+            if (b.distance != null) return 1;
+            return 0;
+          });
+          setRecommendedStores(storesWithDistance);
+        },
+        () => {
+          // If location not available, fallback to price
+          const sorted = [...recommendedStores].sort((a, b) => a.total - b.total);
+          setRecommendedStores(sorted);
+        }
+      );
+    } else {
+      // Sort by price
+      const sorted = [...recommendedStores].sort((a, b) => a.total - b.total);
+      setRecommendedStores(sorted);
+    }
+  }, [cartItems, sortMode]);
 
   return (
     <>
@@ -127,7 +175,23 @@ const Cart = () => {
           </div>
           {/* Right: Recommended Stores */}
           <div className="md:w-1/2 w-full bg-white rounded-lg shadow p-6">
-            <h2 className="text-xl font-semibold mb-4">Recommended Stores</h2>
+            <div className="flex items-center justify-between mb-4">
+              <h2 className="text-xl font-semibold">Recommended Stores</h2>
+              <div className="flex gap-2">
+                <button
+                  className={`px-3 py-1 rounded border text-sm transition ${sortMode === 'price' ? 'bg-rose-600 text-white border-rose-600' : 'bg-white border-gray-300 hover:bg-gray-100'}`}
+                  onClick={() => setSortMode('price')}
+                >
+                  Sort by Price
+                </button>
+                <button
+                  className={`px-3 py-1 rounded border text-sm transition ${sortMode === 'proximity' ? 'bg-rose-600 text-white border-rose-600' : 'bg-white border-gray-300 hover:bg-gray-100'}`}
+                  onClick={() => setSortMode('proximity')}
+                >
+                  Sort by Proximity
+                </button>
+              </div>
+            </div>
             {recommendedStores.length === 0 ? (
               <div className="text-gray-500">No recommendations yet.</div>
             ) : (
@@ -135,13 +199,19 @@ const Cart = () => {
                 {recommendedStores.map((store, idx) => (
                   <StoreCard
                     key={store.name}
-                    image={"/public/logo192.png"}
+                    image={store.image || 'https://via.placeholder.com/150'}
                     name={store.name}
                     price={store.total}
-                    id={store.name}
-                    className="w-full"
+                    id={store.id}
+                    className={`w-full ${selectedStore === store.name ? 'bg-sky-100' : 'bg-white'}`}
                     onClick={() => setSelectedStore(store.name)}
-                  />
+                  >
+                    {store.distance != null && (
+                      <div className="text-xs text-gray-500 mt-1">
+                        {`Distance: ${store.distance.toFixed(1)} km`}
+                      </div>
+                    )}
+                  </StoreCard>
                 ))}
               </div>
             )}

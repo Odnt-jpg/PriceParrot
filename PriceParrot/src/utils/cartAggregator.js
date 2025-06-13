@@ -11,15 +11,17 @@ export function aggregateCartByStore(cart) {
   cart.forEach(item => {
     (item.competitors || []).forEach(offer => {
       const retailer = offer.retailer_name || offer.retailer;
+      console.log('Processing offer:', offer);
+      const retailerId = offer.retailer_id || offer.id; 
       const price = typeof offer.price === 'number' ? offer.price : parseFloat(offer.price);
       if (!retailer || isNaN(price)) return;
-      if (!storeStats[retailer]) storeStats[retailer] = { total: 0, count: 0 };
+      if (!storeStats[retailer]) storeStats[retailer] = { total: 0, count: 0,  id: retailerId };
       storeStats[retailer].total += price;
       storeStats[retailer].count += 1;
     });
   });
 
   return Object.entries(storeStats)
-    .map(([name, { total, count }]) => ({ name, total, count }))
+    .map(([name, { total, count, id }]) => ({ name, total, count , id }))
     .sort((a, b) => b.count - a.count || a.total - b.total);
 }

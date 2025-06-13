@@ -2,7 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 
-const StoreCard = ({ image, name, price, id, className = '', onClick }) => {
+const StoreCard = ({ image, name, price, id, className = '', onClick, storeLocation }) => {
+  console.log('StoreCard rendered with:', { image, name, price, id, className, storeLocation });
   return (
     <div
       className={
@@ -21,14 +22,14 @@ const StoreCard = ({ image, name, price, id, className = '', onClick }) => {
       </div>
       <p className="list-col-wrap text-xs "></p>
       <div className="flex flex-col gap-3">
-        <button
-          className="btn btn-square btn-ghost absolute bottom-3 right-3 flex flex-col items-center gap-2 pointer-events-none"
-          tabIndex={-1}
-          type="button"
+        <a
+          href={`/store/${id}`}
+          className="btn btn-square btn-ghost absolute bottom-3 right-3 flex flex-col items-center gap-2 text-m text-rose-500 hover:underline"
+          onClick={e => e.stopPropagation()}
         >
           <span className="text-lg font-bold text-gray-900">${price?.toFixed(2)}</span>
-          <span className="text-m text-rose-500">View Store →</span>
-        </button>
+          <span>View Store →</span>
+        </a>
       </div>
     </div>
   );
