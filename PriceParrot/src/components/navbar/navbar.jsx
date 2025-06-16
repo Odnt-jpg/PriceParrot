@@ -45,6 +45,9 @@ const Navbar = () => {
           <>
             <li><a href="/wishlist">Wishlist</a></li>
             <li><a href="/cart">Cart</a></li>
+            {user.isAdmin && (
+              <li><a href="/admin">Admin</a></li>
+            )}
             <li className="navbar-user-icon-wrapper" style={{position: 'relative'}}>
               <button className="navbar-user-icon" onClick={handleUserIconClick} aria-label="User menu">
                 <span role="img" aria-label="user">👤</span>

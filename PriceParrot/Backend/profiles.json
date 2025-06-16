@@ -1,0 +1,33 @@
+[
+  {
+    "name": "PriceSmart",
+    "url": "https://www.pricesmart.com/en-jm/category/Groceries",
+    "input": "https://www.pricesmart.com/en-jm/category/Groceries/G10D03?page=1",
+    "output": "pricesmart_products.json",
+    "addresses": ["Red Hills Road, Kingston"],
+    "categoryId": 1
+  },
+  {
+    "name": "HiLo",
+    "url": "https://www.hilofoodstoresja.com/",
+    "input": "utils/Html-files/hilo_food_stores.htm",
+    "output": "hilo_products.json",
+    "addresses": [
+      "Mannor Park, Kingston 8",
+      "87 ¾ Barbican Road, Kingston 8",
+      "Pavillion, 13 Constant Spring Road, Kingston 10",
+      "Head Office, 13 Old Hope Road, Cross Roads, Kingston 5",
+      "UWI Mona, Kingston 7",
+      "121 Old Hope Road, Kingston 6"
+    ],
+    "categoryId": 1
+  },
+  {
+    "name": "CoolMarket",
+    "url": "https://www.coolmarket.com",
+    "input": "https://www.coolmarket.com/groceries.html?p=2",
+    "output": "coolmarket_products.json",
+    "addresses": ["Online Only"],
+    "categoryId": 1
+  }
+]

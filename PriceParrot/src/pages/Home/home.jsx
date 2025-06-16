@@ -3,6 +3,9 @@ import { useNavigate } from 'react-router-dom';
 import Navbar from '../../components/navbar/navbar.jsx';
 import Carousel from '../../components/carousel/Carousel.jsx';
 import ItemCard from '../../components/itemcard/itemcard.jsx';
+import { loadRecentlyViewed, addToRecentlyViewed as addToRecentlyViewedUtil } from '../../utils/productStatsUtils.js';
+import { fetchWishlist } from '../../utils/wishlistCartFuncs.js';
+import { deduplicateAndAggregatePrices } from '../../utils/formatter.js';
 
 function Home() {
     const [searchQuery, setSearchQuery] = useState('');
@@ -11,6 +14,10 @@ function Home() {
     const [error, setError] = useState(null);
     const [showDropdown, setShowDropdown] = useState(false);
     const [dropdownResults, setDropdownResults] = useState([]);
+    const [recentlyViewed, setRecentlyViewed] = useState([]);
+    const [wishlist, setWishlist] = useState([]);
+    const [user, setUser] = useState(null);
+    const [trending, setTrending] = useState([]);
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -66,6 +73,15 @@ function Home() {
     };
 
     useEffect(() => {
+        // If on the search page, update the search query from the URL
+        const params = new URLSearchParams(window.location.search);
+        const q = params.get('q');
+        if (q && q !== searchQuery) {
+            setSearchQuery(q);
+        }
+    }, []);
+
+    useEffect(() => {
         if (searchQuery.trim()) {
             fetch(`/api/products/search?q=${encodeURIComponent(searchQuery)}`)
                 .then(res => res.json())
@@ -76,14 +92,42 @@ function Home() {
         }
     }, [searchQuery]);
 
-    // Show login status and account details
     useEffect(() => {
-        const user = JSON.parse(localStorage.getItem('user'));
+        setRecentlyViewed(loadRecentlyViewed());
+    }, []);
+
+    const addToRecentlyViewed = (product) => {
+        setRecentlyViewed(addToRecentlyViewedUtil(product));
+    };
+
+    useEffect(() => {
+        const storedUser = localStorage.getItem('user');
+        setUser(storedUser ? JSON.parse(storedUser) : null);
+    }, []);
+
+    useEffect(() => {
+        if (user && user.id) {
+            fetchWishlist(user.id)
+                .then(data => setWishlist(Array.isArray(data) ? data : []))
+                .catch(() => setWishlist([]));
+        } else {
+            setWishlist([]);
+        }
+    }, [user]);
+
+    useEffect(() => {
         if (user && user.id) {
             console.log('Home: Logged in as', user.email || user.first_name || user.id, user);
         } else {
             console.log('Home: Not logged in');
         }
+    }, []);
+
+    useEffect(() => {
+        fetch('/api/products/trending')
+            .then(res => res.json())
+            .then(data => setTrending(Array.isArray(data) ? data : []))
+            .catch(() => setTrending([]));
     }, []);
 
     return (
@@ -131,6 +175,7 @@ function Home() {
                                         onMouseDown={() => {
                                             setShowDropdown(false);
                                             setSearchQuery(item.name);
+                                            addToRecentlyViewed(item); // Track click
                                             navigate(`/item/${item.id}`);
                                         }}
                                     >
@@ -151,20 +196,18 @@ function Home() {
                         </div>
                     ) : items.length > 0 ? (
                         <Carousel
-                            items={items}
+                            items={deduplicateAndAggregatePrices(items)}
                             itemsPerView={4}
                             renderItem={item => {
-                                let cheapest = item.price;
-                                if (Array.isArray(item.prices) && item.prices.length > 0) {
-                                    cheapest = Math.min(...item.prices.map(p => p.price));
-                                }
+                                console.log('Featured ItemCard:', item);
                                 return (
                                     <ItemCard
                                         key={item.id}
                                         id={item.id}
                                         image={item.image_url}
                                         name={item.name}
-                                        price={cheapest ?? 0}
+                                        price={item.price}
+                                        onClick={() => addToRecentlyViewed(item)} 
                                     />
                                 );
                             }}
@@ -174,37 +217,97 @@ function Home() {
                     )}
                 </section>
 
-                {/* Recently Viewed Products */}
-                <section className="mb-12">
-                    <h2 className="text-2xl font-semibold text-gray-800 mb-6">Recently Viewed Products</h2>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-                        <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
-                            <h3 className="text-lg font-medium text-gray-800">Product A</h3>
-                        </div>
-                        <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
-                            <h3 className="text-lg font-medium text-gray-800">Product B</h3>
-                        </div>
-                        <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
-                            <h3 className="text-lg font-medium text-gray-800">Product C</h3>
-                        </div>
-                    </div>
-                </section>
-
                 {/* Trending Products */}
                 <section className="mb-12">
                     <h2 className="text-2xl font-semibold text-gray-800 mb-6">Trending Products</h2>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-                        <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
-                            <h3 className="text-lg font-medium text-gray-800">Trending 1</h3>
-                        </div>
-                        <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
-                            <h3 className="text-lg font-medium text-gray-800">Trending 2</h3>
-                        </div>
-                        <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
-                            <h3 className="text-lg font-medium text-gray-800">Trending 3</h3>
-                        </div>
-                    </div>
+                    <Carousel
+                        items={deduplicateAndAggregatePrices(trending)}
+                        itemsPerView={4}
+                        renderItem={item => {
+                            let cheapest = 0;
+                            if (Array.isArray(item.prices) && item.prices.length > 0) {
+                                cheapest = Math.min(...item.prices.map(p => p.price));
+                            } else if (item.price !== undefined) {
+                                cheapest = item.price;
+                            }
+                            console.log('Trending ItemCard:', item);
+                            return (
+                                <ItemCard
+                                    key={item.id}
+                                    id={item.id}
+                                    image={item.image_url}
+                                    name={item.name}
+                                    price={cheapest}
+                                />
+                            );
+                        }}
+                    />
                 </section>
+
+                {/* Recently Viewed Products */}
+                <section className="mb-12">
+                    <h2 className="text-2xl font-semibold text-gray-800 mb-6">Recently Viewed Products</h2>
+                    {recentlyViewed.length === 0 ? (
+                        <div className="text-gray-500 col-span-3">No recently viewed products.</div>
+                    ) : (
+                        <Carousel
+                            items={deduplicateAndAggregatePrices(recentlyViewed)}
+                            itemsPerView={4}
+                            renderItem={item => {
+                                console.log('Recently Viewed ItemCard:', item);
+                                return (
+                                    <ItemCard
+                                        key={item.id}
+                                        id={item.id}
+                                        image={item.image_url}
+                                        name={item.name}
+                                        price={item.price}
+                                        onClick={() => addToRecentlyViewed(item)}
+                                    />
+                                );
+                            }}
+                        />
+                    )}
+                </section>
+
+                {/* Wishlist Products */}
+                {user && wishlist.length > 0 && (
+                    <section className="mb-12">
+                        <h2 className="text-2xl font-semibold text-gray-800 mb-6">Your Wishlist</h2>
+                        <Carousel
+                            items={[...deduplicateAndAggregatePrices(wishlist).slice(0, 7), { showAllCard: true }]}
+                            itemsPerView={4}
+                            renderItem={item => {
+                                if (item.showAllCard) {
+                                    return (
+                                        <div
+                                            key="show-all-wishlist"
+                                            className="flex flex-col items-center justify-center h-full bg-rose-100 border-2 border-rose-400 rounded-lg cursor-pointer hover:bg-rose-200 transition"
+                                            style={{ minHeight: 220, minWidth: 180 }}
+                                            onClick={() => navigate('/wishlist')}
+                                        >
+                                            <span className="text-3xl mb-2">➕</span>
+                                            <span className="font-semibold text-rose-700">Show All</span>
+                                        </div>
+                                    );
+                                } else {
+                                    console.log('Wishlist ItemCard:', item);
+                                    return (
+                                        <ItemCard
+                                            key={item.id}
+                                            id={item.id}
+                                            image={item.image_url}
+                                            name={item.name}
+                                            price={item.price}
+                                            onClick={() => addToRecentlyViewed(item)}
+                                        />
+                                    );
+                                }
+                            }}
+                        />
+                    </section>
+                )}
+
             </main>
 
             {/* Footer */}

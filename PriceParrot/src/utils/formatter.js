@@ -22,3 +22,31 @@ export function formatProductName(name) {
 
   return formatted;
 }
+
+// Deduplicate products and aggregate their prices, always showing the cheapest price
+export function deduplicateAndAggregatePrices(products) {
+    const map = new Map();
+    for (const item of products) {
+        const id = item.id;
+        if (!map.has(id)) {
+            map.set(id, {
+                ...item,
+                prices: item.prices ? [...item.prices] : [{ price: item.price, retailer: item.retailer }].filter(p => p.price !== undefined),
+            });
+        } else {
+            const existing = map.get(id);
+            if (item.prices && Array.isArray(item.prices)) {
+                existing.prices.push(...item.prices);
+            } else if (item.price !== undefined) {
+                existing.prices.push({ price: item.price, retailer: item.retailer });
+            }
+        }
+    }
+    return Array.from(map.values()).map(item => {
+        const priceArr = (item.prices || []).map(p => p.price).filter(p => typeof p === 'number');
+        return {
+            ...item,
+            price: priceArr.length > 0 ? Math.min(...priceArr) : item.price,
+        };
+    });
+}

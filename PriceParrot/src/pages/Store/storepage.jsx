@@ -39,7 +39,6 @@ const StoreMap = ({ userLocation, storeLocations, retailer, selectedAddressIdx, 
     center = [storeLocations[0].latitude, storeLocations[0].longitude];
   }
 
-  // Pan/zoom to selected address
   useEffect(() => {
     if (selectedAddressIdx != null && mapRef.current && storeLocations[selectedAddressIdx]) {
       const { latitude, longitude } = storeLocations[selectedAddressIdx];
@@ -122,7 +121,7 @@ const StorePage = () => {
         <div className="text-red-500">{error}</div>
       ) : retailer ? (
         <div className="bg-white rounded-lg shadow p- 6">
-           <img src ={retailer.url_image} alt={retailer.name} className="w-full h-48 object-cover rounded mb-4" />
+           <img src ={retailer.url_image||' https://www.svgrepo.com/show/508699/landscape-placeholder.svg'} alt={retailer.name} className="w-full h-48 object-cover rounded mb-4" />
           <h1 className="text-2xl font-bold mb-4">{retailer.name}</h1>
           {/* Address Buttons */}
           {Array.isArray(retailer.addresses) && retailer.addresses.length > 0 && (
@@ -140,7 +139,7 @@ const StorePage = () => {
           )}
           <StoreMap
             userLocation={userLocation}
-            storeLocations={Array.isArray(retailer.addresses) ? retailer.addresses.filter(addr => addr.latitude && addr.longitude) : []}
+            storeLocations={Array.isArray(retailer.addresses) ? retailer.addresses : []}
             retailer={retailer}
             selectedAddressIdx={selectedAddressIdx}
             setSelectedAddressIdx={setSelectedAddressIdx}

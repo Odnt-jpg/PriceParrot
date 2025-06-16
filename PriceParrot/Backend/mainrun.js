@@ -1,7 +1,23 @@
 import { scrapeAllPages, normalizeProductName } from './utils/extract_products.js';
 import fs from 'fs/promises';
 import mysql from 'mysql2/promise';
+import { createWriteStream } from 'fs';
+import path from 'path';
+import schedule from 'node-schedule';
 
+// Polyfill __dirname for ES modules
+import { fileURLToPath } from 'url';
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// Redirect all console.log output to server-log.txt
+const logStream = createWriteStream(path.join(__dirname, 'server-log.txt'), { flags: 'a' });
+const origConsoleLog = console.log;
+console.log = (...args) => {
+  const msg = args.map(a => (typeof a === 'string' ? a : JSON.stringify(a))).join(' ');
+  logStream.write(msg + '\n');
+  origConsoleLog(...args);
+};
 
 //* Main PROFILES FOR THE SCRAPE AND ADDING TO THE DATABASE*//
 const profiles = [
@@ -25,7 +41,6 @@ const profiles = [
       'Head Office, 13 Old Hope Road, Cross Roads, Kingston 5',
       'UWI Mona, Kingston 7',
       '121 Old Hope Road, Kingston 6'],
-    
     categoryId: 1
   },
   {
@@ -174,10 +189,21 @@ async function testAndSave(profile) {
   }
 }
 
-// Run all profiles in da sequence
-(async () => {
+// Function to run all profiles
+async function runAllProfiles() {
   for (const profile of profiles) {
     await testAndSave(profile);
   }
-  process.exit(0);
-})();
+}
+
+// Schedule the scraper to run at 8am and 5pm every day
+schedule.scheduleJob('0 8 * * *', runAllProfiles); // 8:00 AM
+schedule.scheduleJob('0 17 * * *', runAllProfiles); // 5:00 PM
+
+// If run directly, execute once and exit
+if (process.argv[1] === fileURLToPath(import.meta.url)) {
+  (async () => {
+    await runAllProfiles();
+    process.exit(0);
+  })();
+}

@@ -50,6 +50,29 @@ router.get('/trending', async (req, res) => {
   }
 });
 
+// Search products by name (case-insensitive, prioritize names starting with query)
+router.get('/search', async (req, res) => {
+  const { q } = req.query;
+  if (!q) return res.status(400).json({ error: 'Missing search query.' });
+
+  const query = `
+    SELECT p.*, r.name as retailer_name, r.id as retailer_id FROM products p
+    LEFT JOIN product_retailers pr ON p.id = pr.product_id
+    LEFT JOIN retailers r ON pr.retailer_id = r.id
+    WHERE LOWER(p.name) LIKE LOWER(?)
+    ORDER BY (LOWER(p.name) LIKE LOWER(?)) DESC, p.name ASC
+    LIMIT 50
+  `;
+  try {
+    // First param: anywhere in name, Second param: starts with query
+    const [results] = await db.query(query, [`%${q}%`, `${q.toLowerCase()}%`]);
+    res.status(200).json(results);
+  } catch (err) {
+    console.error('Database error:', err);
+    return res.status(500).json({ error: 'Internal server error.' });
+  }
+});
+
 // Get item details by ID 
 router.get('/:id', async (req, res) => {
   const { id } = req.params;
@@ -94,22 +117,21 @@ router.get('/:id', async (req, res) => {
   }
 });
 
-// Search products by name (case-insensitive)
-router.get('/search', async (req, res) => {
-  const { q } = req.query;
-  if (!q) return res.status(400).json({ error: 'Missing search query.' });
-
-  const query = `
-    SELECT * FROM products
-    WHERE LOWER(name) LIKE LOWER(?)
-    LIMIT 50
-  `;
+// Increment product view count
+router.post('/view/:id', async (req, res) => {
+  const { id } = req.params;
   try {
-    const [results] = await db.query(query, [`%${q}%`]);
-    res.status(200).json(results);
+    const [result] = await db.query(
+      'UPDATE products SET viewcount = viewcount + 1 WHERE id = ?',
+      [id]
+    );
+    if (result.affectedRows === 0) {
+      return res.status(404).json({ error: 'Product not found.' });
+    }
+    res.json({ success: true });
   } catch (err) {
     console.error('Database error:', err);
-    return res.status(500).json({ error: 'Internal server error.' });
+    res.status(500).json({ error: 'Internal server error.' });
   }
 });
 

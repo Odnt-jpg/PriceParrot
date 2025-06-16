@@ -49,6 +49,7 @@ const Wishlist = () => {
         }
         const data = await fetchWishlist(user.id);
         setWishlist(data);
+        console.log('Wishlist data:', data); // Debugging line
       } catch (err) {
         setError(err.message || 'Error loading wishlist');
       } finally {
@@ -126,7 +127,7 @@ const Wishlist = () => {
         ) : (
           <div className="wishlist-list space-y-6 px-4">
             {wishlist.map((item) => {
-              const itemId = item._id || item.id;
+              const itemId = item.product_id || item.id;
               return (
                 <div
                   key={itemId}
@@ -141,7 +142,7 @@ const Wishlist = () => {
                       className="mb-2"
                     />
                     <img
-                      src={item.photoUrl || item.image || '/public/logo192.png'}
+                      src={item.image_url   || item.image || '/public/logo192.png'}
                       alt={item.name}
                       className="w-24 h-24 object-cover rounded-md border border-gray-200"
                       onError={(e) => {
@@ -181,7 +182,9 @@ const Wishlist = () => {
                       <ul className="space-y-2 w-full">
                         {item.competitors.slice(0, 3).map((comp, idx) => (
                           <li
-                            key={comp.product_url || comp.id || idx}
+                            key={
+                              [itemId, comp.product_url, comp.id, comp.retailer_name, idx].filter(Boolean).join('-')
+                            }
                             className="flex justify-end  bg-gray-50 px-4 py-2 rounded-md"
                           >
                             <div className="flex  gap-2">
@@ -200,7 +203,6 @@ const Wishlist = () => {
                                   ? `$${parseFloat(comp.price).toFixed(2)}`
                                   : 'N/A'}
                               </span>
-                              
                             </div>
                           </li>
                         ))}

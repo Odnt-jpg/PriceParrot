@@ -7,10 +7,10 @@ export function normalizeProductName(name) {
   name = name.toLowerCase();
   name = name.replace(/\bbdf\b/g, 'best dressed');
   name = name.replace(/\b(frozen|chilled|tray pack|tray|bag|pack|a grade|grade|the)\b/g, '');
-  // name = name.replace(/\b\d+(\.\d+)?\s*(kg|g|oz|lb|l)\b/g, '');
+  name = name.replace(/\b\d+(\.\d+)?\s*(kg|g|oz|lb|l)\b/g, '');
   name = name.replace(/[^\w\s]/g, '');
   name = name.replace(/\s+/g, ' ').trim();
-  return name;
+  return name;  
 }
 
 /**

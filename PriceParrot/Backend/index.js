@@ -5,6 +5,7 @@ const authRoutes = require('./routes/authRoutes');
 const productRoutes = require('./routes/productRoutes');
 const userRoutes = require('./routes/userRoutes');
 const retailerRoutes = require('./routes/retailerRoutes')
+const adminRoutes = require('./routes/adminRoutes');
 
 const app = express();
 const PORT = 3002;
@@ -17,6 +18,7 @@ app.use('/api/auth', authRoutes); // Routes for login and registration
 app.use('/api/products', productRoutes); // Routes for products
 app.use('/api/users', userRoutes); // Routes for user
 app.use(retailerRoutes);// Need to add for retailers
+app.use(adminRoutes); // Admin routes for SQL/table access
 
 
 app.get('/', (req, res) => {

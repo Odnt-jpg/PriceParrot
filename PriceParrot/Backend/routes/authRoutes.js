@@ -33,9 +33,16 @@ router.post('/login', async (req, res) => {
 
     res.status(200).json({
       message: 'Login successful.',
-      user: { id: user.id, email: user.email, first_name: user.first_name, last_name: user.last_name },
+      user: {
+        id: user.id,
+        email: user.email,
+        first_name: user.first_name,
+        last_name: user.last_name,
+        isAdmin: user.is_admin === 1 // Use is_admin from DB
+      },
       token,
     });
+    return;
   } catch (error) {
     console.error('Error during login:', error);
     res.status(500).json({ error: 'Internal server error.' });

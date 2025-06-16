@@ -7,7 +7,8 @@ import Wishlist from './pages/Wishlist/wishlist.jsx';
 import Cart from './pages/Cart/cart.jsx';
 import BestFit from './pages/BestFit/bestfit.jsx';
 import StoreCard from './components/storecard/storecard';
-import StorePage from './pages/Store/storepage.jsx'; 
+import StorePage from './pages/Store/storepage.jsx';
+import AdminPage from './pages/Admin/admin.jsx'; 
 
 
 function App() {
@@ -59,6 +60,10 @@ function App() {
           <Route 
             path="/store/:id" 
             element={<StorePage />} 
+          />
+          <Route 
+            path="/admin" 
+            element={<AdminPage />} 
           />
           {/* <Route path="/login" element={<Login />} /> */}
           {/* <Route path="/register" element={<Register />} /> */}
