@@ -116,20 +116,26 @@ const StorePage = () => {
     <Navbar />
     <div className="container mx-auto px-4 py-8">
       {loading ? (
-        <div>Loading store details...</div>
+        <div className="flex justify-center items-center h-64 text-lg text-gray-500 animate-pulse">Loading store details...</div>
       ) : error ? (
-        <div className="text-red-500">{error}</div>
+        <div className="text-red-500 text-center font-semibold py-4">{error}</div>
       ) : retailer ? (
-        <div className="bg-white rounded-lg shadow p- 6">
-           <img src ={retailer.url_image||' https://www.svgrepo.com/show/508699/landscape-placeholder.svg'} alt={retailer.name} className="w-full h-48 object-cover rounded mb-4" />
-          <h1 className="text-2xl font-bold mb-4">{retailer.name}</h1>
+        <div className="bg-white rounded-2xl shadow-lg p-8 max-w-2xl mx-auto">
+          <div className="flex flex-col md:flex-row items-center gap-6 mb-6">
+            <img src={retailer.url_image || 'https://www.svgrepo.com/show/508699/landscape-placeholder.svg'} alt={retailer.name} className="w-40 h-40 object-cover rounded-xl border border-gray-200 shadow-sm bg-gray-100" />
+            <div className="flex-1 text-center md:text-left">
+              <h1 className="text-3xl font-bold mb-2 text-gray-800">{retailer.name}</h1>
+              <div className="mb-2 text-gray-600"><b>Phone:</b> {retailer.phone || <span className='italic text-gray-400'>N/A</span>}</div>
+              <div className="mb-2 text-gray-600"><b>Hours:</b> {retailer.hours || <span className='italic text-gray-400'>N/A</span>}</div>
+            </div>
+          </div>
           {/* Address Buttons */}
           {Array.isArray(retailer.addresses) && retailer.addresses.length > 0 && (
-            <div className="mb-4 flex flex-wrap gap-2">
+            <div className="mb-6 flex flex-wrap gap-2 justify-center md:justify-start">
               {retailer.addresses.map((addr, idx) => (
                 <button
                   key={idx}
-                  className={`px-3 py-1 rounded border text-sm transition ${selectedAddressIdx === idx ? 'bg-rose-600 text-white border-rose-600' : 'bg-white border-gray-300 hover:bg-gray-100'}`}
+                  className={`px-4 py-2 rounded-lg border text-sm font-medium shadow-sm transition focus:outline-none focus:ring-2 focus:ring-rose-400 ${selectedAddressIdx === idx ? 'bg-rose-600 text-white border-rose-600' : 'bg-white border-gray-300 hover:bg-gray-100'}`}
                   onClick={() => setSelectedAddressIdx(idx)}
                 >
                   {addr.branch_name ? `${addr.branch_name} - ` : ''}{typeof addr === 'string' ? addr : addr.address}
@@ -144,24 +150,23 @@ const StorePage = () => {
             selectedAddressIdx={selectedAddressIdx}
             setSelectedAddressIdx={setSelectedAddressIdx}
           />
-          <div className="mb-2"><b>Address:</b> 
-          {Array.isArray(retailer.addresses) ? (
-            <ul className="list-disc ml-6">
-              {retailer.addresses.map((addr, idx) => (
-                <li key={idx}>
-                  {typeof addr === 'string' ? addr : addr.address}
-                </li>
-              ))}
-            </ul>
-          ) : (
-            <span> {retailer.addresses}</span>
-          )}</div>
-          <div className="mb-2"><b>Phone:</b> {retailer.phone}</div>
-          <div className="mb-2"><b>Hours:</b> {retailer.hours}</div> 
-          
+          <div className="mb-4">
+            <b className="text-gray-700">Addresses:</b>
+            {Array.isArray(retailer.addresses) ? (
+              <ul className="list-disc ml-8 mt-2 text-gray-700">
+                {retailer.addresses.map((addr, idx) => (
+                  <li key={idx} className="mb-1">
+                    {typeof addr === 'string' ? addr : addr.address}
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <span className="text-gray-500"> {retailer.addresses}</span>
+            )}
+          </div>
         </div>
       ) : (
-        <div>Store not found.</div>
+        <div className="text-center text-gray-500 py-8">Store not found.</div>
       )}
     </div>
     </>

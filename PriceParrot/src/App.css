@@ -1,8 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@plugin "daisyui"
+{
+  themes: light --default, dark --prefersdark;
+  root: ":root";
+  include: ;
+  exclude: ;
+  prefix: ;
+  logs: true;
+}
+
+:root {
+  --color-primary: #57C785;
+  --color-secondary: #FF1A48;
+  --font-primary: 'Noto Sans', sans-serif;
+  --font-raleway: 'Raleway', sans-serif;
+  --color-accent: #f8e4d1;
+  --color-neutral: #17182a;
+  
+}
+
+@theme{
+  --animate-floatY: floatY 3s ease-in-out infinite;
+  --animate-fall: fall 6s linear infinite;
+  --animate-marquee: marquee 10s linear infinite;
+
+}
 
 body {
   background-color: #F8E4D1;
   margin: 0;
-  font-family: ubuntu,-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: var(--font-primary);
 }
 
 .App {
@@ -43,4 +73,28 @@ body {
     transform: rotate(360deg);
   }
 }
+
+@keyframes floatY {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-18px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes fall {
+  0% {
+    top: -60px;
+    opacity: 0.7;
+    transform: rotate(-10deg) scale(1);
+  }
+  80% {
+    opacity: 1;
+    transform: rotate(10deg) scale(1.1);
+  }
+  100% {
+    top: 100vh;
+    opacity: 0.2;
+    transform: rotate(20deg) scale(0.95);
+  }
+}
+
 

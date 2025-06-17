@@ -240,7 +240,7 @@ const ItemDisplay = () => {
 
                 {/* Comments Section */}
                 <div className="item-comments mt-12 bg-white rounded-2xl shadow-md p-6">
-                    <h2 className="text-xl font-semibold mb-4">Comments</h2>
+                    <h2 className="text-xl font-semibold mb-4 text-black">Comments</h2>
                     <p className="text-gray-600 text-center mb-4">
                         {item.description || 'No description available.'}
                     </p>

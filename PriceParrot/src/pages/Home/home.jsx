@@ -30,7 +30,7 @@ function Home() {
                     throw new Error('Failed to fetch products');
                 }
                 const data = await response.json();
-                console.log('Featured products data:', data); // <-- Added console log
+                console.log('Featured products data:', data); 
                 setItems(data);
             } catch (err) {
                 setError(err.message);
@@ -175,7 +175,7 @@ function Home() {
                                         onMouseDown={() => {
                                             setShowDropdown(false);
                                             setSearchQuery(item.name);
-                                            addToRecentlyViewed(item); // Track click
+                                            addToRecentlyViewed(item); 
                                             navigate(`/item/${item.id}`);
                                         }}
                                     >

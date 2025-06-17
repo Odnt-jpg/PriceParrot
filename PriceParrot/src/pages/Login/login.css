@@ -1,27 +1,9 @@
 /* login.css */
 
-.login-page {
-  display: flex;
-  flex-direction: row;
-  height: 100vh;
-}
 
-.login-left {
-  flex: 7;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: left;
-  background-color: #0F8026; 
-}
 
-.login-right {
-  flex: 3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #F8E4D1; 
-}
+
+
 #login-form{
   display: flex;
   flex-direction: column;
@@ -46,29 +28,8 @@
 
 
 
-.logo{
-    font-weight: bold;
-    margin-top: 0cm;
-    margin-left: 60px;
-}
 
-#sublogo{
-    font-size:2rem;
-    margin-top: 0cm;
-    margin-left: 60px;
-    margin-bottom: 0cm;
-    color: #F8E4D1;
-    font-family: 'Space Grotesk', sans-serif;
-    font-weight: bold;
-}
 
-#mainlogo{
-    font-family: 'ubuntu', sans-serif;
-    margin-top: 0px;
-    line-height: 123px;
-    font-size:7rem;
-    color: #FF1A48;
-}
 
 #login{
     background-color: limegreen;

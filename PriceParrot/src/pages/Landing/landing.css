@@ -1,12 +1,18 @@
 /* landing.css */
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+
+body, .bg-gray-50 {
+  background-color: #f0e68c !important; /* a bright khaki yellow for high visibility */
+}
+
 .landing-page {
   display: flex;
   flex-direction: row;
   height: 100vh;
 }
 
-.landing-left {
+#landing-left {
   flex: 7;
   display: flex;
   flex-direction: column;
@@ -94,7 +100,7 @@
 }
 
 
-#sublogo{
+/* #sublogo{
     font-size:2rem;
     margin-top: 0cm;
     margin-left: 60px;
@@ -109,7 +115,7 @@
     line-height: 123px;
     font-size:7rem;
     color: #FF1A48;
-}
+} */
 
 /* Styling for the register form */
 #register-form {
@@ -129,6 +135,13 @@
   font-family: 'ubuntu', sans-serif;
 }
 
+.registerbox::placeholder, .loginbox::placeholder {
+  color: #000000 !important;
+  opacity: 1 !important;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
 .register-button {
   background-color: #54BD5C;
   color: white;
@@ -145,6 +158,49 @@
 
 .register-button:hover {
   background-color: #3e9e4a;
+}
+
+@keyframes fall {
+  0% {
+    top: -60px;
+    opacity: 0.7;
+    transform: rotate(-10deg) scale(1);
+  }
+  80% {
+    opacity: 1;
+    transform: rotate(10deg) scale(1.1);
+  }
+  100% {
+    top: 100vh;
+    opacity: 0.2;
+    transform: rotate(20deg) scale(0.95);
+  }
+}
+.falling-money {
+  pointer-events: none;
+  position: absolute;
+  animation-name: fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  z-index: 10;
+}
+
+@keyframes floatY {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-18px); }
+  100% { transform: translateY(0); }
+}
+.logo-float {
+  animation: floatY 3s ease-in-out infinite;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 18s linear infinite;
 }
 
 

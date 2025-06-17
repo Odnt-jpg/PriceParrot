@@ -55,6 +55,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.4.1",
+    "daisyui": "^5.0.43",
     "vite": "^6.3.5"
   }
 }

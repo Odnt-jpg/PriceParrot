@@ -35,7 +35,7 @@ router.get('/featured', async (req, res) => {
 router.get('/trending', async (req, res) => {
   const query = `
     SELECT p.id, p.name,  p.image_url, COUNT(rv.product_id) AS view_count
-    FROM recently_viewed rv
+    FROM retailer rv
     JOIN products p ON rv.product_id = p.id
     GROUP BY rv.product_id
     ORDER BY view_count DESC

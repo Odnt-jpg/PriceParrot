@@ -150,13 +150,13 @@ const Search = () => {
     <div className="search-page">
       <div className="flex">
         {/* Sidebar for sort options */}
-        <aside className="w-64 bg-gray-50 p-6 hidden absolute-left md:block h-full">
+        <aside className="w-64 bg-gray-50 p-6  absolute-left md:block h-full">
           <h2 className="font-bold mb-4 text-lg">Sort By</h2>
           <ul className="space-y-2">
             {sortOptions.map(opt => (
               <li key={opt.value}>
                 <button
-                  className={`w-full text-left px-3 py-2 rounded transition ${sort === opt.value ? 'bg-rose-100 text-rose-700 font-bold' : 'hover:bg-gray-100'}`}
+                  className={`w-full text-left px-3 py-2  text-rose-600 font-bold rounded transition ${sort === opt.value ? 'bg-rose-100 text-rose-700 font-bold' : 'hover:bg-gray-100'}`}
                   onClick={() => setSort(opt.value)}
                 >
                   {opt.label}
@@ -178,7 +178,7 @@ const Search = () => {
                   onClick={() => setSelectedRetailer(selectedRetailer === ret.id ? null : ret.id)}
                 >
                   <img src={ret.image || 'https://www.svgrepo.com/show/508699/landscape-placeholder.svg'} alt={ret.name} className="h-10 w-10 object-contain mb-1" />
-                  <span className="text-xs font-medium">{ret.name}</span>
+                  <span className="text-xs font-medium text-neutral">{ret.name}</span>
                 </button>
               ))}
             </div>
