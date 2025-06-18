@@ -2,7 +2,6 @@ import { useState, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../../App.css';
 import axios from 'axios';
-import Logo from '../../components/Images/big.png';
 import MoneyForest from '../../components/Images/money-forest.png';
 import CoolMarket from '../../../public/Product_Images/cool_market.jpg';
 import HiloLogo from '../../../public/Product_Images/hilo-logo.png';
@@ -69,14 +68,14 @@ function Landing() {
       if (formRef.current) {
         formRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
       }
-    }, 350); // Wait for animation to start
+    }, 350);  
   };
 
   function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 
-  // Falling money state
+  // Falling money animation setup
   const moneyCount = 16;
   const moneyImages = [Dollar1, Dollar2];
   const fallingMoney = Array.from({ length: moneyCount }).map((_, i) => {
@@ -117,19 +116,21 @@ function Landing() {
       {/* Buttons */}
       <div className="flex flex-col items-center justify-center py-4">
         <img src={LogoPng} alt="PriceParrot Logo" className="h-50 w-auto mb-4 drop-shadow-lg" />
-        <h2 className="text-3x1 md:text-3x1 font-normal text-green-700 text-center tracking-wide drop-shadow-lg mb-6" style={{ fontFamily: 'Raleway, sans-serif' }}>
-          Know what you're buying before you buy it
-        </h2>
+        <div className="text-green-700 text-center tracking-wide drop-shadow-lg mb-6 text-3xl" style={{ fontFamily: 'Raleway, sans-serif', }}>
+          Know what you're buying before you buy it    
+        </div>
         <div className="flex flex-row justify-center items-center gap-6 w-full max-w-md p-6 rounded-2xl   border-gray-200">
           <button
             onClick={() => { setShowRegister(true); setSlideForm(true); setShowLogin(false); scrollToForm(); }}
             id="register-button"
-            className=" btn btn-secondary flex-1 py-3 rounded-lg text-black font-bold text-m shadow hover:scale-105 transition-transform"
+            className=" btn btn-secondary flex-1 py-3 rounded-lg text-slate-100 font-bold text-m shadow hover:scale-105 transition-transform"
+            style={{ fontFamily: 'Raleway, sans-serif', }}
           >Register</button>
           <button
             onClick={() => { setShowLogin(true); setSlideForm(true); setShowRegister(false); scrollToForm(); }}
             id="login-button"
-            className=" btn btn-primary  flex-1 py-3 rounded-lg text-black font-bold text-m shadow hover:scale-105 transition-transform"
+            className=" btn btn-primary  flex-1 py-3 rounded-lg text-slate-100 font-bold text-m shadow hover:scale-105 transition-transform"
+            style={{ fontFamily: 'Raleway, sans-serif', }}
           >Login</button>
           <button
             onClick={() => {
@@ -138,7 +139,8 @@ function Landing() {
               navigate('/home');
             }}
             id="guest-button"
-            className="btn btn-dash flex-1 py-3 rounded-lg text-gray-700 font-bold text-m shadow hover:bg-gray-300 transition"
+            className="btn btn-dash flex-1 py-3 rounded-lg text-gray-700 font-bold text-m shadow hover:bg-gray-200 transition"
+            style={{ fontFamily: 'Raleway, sans-serif', }}
           >Continue as Guest</button>
         </div>
         
@@ -151,7 +153,7 @@ function Landing() {
       >
         {showLogin && (
           <div className="auth-form flex flex-col gap-6 w-full max-w-md p-10 rounded-2xl bg-white/90 shadow-xl border border-gray-200 mt-4">
-            <h1 className="text-3xl font-bold text-green-700 mb-4 text-center">Login</h1>
+            <h1 className="text-3xl font-bold text-green-700 mb-4 text-center" style={{ fontFamily: 'Raleway, sans-serif', }}>Login</h1>
             <form onSubmit={handleLoginSubmit} id="login-form" className="flex flex-col gap-4">
               <input
                 type="email"
@@ -169,14 +171,14 @@ function Landing() {
                 required
                 className="loginbox px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-400 text-gray-700 placeholder:text-gray-500"
               />
-              <button type="submit" id="login" className="w-full py-3 rounded-lg bg-gradient-to-r from-green-500 to-green-600 text-white font-bold text-lg shadow hover:scale-105 transition-transform">Login</button>
+              <button type="submit" id="login" className="w-full py-3 rounded-lg bg-gradient-to-r from-green-500 to-green-600 text-white font-bold text-lg shadow hover:scale-105 transition-transform" style={{ fontFamily: 'Raleway, sans-serif', }}>Login</button>
             </form>
-            <button onClick={() => { setShowLogin(false); setSlideForm(false); }} id="back" className="mt-2 text-green-600 hover:underline">Back</button>
+            <button onClick={() => { setShowLogin(false); setSlideForm(false); }} id="back" className="mt-2 text-green-600 hover:underline" style={{ fontFamily: 'Raleway, sans-serif', }}>Back</button>
           </div>
         )}
         {showRegister && (
           <div className="auth-form flex flex-col gap-6 w-full max-w-md p-10 rounded-2xl bg-white/90 shadow-xl border border-gray-200 mt-4">
-            <h1 className="text-3xl font-bold text-green-700 mb-4 text-center">Register</h1>
+            <h1 className="text-3xl font-bold text-green-700 mb-4 text-center" style={{ fontFamily: 'Raleway, sans-serif', }}>Register</h1>
             <form id="register-form" onSubmit={handleRegisterSubmit} className="flex flex-col gap-4">
               <input
                 type="text"
@@ -206,7 +208,7 @@ function Landing() {
                 required
                 className="registerbox px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-400 placeholder:text-gray-500"
               />
-              <button type="submit" id="register" className="w-full py-3 rounded-lg bg-gradient-to-r from-green-500 to-green-600 text-white font-bold text-lg shadow hover:scale-105 transition-transform">Register</button>
+              <button type="submit" id="register" className="w-full py-3 rounded-lg bg-gradient-to-r from-green-500 to-green-600 text-white font-bold text-lg shadow hover:scale-105 transition-transform" style={{ fontFamily: 'Raleway, sans-serif', }}>Register</button>
             </form>
             <button onClick={() => { setShowRegister(false); setSlideForm(false); }} id="back" className="mt-2 text-green-600 hover:underline">Back</button>
           </div>
@@ -215,14 +217,14 @@ function Landing() {
       {/* Store Logos Marquee */}
         <div className="w-full flex flex-col items-center mt-8">
           <span className="text-lg font-semibold text-gray-700 mb-2">Stores we support</span>
-          <div className="relative w-full max-w-2xl overflow-hidden h-24">
+          <div className="relative w-full max-w-2xl overflow-hidden h-24" >
             <div className="absolute left-0 top-0 flex items-center h-24 animate-marquee whitespace-nowrap" style={{ minWidth: '200%', width: 'max-content' }}>
               { [
                 CoolMarket, HiloLogo, PriceSmartLogo, SLogo,
                 CoolMarket, HiloLogo, PriceSmartLogo, SLogo
               ].map((logo, idx) => (
                 <div key={idx} className="flex items-center justify-center mx-8 bg-white rounded-xl shadow-xl" style={{ width: '90px', height: '90px' }}>
-                  <img src={logo} alt={`Store ${idx}`} className="h-16 w-16 object-contain" />
+                  <img src={logo} alt={`Store ${idx}`} className="h-24 w-24 object-contain" style={{ maxWidth: '80px', maxHeight: '80px' }} />
                 </div>
               ))}
             </div>

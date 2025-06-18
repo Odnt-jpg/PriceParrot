@@ -9,7 +9,7 @@ import BestFit from './pages/BestFit/bestfit.jsx';
 import StoreCard from './components/storecard/storecard';
 import StorePage from './pages/Store/storepage.jsx';
 import AdminPage from './pages/Admin/admin.jsx'; 
-import './App.css'; 
+
 
 function App() {
   return (

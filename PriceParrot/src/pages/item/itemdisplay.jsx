@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import Navbar from '../../components/navbar/navbar';
+import Footer from '../../components/Footer';
 import '../../App.css';
 import '../../index.css';
 import { formatProductName } from '../../utils/formatter.js';
 import { addToCart, addToWishlist } from '../../utils/wishlistCartFuncs.js';
+import { getRetailerLogo } from '../../utils/retailerLogos';
+import ParrotLoader from '../../components/ParrotLoader';
 
 const ItemDisplay = () => {
     const { id } = useParams();
@@ -100,6 +103,14 @@ const ItemDisplay = () => {
         }
     }, []);
 
+    useEffect(() => {
+        // Increment view count when product is opened
+        fetch(`/api/products/view/${id}`, { method: 'POST' })
+            .then(res => res.json())
+            .then(data => console.log('View count incremented:', data))
+            .catch(err => console.error('Error incrementing view count:', err));
+    }, [id]);
+
     const getToken = () => localStorage.getItem('token');
 
     const handleAddToCart = async () => {
@@ -138,121 +149,144 @@ const ItemDisplay = () => {
         setTimeout(() => setShowPopup(false), 2000);
     };
 
-    if (isLoading) return <div className="text-center mt-10">Loading item details...</div>;
+    // Helper to calculate distance in km
+    function getDistanceKm(lat1, lon1, lat2, lon2) {
+        if (lat1 == null || lon1 == null || lat2 == null || lon2 == null) return null;
+        const R = 6371;
+        const dLat = ((lat2 - lat1) * Math.PI) / 180;
+        const dLon = ((lon2 - lon1) * Math.PI) / 180;
+        const a =
+            Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+            Math.cos((lat1 * Math.PI) / 180) *
+            Math.cos((lat2 * Math.PI) / 180) *
+            Math.sin(dLon / 2) * Math.sin(dLon / 2);
+        const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+        return R * c;
+    }
+
+    if (isLoading) return <ParrotLoader text="Loading item details..." />;
     if (error) return <div className="text-center text-red-600 mt-10">Error: {error}</div>;
     if (!item) return <div className="text-center text-red-600 mt-10">Item not found</div>;
 
     return (
-        <div className="item-display-page bg-gray-100 min-h-screen pb-16">
+        <div className="min-h-screen flex flex-col">
             <Navbar />
-            <div className="max-w-6xl mx-auto px-4 pt-6">
-                {showPopup && (
-                    <div style={{position: 'fixed', top: 80, left: '50%', transform: 'translateX(-50%)', zIndex: 1000}} className="bg-green-500 text-white px-6 py-3 rounded shadow-lg animate-bounce">
-                        {popupMessage}
-                    </div>
-                )}
-                <button
-                    onClick={() => navigate(-1)}
-                    className="mb-6 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
-                >
-                    ← Back
-                </button>
-                <div className="item-details-container bg-white shadow-lg rounded-2xl p-8 flex flex-col md:flex-row gap-10">
-                    {/* Left Side */}
-                    <div className="flex-1 flex flex-col items-center">
-                        <img
-                            src={item.image_url}
-                            alt={item.name}
-                            className="w-full max-w-md rounded-xl shadow-md mb-6"
-                        />
-                        <h1 className="text-4xl font-bold mb-3 text-center text-gray-800">
-                            {formatProductName(item.name)}
-                        </h1>
-                        {user && (
-                            <div className="flex flex-col gap-2 w-full items-center">
-                                <button className="bg-yellow-500 text-white px-6 py-2 rounded hover:bg-yellow-600 font-semibold w-full" onClick={handleAddToCart}>
-                                    Add to Cart
-                                </button>
-                                <button className="bg-pink-500 text-white px-6 py-2 rounded hover:bg-pink-600 font-semibold w-full" onClick={handleAddToWishlist}>
-                                    Add to Wishlist
-                                </button>
+            <main className="flex-1">
+                <div className="item-display-page bg-gray-100  pb-16">
+                    <div className="max-w-6xl mx-auto px-4 pt-6 min-h-screen">
+                        {showPopup && (
+                            <div style={{position: 'fixed', top: 80, left: '50%', transform: 'translateX(-50%)', zIndex: 1000}} className="bg-green-500 text-white px-6 py-3 rounded shadow-lg animate-bounce">
+                                {popupMessage}
                             </div>
                         )}
-                    </div>
+                        <button
+                            onClick={() => navigate(-1)}
+                            className="mb-6 bg-secondary text-white px-4 py-2 rounded hover:bg-rose-700"
+                        >
+                            ← Back
+                        </button>
+                        <div className="item-details-container bg-white shadow-lg rounded-2xl p-8 flex flex-col md:flex-row gap-10">
+                            {/* Left Side */}
+                            <div className="flex-1 flex flex-col items-center">
+                                <img
+                                    src={item.image_url}
+                                    alt={item.name}
+                                    className="w-full max-w-md rounded-xl shadow-md mb-6"
+                                />
+                                <h1 className="text-4xl font-bold mb-3 text-center text-gray-800">
+                                    {formatProductName(item.name)}
+                                </h1>
+                                {user && (
+                                    <div className="flex flex-col gap-2 w-full items-center">
+                                        <button className="bg-primary text-white px-6 py-2 rounded hover:bg-emerald-600 font-semibold w-full" onClick={handleAddToCart}>
+                                            Add to Cart
+                                        </button>
+                                        <button className="bg-secondary text-white px-6 py-2 rounded hover:bg-rose-700 font-semibold w-full" onClick={handleAddToWishlist}>
+                                            Add to Wishlist
+                                        </button>
+                                    </div>
+                                )}
+                            </div>
 
-                    {/* Right Side */}
-                    <div className="flex-1">
-                        {sortedPrices.length > 0 && (
-                            <div className="flex justify-end gap-3 mb-4">
-                                <button
-                                    className={`px-4 py-2 rounded-lg font-semibold border transition ${
-                                        sortType === 'price'
-                                            ? 'bg-red-500 text-white border-red-500'
-                                            : 'bg-white text-red-500 border-red-500 hover:bg-red-50'
-                                    }`}
-                                    onClick={() => setSortType('price')}
-                                >
-                                    Sort by Price
-                                </button>
-                                <button
-                                    className={`px-4 py-2 rounded-lg font-semibold border transition ${
-                                        sortType === 'proximity'
-                                            ? 'bg-green-500 text-white border-green-500'
-                                            : 'bg-white text-green-500 border-green-500 hover:bg-green-50'
-                                    }`}
-                                    onClick={() => setSortType('proximity')}
-                                >
-                                    Sort by Proximity
-                                </button>
+                            {/* Right Side */}
+                            <div className="flex-1">
+                                {sortedPrices.length > 0 && (
+                                    <div className="flex justify-end gap-3 mb-4">
+                                        <button
+                                            className={`px-4 py-2 rounded-lg font-semibold border transition ${
+                                                sortType === 'price'
+                                                    ? 'bg-secondary text-white border-secondary'
+                                                    : 'bg-white text-secondary border-secondary hover:bg-red-50'
+                                            }`}
+                                            onClick={() => setSortType('price')}
+                                        >
+                                            Sort by Price
+                                        </button>
+                                        <button
+                                            className={`px-4 py-2 rounded-lg font-semibold border transition ${
+                                                sortType === 'proximity'
+                                                    ? 'bg-green-500 text-white border-green-500'
+                                                    : 'bg-white text-green-500 border-green-500 hover:bg-green-50'
+                                            }`}
+                                            onClick={() => setSortType('proximity')}
+                                        >
+                                            Sort by Proximity
+                                        </button>
+                                    </div>
+                                )}
+                                <div className="bg-gray-50 rounded-xl shadow-inner p-6">
+                                    <h2 className="text-xl font-semibold mb-4 text-gray-700 text-right">Prices from Retailers:</h2>
+                                    <ul className="space-y-4">
+                                        {sortedPrices.map((p, idx) => {
+                                            const logo = getRetailerLogo(p.retailer_name);
+                                            let distance = null;
+                                            if (userLocation && p.latitude && p.longitude) {
+                                                distance = getDistanceKm(userLocation.lat, userLocation.lng, p.latitude, p.longitude);
+                                            }
+                                            return (
+                                                <li
+                                                    key={idx}
+                                                    className="flex justify-between items-center px-4 py-3 bg-white rounded-xl shadow-md border"
+                                                >
+                                                    <div className="flex items-center gap-3 min-w-0">
+                                                        {logo && (
+                                                            <img src={logo} alt={p.retailer_name} className="h-10 w-10 object-contain rounded bg-gray-100 border" />
+                                                        )}
+                                                        <span className="font-bold text-blue-700 truncate">{p.retailer_name || p.name || `Retailer ${p.retailer_id || ''}`}</span>
+                                                    </div>
+                                                    <div className="flex flex-col items-end min-w-0">
+                                                        <span className="text-lg text-gray-700 font-medium">${typeof p.price === 'number' ? p.price.toFixed(2) : p.price}</span>
+                                                        {distance !== null && (
+                                                            <span className="text-xs text-gray-500 mt-1">{distance.toFixed(2)} km away</span>
+                                                        )}
+                                                    </div>
+                                                </li>
+                                            );
+                                        })}
+                                    </ul>
+                                </div>
                             </div>
-                        )}
-                        <div className="bg-gray-50 rounded-xl shadow-inner p-6">
-                            <h2 className="text-xl font-semibold mb-4 text-gray-700 text-right">Prices from Retailers:</h2>
-                            <ul className="space-y-4">
-                                {sortedPrices.map((p, idx) => (
-                                    <li
-                                        key={idx}
-                                        className="flex justify-between items-center px-4 py-3 bg-white rounded-xl shadow-md border"
-                                    >
-                                        {p.retailer_url ? (
-                                            <a
-                                                href={p.retailer_url}
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                className="font-bold text-blue-700 underline"
-                                            >
-                                                {p.retailer_name || p.name || `Retailer ${p.retailer_id || ''}`}
-                                            </a>
-                                        ) : (
-                                            <span className="font-bold text-blue-700">
-                                                {p.retailer_name || p.name || `Retailer ${p.retailer_id || ''}`}
-                                            </span>
-                                        )}
-                                        <span className="text-lg text-gray-700 font-medium">
-                                            ${typeof p.price === 'number' ? p.price.toFixed(2) : p.price}
-                                        </span>
-                                    </li>
-                                ))}
-                            </ul>
+                        </div>
+
+                        {/* Comments Section */}
+                        <div className="item-comments mt-12 bg-white rounded-2xl shadow-md p-6">
+                            <h2 className="text-xl font-semibold mb-4 text-black">Comments</h2>
+                            <p className="text-gray-600 text-center mb-4">
+                                {item.description || 'No description available.'}
+                            </p>
+                            {user && (
+                                <div className="flex justify-center">
+                                    <button className="bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600 font-semibold">
+                                        Add Comment
+                                    </button>
+                                </div>
+                            )}
                         </div>
                     </div>
                 </div>
-
-                {/* Comments Section */}
-                <div className="item-comments mt-12 bg-white rounded-2xl shadow-md p-6">
-                    <h2 className="text-xl font-semibold mb-4 text-black">Comments</h2>
-                    <p className="text-gray-600 text-center mb-4">
-                        {item.description || 'No description available.'}
-                    </p>
-                    {user && (
-                        <div className="flex justify-center">
-                            <button className="bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600 font-semibold">
-                                Add Comment
-                            </button>
-                        </div>
-                    )}
-                </div>
-            </div>
+            </main>
+            {/* Only show footer when not loading */}
+            {!isLoading && <Footer />}
         </div>
     );
 };

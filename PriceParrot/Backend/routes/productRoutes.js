@@ -15,11 +15,12 @@ router.get('/allproducts', async (req, res) => {
   }
 });
 
-// Get featured products endpoint
+// Get featured products endpoint (no duplicates)
 router.get('/featured', async (req, res) => {
-  const query = `SELECT p.id, p.name, p.image_url, pr.price 
-    FROM products p 
+  const query = `SELECT p.id, p.name, p.image_url, MIN(pr.price) as price
+    FROM products p
     LEFT JOIN product_retailers pr ON p.id = pr.product_id
+    GROUP BY p.id, p.name, p.image_url
     ORDER BY p.created_at ASC
     LIMIT 20;`;
   try {
@@ -34,13 +35,19 @@ router.get('/featured', async (req, res) => {
 // Get trending products endpoint
 router.get('/trending', async (req, res) => {
   const query = `
-    SELECT p.id, p.name,  p.image_url, COUNT(rv.product_id) AS view_count
-    FROM retailer rv
-    JOIN products p ON rv.product_id = p.id
-    GROUP BY rv.product_id
-    ORDER BY view_count DESC
-    LIMIT 10
-  `;
+  SELECT 
+  p.id, 
+  p.name, 
+  p.image_url, 
+  MIN(pr.price) as price
+  FROM products p
+  LEFT JOIN product_retailers pr ON p.id = pr.product_id
+  WHERE p.viewcount > 0
+  GROUP BY p.id, p.name, p.image_url
+  ORDER BY p.viewcount DESC
+  LIMIT 20;`
+    
+  
   try {
     const [results] = await db.query(query);
     res.status(200).json(results);
@@ -56,7 +63,7 @@ router.get('/search', async (req, res) => {
   if (!q) return res.status(400).json({ error: 'Missing search query.' });
 
   const query = `
-    SELECT p.*, r.name as retailer_name, r.id as retailer_id FROM products p
+    SELECT p.*, r.name as retailer_name, pr.price, r.id as retailer_id FROM products p
     LEFT JOIN product_retailers pr ON p.id = pr.product_id
     LEFT JOIN retailers r ON pr.retailer_id = r.id
     WHERE LOWER(p.name) LIKE LOWER(?)
@@ -134,6 +141,8 @@ router.post('/view/:id', async (req, res) => {
     res.status(500).json({ error: 'Internal server error.' });
   }
 });
+
+
 
 // Utility: Haversine formula for distance in km
 function haversine(lat1, lon1, lat2, lon2) {

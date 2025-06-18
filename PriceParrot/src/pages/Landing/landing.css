@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
 
 body, .bg-gray-50 {
-  background-color: #f0e68c !important; /* a bright khaki yellow for high visibility */
+  background-color: #f0e68c !important; 
 }
 
 .landing-page {

@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Navbar from '../../components/navbar/navbar.jsx';
 import Carousel from '../../components/carousel/Carousel.jsx';
@@ -6,6 +6,10 @@ import ItemCard from '../../components/itemcard/itemcard.jsx';
 import { loadRecentlyViewed, addToRecentlyViewed as addToRecentlyViewedUtil } from '../../utils/productStatsUtils.js';
 import { fetchWishlist } from '../../utils/wishlistCartFuncs.js';
 import { deduplicateAndAggregatePrices } from '../../utils/formatter.js';
+import LogoPng from '../../components/Images/bigparrot.png';
+import ParrotLoader from '../../components/ParrotLoader';
+import Footer from '../../components/Footer';
+import { fetchProductSearch, handleSearchNavigate } from '../../utils/searchUtils';
 
 function Home() {
     const [searchQuery, setSearchQuery] = useState('');
@@ -18,6 +22,8 @@ function Home() {
     const [wishlist, setWishlist] = useState([]);
     const [user, setUser] = useState(null);
     const [trending, setTrending] = useState([]);
+    const [showLoader, setShowLoader] = useState(false);
+    const loaderTimeoutRef = useRef(null);
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -66,30 +72,22 @@ function Home() {
         return () => clearInterval(interval);
     }, []);
 
+    //Search functionality
     const handleSearch = () => {
-        if (searchQuery.trim()) {
-            navigate(`/search?q=${encodeURIComponent(searchQuery)}`);
-        }
+        handleSearchNavigate(searchQuery, navigate);
     };
 
+    // Dropdown search logic
     useEffect(() => {
-        // If on the search page, update the search query from the URL
-        const params = new URLSearchParams(window.location.search);
-        const q = params.get('q');
-        if (q && q !== searchQuery) {
-            setSearchQuery(q);
-        }
-    }, []);
-
-    useEffect(() => {
+        let ignore = false;
         if (searchQuery.trim()) {
-            fetch(`/api/products/search?q=${encodeURIComponent(searchQuery)}`)
-                .then(res => res.json())
-                .then(data => setDropdownResults(data.slice(0, 6))) 
-                .catch(() => setDropdownResults([]));
+            fetchProductSearch(searchQuery).then(results => {
+                if (!ignore) setDropdownResults(results.slice(0, 6));
+            });
         } else {
             setDropdownResults([]);
         }
+        return () => { ignore = true; };
     }, [searchQuery]);
 
     useEffect(() => {
@@ -130,75 +128,119 @@ function Home() {
             .catch(() => setTrending([]));
     }, []);
 
+    function deduplicateById(arr) {
+        const map = new Map();
+        arr.forEach(item => {
+            if (item && item.id && !map.has(item.id)) {
+                map.set(item.id, item);
+            }
+        });
+        return Array.from(map.values());
+    }
+
+    useEffect(() => {
+        if (isLoading) {
+            loaderTimeoutRef.current = setTimeout(() => {
+                setShowLoader(true);
+            }, 3000);
+        } else {
+            setShowLoader(false);
+            if (loaderTimeoutRef.current) {
+                clearTimeout(loaderTimeoutRef.current);
+                loaderTimeoutRef.current = null;
+            }
+        }
+        return () => {
+            if (loaderTimeoutRef.current) {
+                clearTimeout(loaderTimeoutRef.current);
+                loaderTimeoutRef.current = null;
+            }
+        };
+    }, [isLoading]);
+
+    if (showLoader) return <ParrotLoader text="Loading..." />;
+
     return (
-        <div className="min-h-screen flex flex-col">
+        <div className="min-h-screen flex flex-col bg-accent">
             <Navbar />
-            <main className="flex-grow container mx-auto px-4 py-8">
-                {/* Hero Section */}
-                <section className="text-center mb-12">
-                    <div className="flex items-center justify-center mb-4 gap-2">
-                        
-                        <h1 className="text-4xl font-bold text-gray-800 m-0">Welcome to PriceParrot</h1>
+            {/* Grabber Section */}
+            <div className="w-full flex flex-col bg-gray-50 pb-8">
+                <div className="flex flex-col md:flex-row items-center justify-center gap-8 py-8 px-4 md:px-12 max-w-6xl mx-auto w-full">
+                    {/* Left: Logo Image */}
+                    <div className="flex-1 flex justify-center items-center">
+                        <img src={LogoPng} alt="PriceParrot Logo" className="w-48 h-48 object-contain drop-shadow-xl" />
                     </div>
-                    <p className="text-xl text-gray-600 mb-8">Your one-stop solution for price comparison.</p>
-
-                    {/* Search Bar */}
-                    <div className="max-w-2xl mx-auto flex flex-col relative shadow-md rounded-lg overflow-visible bg-white p-6 ">
-                        <div className="flex">
-                            <input
-                                type="text"
-                                placeholder="Search for products..."
-                                value={searchQuery}
-                                onChange={(e) => {
-                                    setSearchQuery(e.target.value);
-                                    setShowDropdown(true);
-                                }}
-                                onFocus={() => setShowDropdown(true)}
-                                onBlur={() => setTimeout(() => setShowDropdown(false), 150)}
-                                onKeyPress={(e) => e.key === 'Enter' && handleSearch()}
-                                className="flex-grow px-4 py-3 focus:outline-none p-5"
-                                autoComplete="off"
-                            />
-                            <button 
-                                onClick={handleSearch} 
-                                className="bg-rose-600 hover:bg-rose-500 text-white px-3 py-2 transition-colors duration-200"
-                            >
-                                Search
-                            </button>
+                    {/* Right: Welcome Text */}
+                    <div className="flex-1 flex flex-col items-center md:items-start text-center md:text-left">
+                        <h1 className="text-green-700 font-bold text-4xl mb-2 tracking-wide" style={{ fontFamily: 'Raleway, sans-serif' }}>WELCOME TO PRICE PARROT</h1>
+                        <p className="text-lg text-gray-700 mb-6">Your one-stop solution for the cheapest prices</p>
+                        <div className="w-full max-w-md mx-auto relative mb-6">
+                            <div className="flex rounded-lg shadow-lg border border-gray-200 bg-white overflow-hidden focus-within:ring-2 focus-within:ring-rose-400">
+                                <input
+                                    type="text"
+                                    placeholder="Search for products..."
+                                    value={searchQuery}
+                                    onChange={(e) => {
+                                        setSearchQuery(e.target.value);
+                                        setShowDropdown(true);
+                                    }}
+                                    onFocus={() => setShowDropdown(true)}
+                                    onBlur={() => setTimeout(() => setShowDropdown(false), 150)}
+                                    onKeyPress={(e) => e.key === 'Enter' && handleSearch()}
+                                    className="flex-grow px-4 py-3 text-gray-800 bg-transparent focus:outline-none text-base placeholder-gray-400"
+                                    autoComplete="off"
+                                    style={{ minWidth: 0 }}
+                                />
+                                <button
+                                    onClick={handleSearch}
+                                    className="bg-rose-600 hover:bg-rose-500 text-white px-5 py-2 font-semibold transition-colors duration-200 rounded-none"
+                                    style={{ borderLeft: '1px solid #e5e7eb' }}
+                                >
+                                    Search
+                                </button>
+                            </div>
+                            {showDropdown && dropdownResults.length > 0 && (
+                                <ul className="absolute left-0 right-0 top-full z-20 bg-white border border-gray-200 rounded-b-lg shadow-lg max-h-72 overflow-y-auto mt-1">
+                                    {dropdownResults.map(item => (
+                                        <li
+                                            key={item.id}
+                                            className="px-4 py-2 hover:bg-gray-100 cursor-pointer text-left text-gray-800"
+                                            onMouseDown={() => {
+                                                setShowDropdown(false);
+                                                setSearchQuery(item.name);
+                                                addToRecentlyViewed(item);
+                                                navigate(`/item/${item.id}`);
+                                            }}
+                                        >
+                                            {item.name}
+                                        </li>
+                                    ))}
+                                </ul>
+                            )}
                         </div>
-                        {showDropdown && dropdownResults.length > 0 && (
-                            <ul className="absolute left-0 right-0 top-full z-10 bg-white border border-gray-200 rounded-b-lg shadow-lg max-h-72 overflow-y-auto mt-1">
-                                {dropdownResults.map(item => (
-                                    <li
-                                        key={item.id}
-                                        className="px-4 py-2 hover:bg-gray-100 cursor-pointer text-left"
-                                        onMouseDown={() => {
-                                            setShowDropdown(false);
-                                            setSearchQuery(item.name);
-                                            addToRecentlyViewed(item); 
-                                            navigate(`/item/${item.id}`);
-                                        }}
-                                    >
-                                        {item.name}
-                                    </li>
-                                ))}
-                            </ul>
-                        )}
                     </div>
-                </section>
-
+                </div>
+            </div>
+            <div className="h-12 md:h-16" />
+            <main className="flex-1">
                 {/* Featured Products */}
-                <section className="mb-12">
-                    <h2 className="text-2xl font-semibold text-gray-800 mb-6">Featured Products</h2>
+                <section className="mb-12 bg-white pt-4">
+                    <h2 className="text-2xl font-semibold text-gray-800 mb-6 px-6 ">Featured Products</h2>
                     {error ? (
                         <div className="bg-red-100 border-l-4 border-red-500 text-red-700 p-4">
                             <p>Error: {error}</p>
                         </div>
                     ) : items.length > 0 ? (
                         <Carousel
-                            items={deduplicateAndAggregatePrices(items)}
+                            items={deduplicateById(deduplicateAndAggregatePrices(items))}
                             itemsPerView={4}
                             renderItem={item => {
+                                let cheapest = 0;
+                                if (Array.isArray(item.prices) && item.prices.length > 0) {
+                                    cheapest = Math.min(...item.prices.map(p => p.price));
+                                } else if (item.price !== undefined) {
+                                    cheapest = item.price;
+                                }
                                 console.log('Featured ItemCard:', item);
                                 return (
                                     <ItemCard
@@ -206,7 +248,7 @@ function Home() {
                                         id={item.id}
                                         image={item.image_url}
                                         name={item.name}
-                                        price={item.price}
+                                        price={cheapest}
                                         onClick={() => addToRecentlyViewed(item)} 
                                     />
                                 );
@@ -218,8 +260,9 @@ function Home() {
                 </section>
 
                 {/* Trending Products */}
-                <section className="mb-12">
-                    <h2 className="text-2xl font-semibold text-gray-800 mb-6">Trending Products</h2>
+                <section className="mb-12 bg-white pt-4">
+                    <h2 className="text-2xl font-semibold text-gray-800 mb-6 px-6">Trending Products</h2>
+                  
                     <Carousel
                         items={deduplicateAndAggregatePrices(trending)}
                         itemsPerView={4}
@@ -241,12 +284,13 @@ function Home() {
                                 />
                             );
                         }}
+                        
                     />
                 </section>
 
                 {/* Recently Viewed Products */}
-                <section className="mb-12">
-                    <h2 className="text-2xl font-semibold text-gray-800 mb-6">Recently Viewed Products</h2>
+                <section className="mb-12 bg-white pt-4">
+                    <h2 className="text-2xl font-semibold text-gray-800 mb-6 px-6">Recently Viewed Products</h2>
                     {recentlyViewed.length === 0 ? (
                         <div className="text-gray-500 col-span-3">No recently viewed products.</div>
                     ) : (
@@ -254,6 +298,12 @@ function Home() {
                             items={deduplicateAndAggregatePrices(recentlyViewed)}
                             itemsPerView={4}
                             renderItem={item => {
+                                let cheapest = 0;
+                                if (Array.isArray(item.prices) && item.prices.length > 0) {
+                                    cheapest = Math.min(...item.prices.map(p => p.price));
+                                } else if (item.price !== undefined) {
+                                    cheapest = item.price;
+                                }
                                 console.log('Recently Viewed ItemCard:', item);
                                 return (
                                     <ItemCard
@@ -261,7 +311,7 @@ function Home() {
                                         id={item.id}
                                         image={item.image_url}
                                         name={item.name}
-                                        price={item.price}
+                                        price={cheapest}
                                         onClick={() => addToRecentlyViewed(item)}
                                     />
                                 );
@@ -291,6 +341,12 @@ function Home() {
                                         </div>
                                     );
                                 } else {
+                                    let cheapest = 0;
+                                    if (Array.isArray(item.prices) && item.prices.length > 0) {
+                                        cheapest = Math.min(...item.prices.map(p => p.price));
+                                    } else if (item.price !== undefined) {
+                                        cheapest = item.price;
+                                    }
                                     console.log('Wishlist ItemCard:', item);
                                     return (
                                         <ItemCard
@@ -298,7 +354,7 @@ function Home() {
                                             id={item.id}
                                             image={item.image_url}
                                             name={item.name}
-                                            price={item.price}
+                                            price={cheapest}
                                             onClick={() => addToRecentlyViewed(item)}
                                         />
                                     );
@@ -309,20 +365,8 @@ function Home() {
                 )}
 
             </main>
-
-            {/* Footer */}
-            <footer className="bg-gray-800 text-white py-8">
-                <div className="container mx-auto px-4">
-                    <div className="flex flex-col md:flex-row justify-between items-center">
-                        <p className="mb-4 md:mb-0">&copy; 2025 PriceParrot. All rights reserved.</p>
-                        <ul className="flex space-x-6">
-                            <li><a href="/about" className="hover:text-blue-300 transition-colors">About Us</a></li>
-                            <li><a href="/contact" className="hover:text-blue-300 transition-colors">Contact</a></li>
-                            <li><a href="/privacy" className="hover:text-blue-300 transition-colors">Privacy Policy</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </footer>
+            {/* Only show footer when not loading */}
+            {!isLoading && <Footer />}
         </div>
     );
 }

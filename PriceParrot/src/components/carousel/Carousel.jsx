@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Carousel = ({ items, renderItem, itemsPerView = 2 }) => {
+const Carousel = ({ items, renderItem, itemsPerView = 4 }) => {
     const uniqueItems = React.useMemo(() => {
         const seen = new Set();
         return items.filter(item => {
@@ -12,20 +12,33 @@ const Carousel = ({ items, renderItem, itemsPerView = 2 }) => {
     }, [items]);
 
     const [startIdx, setStartIdx] = useState(0);
+    const [animDirection, setAnimDirection] = useState(null);
 
     const canGoBack = startIdx > 0;
     const canGoForward = startIdx + itemsPerView < uniqueItems.length;
 
     const handlePrev = () => {
-        if (canGoBack) setStartIdx(Math.max(0, startIdx - itemsPerView));
+        if (canGoBack) {
+            setAnimDirection('left');
+            setTimeout(() => {
+                setStartIdx(Math.max(0, startIdx - itemsPerView));
+                setAnimDirection(null);
+            }, 250);
+        }
     };
 
     const handleNext = () => {
-        if (canGoForward) setStartIdx(startIdx + itemsPerView);
+        if (canGoForward) {
+            setAnimDirection('right');
+            setTimeout(() => {
+                setStartIdx(startIdx + itemsPerView);
+                setAnimDirection(null);
+            }, 250);
+        }
     };
 
     return (
-        <div className="w-full flex items-center justify-center">
+        <div className="w-full flex items-center justify-center bg-gray-100 rounded-xl py-4 px-2">
             <button
                 onClick={handlePrev}
                 disabled={!canGoBack}
@@ -33,21 +46,19 @@ const Carousel = ({ items, renderItem, itemsPerView = 2 }) => {
             >
                 &#8592;
             </button>
-            
             <div className="flex-1 overflow-hidden">
-                <div className="flex justify-center gap-4 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+                <div className={`flex justify-center gap-1 transition-transform duration-300 ease-in-out ${animDirection === 'left' ? '-translate-x-8 opacity-70' : ''} ${animDirection === 'right' ? 'translate-x-8 opacity-70' : ''} [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]`}>
                     {uniqueItems.slice(startIdx, startIdx + itemsPerView).map((item, idx) => (
                         <div
                             key={item.id || item._id || idx}
                             className="flex-shrink-0"
-                            style={{ width: `calc(${100/itemsPerView}% - 1rem)` }}
+                            style={{ width: `calc(${100/itemsPerView}% - 0.5rem)` }}
                         >
                             {renderItem(item, idx)}
                         </div>
                     ))}
                 </div>
             </div>
-            
             <button
                 onClick={handleNext}
                 disabled={!canGoForward}

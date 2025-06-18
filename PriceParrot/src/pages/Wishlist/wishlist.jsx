@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import './wishlist.css';
 import Navbar from '../../components/navbar/navbar';
+import ParrotLoader from '../../components/ParrotLoader';
+import Footer from '../../components/Footer';
 import {
   fetchWishlist,addToWishlist,removeFromWishlist,addMultipleToCart
 } from '../../utils/wishlistCartFuncs';
@@ -103,6 +105,8 @@ const Wishlist = () => {
     }
   };
 
+  if (loading) return <ParrotLoader text="Loading your wishlist..." />;
+
   return (
     <>
       <Navbar />
@@ -119,9 +123,7 @@ const Wishlist = () => {
               Add Selected to Cart
             </button>
           </div>
-          {loading ? (
-            <div className="wishlist-loading text-center py-4">Loading...</div>
-          ) : error ? (
+          {error ? (
             <div className="wishlist-error text-center py-4 text-red-500">{error}</div>
           ) : wishlist.length === 0 ? (
             <div className="wishlist-empty text-center py-4 text-gray-500">Your wishlist is empty.</div>
@@ -219,6 +221,8 @@ const Wishlist = () => {
           )}
         </div>
       </div>
+      {/* Only show footer when not loading */}
+      {!loading && <Footer />}
     </>
   );
 };

@@ -4,7 +4,7 @@
 
 @plugin "daisyui"
 {
-  themes: light --default, dark --prefersdark;
+  themes: light
   root: ":root";
   include: ;
   exclude: ;
@@ -12,27 +12,68 @@
   logs: true;
 }
 
+/* Import Farabee font family from local typefaces folder */
+@font-face {
+  font-family: 'Farabee';
+  src: url('./typefaces/Farabee/Farabee Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Farabee';
+  src: url('./typefaces/Farabee/Farabee Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Farabee';
+  src: url('./typefaces/Farabee/Farabee Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Farabee';
+  src: url('./typefaces/Farabee/Farabee Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Farabee';
+  src: url('./typefaces/Farabee/Farabee Semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Farabee';
+  src: url('./typefaces/Farabee/Farabee Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+/* Add more weights/styles as needed */
+
 :root {
   --color-primary: #57C785;
   --color-secondary: #FF1A48;
   --font-primary: 'Noto Sans', sans-serif;
   --font-raleway: 'Raleway', sans-serif;
-  --color-accent: #f8e4d1;
+  --color-accent: #f0e68c;
   --color-neutral: #17182a;
-  
+  --font-farabee: 'Farabee', sans-serif;
 }
 
 @theme{
   --animate-floatY: floatY 3s ease-in-out infinite;
   --animate-fall: fall 6s linear infinite;
-  --animate-marquee: marquee 10s linear infinite;
+  --animate-marquee: marquee 18s linear infinite;
+  --color-tertiary:#128047;
+  --color-quaternary: #09944c;
 
 }
 
-body {
+body, html, #root {
+  font-family: 'Raleway', 'Farabee', 'Noto Sans', Arial, Helvetica, sans-serif !important;
   background-color: #F8E4D1;
   margin: 0;
-  font-family: var(--font-primary);
 }
 
 .App {

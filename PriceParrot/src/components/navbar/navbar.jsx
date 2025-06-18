@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import LogoPng from '../Images/parrot.png';
+import { handleSearchNavigate } from '../../utils/searchUtils';
 
 const Navbar = () => {
   const [user, setUser] = useState(null);
+  const [navbarSearch, setNavbarSearch] = useState('');
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -31,13 +34,25 @@ const Navbar = () => {
   const userId = user && user.id ? user.id : null;
 
   return (
-    <nav className="navbar flex items-center justify-between bg-green-800 px-6 py-3 shadow-lg sticky top-0 z-50">
+    <nav className="navbar flex items-center justify-between bg-quaternary px-6 py-3 shadow-lg sticky top-0 z-50">
       <div className="navbar-logo flex items-center gap-2">
-        <a href="/home" className="text-white text-2xl font-bold tracking-wide hover:text-green-200 transition-colors duration-200">PriceParrot</a>
+        
+        <a href="/home" className="text-white text-2xl font-medium tracking-wide hover:text-green-200 transition-colors duration-200" style = {{minWidth: 0, fontFamily: 'Farabee, sans-serif' }}>PriceParrot</a>
+        <img src={LogoPng} alt="PriceParrot Logo" className="h-7 w-auto   mr-2" />
       </div>
-      <div className="navbar-search flex items-center gap-2">
-        <input type="text" placeholder="Search..." className="search-input px-3 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-400 text-gray-800" />
-        <button className="search-button bg-secondary hover:bg-rose-400 text-white px-4 py-2 rounded-md font-semibold transition-colors duration-200">Search</button>
+      <div className="navbar-search flex items-center gap-2 bg-slate-100 rounded-lg px-4 py-2 shadow-sm border-slate-500 focus:outline-none focus:ring-2 focus:ring-green-400 w-96 max-w-xl" style={{ fontFamily: 'Farabee, sans-serif' }}>
+        <span className="material-symbols-outlined" style={{ color: 'grey' }}>
+          search
+        </span>
+        <input
+          type="text"
+          placeholder="Search..."
+          className="search-input h-full w-full text-s text-gray-800 bg-transparent focus:outline-none"
+          value={navbarSearch}
+          onChange={e => setNavbarSearch(e.target.value)}
+          onKeyDown={e => { if (e.key === 'Enter') handleSearchNavigate(navbarSearch, navigate); }}
+          style={{ minWidth: 0, fontFamily: 'Farabee, sans-serif' }}
+        />
       </div>
       <ul className="navbar-links flex items-center gap-6 list-none">
         {user ? (
@@ -45,10 +60,10 @@ const Navbar = () => {
             <li><a href="/wishlist" className="text-white hover:text-secondary   font-medium transition-colors">Wishlist</a></li>
             <li><a href="/cart" className="text-white hover:text-secondary font-medium transition-colors">Cart</a></li>
             {user.isAdmin && (
-              <li><a href="/admin" className="text-white hover:text-yellow-400 font-medium transition-colors">Admin</a></li>
+              <li><a href="/admin" className="text-white hover:text-rose-400 font-medium transition-colors">Admin</a></li>
             )}
             <li className="relative">
-              <button className="navbar-user-icon w-10 h-10 rounded-full bg-green-700 flex items-center justify-center text-white text-xl hover:bg-green-600 transition" onClick={handleUserIconClick} aria-label="User menu">
+              <button className="navbar-user-icon w-10 h-10 rounded-full bg-accent flex items-center justify-center text-white text-xl hover:bg-green-600 transition" onClick={handleUserIconClick} aria-label="User menu">
                 <span role="img" aria-label="user">👤</span>
               </button>
               {showDropdown && (

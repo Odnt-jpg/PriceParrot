@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import ConsoleTerminalDisplay from '../../components/consoleterminaldisplay.jsx';
 import Navbar from '../../components/navbar/navbar.jsx';
+import Footer from '../../components/Footer';
 
 const AdminPage = () => {
   const [sql, setSql] = useState('');
@@ -193,6 +194,7 @@ const AdminPage = () => {
             </div>
           )}
         </section>
+        <Footer />
       </div>
     </>
   );
