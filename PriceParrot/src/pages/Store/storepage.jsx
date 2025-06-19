@@ -6,7 +6,6 @@ import L from 'leaflet';
 import iconUrl from 'leaflet/dist/images/marker-icon.png';
 import iconShadow from 'leaflet/dist/images/marker-shadow.png';
 import Navbar from '../../components/navbar/navbar.jsx';
-import { getRetailerLogoById } from '../../utils/retailerLogoUtils';
 
 // Icon for Users
 const DefaultIcon = L.icon({ iconUrl, shadowUrl: iconShadow });
@@ -103,17 +102,13 @@ const StorePage = () => {
       setLoading(true);
       setError(null);
       try {
-        // Example: Replace with your real store API endpoint
         const res = await fetch(`/api/retailer/${id}`);
         if (!res.ok) throw new Error('Failed to fetch store details');
         const data = await res.json();
         console.log("Store details:", data);
         setRetailer(data);
-        // Fetch logo using util
-        if (data && data.id) {
-          const logoUrl = await getRetailerLogoById(data.id);
-          setRetailerLogo(logoUrl);
-        }
+        // No logo fetch, use retailer.url_image directly
+        setRetailerLogo(data.url_image || '');
       } catch (err) {
         setError(err.message);
       } finally {
@@ -134,7 +129,7 @@ const StorePage = () => {
       ) : retailer ? (
         <div className="bg-white rounded-2xl shadow-lg p-8 max-w-2xl mx-auto">
           <div className="flex flex-col md:flex-row items-center gap-6 mb-6">
-            <img src={retailerLogo || retailer.url_image || 'https://www.svgrepo.com/show/508699/landscape-placeholder.svg'} alt={retailer.name} className="w-40 h-40 object-cover rounded-xl border border-gray-200 shadow-sm bg-gray-100" />
+            <img src={retailer.image||retailerLogo || retailer.url_image || 'https://www.svgrepo.com/show/508699/landscape-placeholder.svg'} alt={retailer.name} className="w-40 h-40 object-cover rounded-xl border border-gray-200 shadow-sm bg-gray-100" />
             <div className="flex-1 text-center md:text-left">
               <h1 className="text-3xl font-bold mb-2 text-gray-800">{retailer.name}</h1>
               <div className="mb-2 text-gray-600"><b>Phone:</b> {retailer.phone_number || <span className='italic text-gray-400'>N/A</span>}</div>

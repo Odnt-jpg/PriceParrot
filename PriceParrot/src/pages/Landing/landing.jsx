@@ -139,7 +139,7 @@ function Landing() {
               navigate('/home');
             }}
             id="guest-button"
-            className="btn btn-dash flex-1 py-3 rounded-lg text-gray-700 font-bold text-m shadow hover:bg-gray-200 transition"
+            className="btn btn-soft flex-1 py-3 rounded-lg text-gray-700 font-bold text-m shadow hover:bg-gray-200 transition"
             style={{ fontFamily: 'Raleway, sans-serif', }}
           >Continue as Guest</button>
         </div>

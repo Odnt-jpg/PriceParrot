@@ -2,6 +2,11 @@ const express = require('express');
 const router = express.Router();
 const db = require('../db');
 
+if (global.origLog && global.origError) {
+  console.log = global.origLog;
+  console.error = global.origError;
+}
+
 // GET /api/retailer/:id - Get all details for a retailer
 router.get('/api/retailer/:id', async (req, res) => {
   const { id } = req.params;
@@ -22,6 +27,7 @@ router.get('/api/retailer/:id', async (req, res) => {
       id: retailers[0].id,
       name: retailers[0].name,
       url: retailers[0].url,
+      image: retailers[0].logo_url,
       phone_number: retailers[0].phone_number,
       opening_hours: retailers[0].opening_hours,
       addresses: retailers

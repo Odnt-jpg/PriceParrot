@@ -158,6 +158,10 @@ function Home() {
         };
     }, [isLoading]);
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     if (showLoader) return <ParrotLoader text="Loading..." />;
 
     return (

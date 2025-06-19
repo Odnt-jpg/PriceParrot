@@ -4,11 +4,15 @@ import mysql from 'mysql2/promise';
 import { createWriteStream } from 'fs';
 import path from 'path';
 import schedule from 'node-schedule';
+import fs2 from 'fs';
 
 // Polyfill __dirname for ES modules
 import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+
+// Clear the log file at the start of mainrun
+fs2.writeFileSync(path.join(__dirname, 'server-log.txt'), '');
 
 // Redirect all console.log output to server-log.txt
 const logStream = createWriteStream(path.join(__dirname, 'server-log.txt'), { flags: 'a' });

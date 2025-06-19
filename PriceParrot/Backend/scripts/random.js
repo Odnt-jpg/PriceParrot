@@ -85,7 +85,7 @@ async function assignRandomProductsToSupermarkets() {
          WHERE p.id NOT IN (
            SELECT product_id FROM product_retailers WHERE retailer_id = ?
          )
-         ORDER BY RAND() LIMIT 300`,
+         ORDER BY RAND() LIMIT 1000`,
         [retailerId]
       );
 
@@ -121,4 +121,4 @@ async function assignRandomProductsToSupermarkets() {
   }
 }
 
-assignRandomProductsToSupermarkets();                
+assignRandomProductsToSupermarkets();

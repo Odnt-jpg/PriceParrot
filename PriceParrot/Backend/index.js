@@ -8,8 +8,23 @@ const retailerRoutes = require('./routes/retailerRoutes')
 const adminRoutes = require('./routes/adminRoutes');
 const schedule = require('node-schedule');
 const { exec } = require('child_process');
-const path = require('path');
 const fs = require('fs');
+const path = require('path');
+const logPath = path.join(__dirname, 'server-log.txt');
+// Temporarily disable writing to server-log.txt by patching logToFile to a no-op
+function logToFile() {}
+
+// Patch console.log and console.error to also write to server-log.txt
+const origLog = console.log;
+const origError = console.error;
+console.log = (...args) => {
+  logToFile(...args);
+  origLog(...args);
+};
+console.error = (...args) => {
+  logToFile(...args);
+  origError(...args);
+};
 
 const app = express();
 const PORT = 3002;
@@ -40,22 +55,19 @@ app.get('/', (req, res) => {
   res.send('Backend server is running!');
 });
 
-const logPath = path.join(__dirname, 'server-log.txt');
-function logToFile(...args) {
-  const msg = args.map(a => (typeof a === 'string' ? a : JSON.stringify(a))).join(' ');
-  fs.appendFileSync(logPath, msg + '\n');
-}
+// Log server start
+fs.appendFileSync(logPath, `[${new Date().toISOString()}] Server is up and running.\n`);
 
-const origLog = console.log;
-const origError = console.error;
-console.log = (...args) => {
-  logToFile(...args);
-  origLog(...args);
-};
-console.error = (...args) => {
-  logToFile(...args);
-  origError(...args);
-};
+// Example: Log DB connection (for mysql2/promise pool)
+const db = require('./db');
+db.getConnection()
+  .then(conn => {
+    fs.appendFileSync(logPath, `[${new Date().toISOString()}] Database connected successfully.\n`);
+    conn.release();
+  })
+  .catch((err) => {
+    fs.appendFileSync(logPath, `[${new Date().toISOString()}] Database connection failed: ${err.message}\n`);
+  });
 
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
