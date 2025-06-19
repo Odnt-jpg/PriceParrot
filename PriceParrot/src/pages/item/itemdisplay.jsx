@@ -27,6 +27,12 @@ const ItemDisplay = () => {
     const [popupMessage, setPopupMessage] = useState('');
     const [retailerLogos, setRetailerLogos] = useState({}); // State to hold retailer logos for each price entry
     const [sortedProximityPrices, setSortedProximityPrices] = useState([]);
+    const [reviews, setReviews] = useState([]);
+    const [showReviewForm, setShowReviewForm] = useState(false);
+    const [reviewText, setReviewText] = useState('');
+    const [selectedRetailer, setSelectedRetailer] = useState('');
+    const [reviewRating, setReviewRating] = useState(5);
+    const [submittingReview, setSubmittingReview] = useState(false);
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -132,6 +138,15 @@ const ItemDisplay = () => {
             .catch(err => console.error('Error incrementing view count:', err));
     }, [id]);
 
+    // Fetch reviews
+    useEffect(() => {
+        if (!id) return;
+        fetch(`/api/products/reviews/${id}`)
+            .then(res => res.json())
+            .then(setReviews)
+            .catch(() => setReviews([]));
+    }, [id]);
+
     const getToken = () => localStorage.getItem('token');
 
     const handleAddToCart = async () => {
@@ -186,7 +201,6 @@ const ItemDisplay = () => {
                 }
             });
         }
-        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [item]);
 
     if (isLoading) return <ParrotLoader text="Loading item details..." />;
@@ -298,17 +312,128 @@ const ItemDisplay = () => {
 
                         {/* Comments Section */}
                         <div className="item-comments mt-12 bg-white rounded-2xl shadow-md p-6">
-                            <h2 className="text-xl font-semibold mb-4 text-black">Comments</h2>
-                            <p className="text-gray-600 text-center mb-4">
-                                {item.description || 'No description available.'}
-                            </p>
-                            {user && (
-                                <div className="flex justify-center">
-                                    <button className="bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600 font-semibold">
-                                        Add Comment
+                            <div className="flex items-center justify-between mb-4">
+                                <h2 className="text-xl font-semibold text-black">Comments</h2>
+                                {user && (
+                                    <button
+                                        className="bg-secondary text-white px-6 py-2 rounded hover:bg-rose-600 font-semibold"
+                                        onClick={() => setShowReviewForm(v => !v)}
+                                    >
+                                        {showReviewForm ? 'Cancel' : 'Add Comment'}
                                     </button>
+                                )}
+                            </div>
+                            
+                            {user && showReviewForm && (
+                                <div className="flex flex-col items-center mb-4">
+                                    <form
+                                        className="w-full max-w-lg bg-gray-100 rounded-xl p-4 mt-2"
+                                        onSubmit={async e => {
+                                            e.preventDefault();
+                                            if (!selectedRetailer || !reviewRating) return;
+                                            setSubmittingReview(true);
+                                            const res = await fetch('/api/products/reviews', {
+                                                method: 'POST',
+                                                headers: { 'Content-Type': 'application/json' },
+                                                body: JSON.stringify({
+                                                    user_id: user.id,
+                                                    product_id: id,
+                                                    retailer_id: selectedRetailer,
+                                                    rating: reviewRating,
+                                                    comment: reviewText
+                                                })
+                                            });
+                                            setSubmittingReview(false);
+                                            if (res.ok) {
+                                                setShowReviewForm(false);
+                                                setReviewText('');
+                                                setSelectedRetailer('');
+                                                setReviewRating(5);
+                                                // Refresh reviews
+                                                fetch(`/api/products/reviews/${id}`)
+                                                    .then(res => res.json())
+                                                    .then(setReviews)
+                                                    .catch(() => {});
+                                            }
+                                        }}
+                                    >
+                                        <div className="mb-2">
+                                            <label className="block mb-1 font-medium">Retailer</label>
+                                            <select
+                                                className="w-full border rounded px-2 py-1"
+                                                value={selectedRetailer}
+                                                onChange={e => setSelectedRetailer(e.target.value)}
+                                                required
+                                            >
+                                                <option value="">Select a retailer</option>
+                                                {item.prices.map(p => (
+                                                    <option key={p.retailer_id} value={p.retailer_id}>
+                                                        {p.retailer_name || p.name}
+                                                    </option>
+                                                ))}
+                                            </select>
+                                            <div className="flex flex-wrap gap-2 mt-1">
+                                                {item.prices.map(p => (
+                                                    <span key={p.retailer_id} className="inline-flex items-center gap-1 text-xs">
+                                                        {retailerLogos[p.retailer_id] && (
+                                                            <img src={retailerLogos[p.retailer_id]} alt="logo" className="h-5 w-5 inline-block rounded" />
+                                                        )}
+                                                        {p.retailer_name || p.name}
+                                                    </span>
+                                                ))}
+                                            </div>
+                                        </div>
+                                        <div className="mb-2">
+                                            <label className="block mb-1 font-medium">Rating</label>
+                                            <select
+                                                className="w-full border rounded px-2 py-1"
+                                                value={reviewRating}
+                                                onChange={e => setReviewRating(Number(e.target.value))}
+                                                required
+                                            >
+                                                {[5,4,3,2,1].map(r => (
+                                                    <option key={r} value={r}>{'★'.repeat(r)}{'☆'.repeat(5-r)}</option>
+                                                ))}
+                                            </select>
+                                        </div>
+                                        <div className="mb-2">
+                                            <label className="block mb-1 font-medium">Review</label>
+                                            <textarea
+                                                className="w-full border rounded px-2 py-1"
+                                                value={reviewText}
+                                                onChange={e => setReviewText(e.target.value)}
+                                                rows={3}
+                                                required
+                                            />
+                                        </div>
+                                        <button
+                                            type="submit"
+                                            className="bg-green-600 text-white px-4 py-2 rounded font-semibold mt-2"
+                                            disabled={submittingReview}
+                                        >
+                                            {submittingReview ? 'Submitting...' : 'Submit Review'}
+                                        </button>
+                                    </form>
                                 </div>
                             )}
+                            <div className="divide-y">
+                                {reviews.length === 0 && <div className="text-gray-400 text-center py-4">No reviews yet.</div>}
+                                {reviews.map((r, idx) => (
+                                    <div key={idx} className="py-3 flex flex-col md:flex-row md:items-center gap-2">
+                                        <div className="flex items-center gap-2">
+                                            {retailerLogos[r.retailer_id] && (
+                                                <img src={retailerLogos[r.retailer_id]} alt="logo" className="h-7 w-7 rounded" />
+                                            )}
+                                            <span className="font-semibold text-blue-700">{r.first_name} {r.last_name}</span>
+                                        </div>
+                                        <div className="flex-1">
+                                            <span className="text-yellow-500">{'★'.repeat(r.rating)}{'☆'.repeat(5-r.rating)}</span>
+                                            <span className="ml-2 text-gray-700">{r.comment}</span>
+                                        </div>
+                                        <div className="text-xs text-gray-400 ml-2">{new Date(r.created_at).toLocaleString()}</div>
+                                    </div>
+                                ))}
+                            </div>
                         </div>
                     </div>
                 </div>

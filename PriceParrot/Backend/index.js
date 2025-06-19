@@ -9,6 +9,7 @@ const adminRoutes = require('./routes/adminRoutes');
 const schedule = require('node-schedule');
 const { exec } = require('child_process');
 const path = require('path');
+const fs = require('fs');
 
 const app = express();
 const PORT = 3002;
@@ -39,6 +40,22 @@ app.get('/', (req, res) => {
   res.send('Backend server is running!');
 });
 
+const logPath = path.join(__dirname, 'server-log.txt');
+function logToFile(...args) {
+  const msg = args.map(a => (typeof a === 'string' ? a : JSON.stringify(a))).join(' ');
+  fs.appendFileSync(logPath, msg + '\n');
+}
+
+const origLog = console.log;
+const origError = console.error;
+console.log = (...args) => {
+  logToFile(...args);
+  origLog(...args);
+};
+console.error = (...args) => {
+  logToFile(...args);
+  origError(...args);
+};
 
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);

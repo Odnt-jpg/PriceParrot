@@ -4,7 +4,6 @@ const db = require('../db');
 
 // GET /api/retailer/:id - Get all details for a retailer
 router.get('/api/retailer/:id', async (req, res) => {
-  
   const { id } = req.params;
   console.log('Fetching retailer details for ID:', id);
   try {
@@ -23,14 +22,16 @@ router.get('/api/retailer/:id', async (req, res) => {
       id: retailers[0].id,
       name: retailers[0].name,
       url: retailers[0].url,
+      phone_number: retailers[0].phone_number,
+      opening_hours: retailers[0].opening_hours,
       addresses: retailers
-        .filter(r => r.address)
-        .map(r => ({
-          address: r.address,
-          latitude: r.latitude,
-          longitude: r.longitude
-        }))
-    };
+      .filter(r => r.address)
+      .map(r => ({
+        address: r.address,
+        latitude: r.latitude,
+        longitude: r.longitude
+      }))
+      };
     res.json(retailer);
   } catch (err) {
     console.error('Error fetching retailer:', err);
@@ -42,7 +43,7 @@ router.get('/api/retailer/:id', async (req, res) => {
 router.get('/api/retailers', async (req, res) => {
   try {
     const [rows] = await db.query(
-      `SELECT r.*, ra.address, ra.latitude, ra.longitude
+      `SELECT r.*, r.opening_hours, r.phone_number, ra.address, ra.latitude, ra.longitude
        FROM retailers r
        LEFT JOIN retailer_addresses ra ON r.id = ra.retailer_id`
     );

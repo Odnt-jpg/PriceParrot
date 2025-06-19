@@ -26,7 +26,7 @@ const StoreIcon = new L.Icon({
 
 
 
-const StoreMap = ({ userLocation, storeLocations, retailer, selectedAddressIdx, setSelectedAddressIdx }) => {
+const StoreMap = ({ userLocation, storeLocations, retailer, selectedAddressIdx, setSelectedAddressIdx, panTo }) => {
   const mapRef = useRef();
   let center = [18.0123, -76.789];
   if (userLocation && Array.isArray(storeLocations) && storeLocations.length > 0) {
@@ -41,10 +41,16 @@ const StoreMap = ({ userLocation, storeLocations, retailer, selectedAddressIdx, 
   }
 
   useEffect(() => {
-    if (selectedAddressIdx != null && mapRef.current && storeLocations[selectedAddressIdx]) {
+    if (
+      typeof selectedAddressIdx === 'number' &&
+      mapRef.current &&
+      Array.isArray(storeLocations) &&
+      storeLocations[selectedAddressIdx]
+    ) {
       const { latitude, longitude } = storeLocations[selectedAddressIdx];
-      mapRef.current.setView([latitude, longitude], 16);
+      mapRef.current.setView([latitude, longitude], 16, { animate: true });
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedAddressIdx]);
 
   return (
