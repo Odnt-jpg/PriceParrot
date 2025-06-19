@@ -174,14 +174,15 @@ const Search = () => {
     <div className="min-h-screen padding-top-16 md:padding-top-20 relative">
       <div className="flex">
         {/* Sidebar for sort options */}
-        <aside className="w-64 bg-gray-50 p-6  absolute-left md:block h-full">
+        <aside className="w-64 bg-gray-50 p-6  absolute-left md:block min-h-screen">
           <h2 className="font-bold mb-4 text-lg text-neutral">Sort By</h2>
           <ul className="space-y-2">
             {sortOptions.map(opt => (
               <li key={opt.value}>
                 <button
-                  className={`w-full text-left px-3 py-2 text-rose-600 rounded transition ${sort === opt.value ? 'bg-rose-100 text-rose-700 font-bold' : 'hover:bg-gray-100'}`}
+                  className={`w-full text-left px-3 py-2  text-rose-600 rounded transition ${sort === opt.value ? 'bg-rose-100 text-rose-700 font-extrabold' : 'hover:bg-gray-100'}`}
                   onClick={() => handleSort(opt.value)}
+                  style = {{ fontFamily: 'Farabee, sans-serif' }}
                 >
                   {opt.label}
                 </button>
@@ -192,44 +193,46 @@ const Search = () => {
         {/* Main content */}
         <div className="flex-1 flex flex-col">
           <div className="max-w-4xl mx-auto w-full">
-            <h1 className="text-2xl font-bold my-6">Search Results</h1>
-            {/* Retailer filter bar */}
-            <div className="flex gap-10 mb-6 overflow-x-auto pb-2">
-              {uniqueRetailers.map(ret => (
-                <button
-                  key={ret.id}
-                  className={`flex flex-col items-center px-4 py-4 rounded border transition ${selectedRetailer === ret.id ? 'bg-rose-100 border-rose-400' : 'bg-white border-gray-200 hover:bg-gray-50'}`}
-                  style={{ width: '110px', minWidth: '110px', height: '120px', minHeight: '120px', justifyContent: 'center' }}
-                  onClick={() => setSelectedRetailer(selectedRetailer === ret.id ? null : ret.id)}
-                >
-                  <img src={ret.image || 'https://www.svgrepo.com/show/508699/landscape-placeholder.svg'} alt={ret.name} className="h-16 w-16 object-contain mb-2" style={{ minWidth: '64px', minHeight: '64px', maxWidth: '64px', maxHeight: '64px' }} />
-                  <span className="text-xs font-medium text-neutral text-center break-words">{ret.name}</span>
-                </button>
-              ))}
-            </div>
-            <form onSubmit={handleSearch} className="search-bar mb-4 flex gap-2">
-              <input
-                type="text"
-                placeholder="Search for products..."
-                value={query}
-                onChange={e => setQuery(e.target.value)}
-                className="flex-1 px-4 py-2 border rounded"
-              />
-              <button type="submit" disabled={loading} className="px-4 py-2 bg-rose-600 text-white rounded hover:bg-rose-700">Search</button>
-            </form>
-            <div className="search-results">
-              {loading && <ParrotLoader text="Searching for products..." />}
-              {!loading && searched && filteredResults.length === 0 && <p>No results found.</p>}
-              <div className="search-results-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-                {filteredResults.map(item => (
-                  <ItemCard
-                    key={item.id}
-                    id={item.id}
-                    image={item.image_url}
-                    name={item.name}
-                    price={typeof item.price === 'number' ? item.price : Number(item.price)}
-                  />
+            <div className="bg-white rounded-xl shadow-lg p-6 mb-8">
+              <h1 className="text-2xl font-bold mb-6">Search Results</h1>
+              {/* Retailer filter bar */}
+              <div className="flex gap-10 mb-6 pb-2">
+                {uniqueRetailers.map(ret => (
+                  <button
+                    key={ret.id}
+                    className={`flex flex-col items-center px-4 py-4 rounded border transition ${selectedRetailer === ret.id ? 'bg-rose-100 border-rose-400' : 'bg-white border-gray-200 hover:bg-gray-50'}`}
+                    style={{ width: '110px', minWidth: '110px', height: '120px', minHeight: '120px', justifyContent: 'center' }}
+                    onClick={() => setSelectedRetailer(selectedRetailer === ret.id ? null : ret.id)}
+                  >
+                    <img src={ret.image || 'https://www.svgrepo.com/show/508699/landscape-placeholder.svg'} alt={ret.name} className="h-16 w-16 object-contain mb-2" style={{ minWidth: '64px', minHeight: '64px', maxWidth: '64px', maxHeight: '64px' }} />
+                    <span className="text-xs font-medium text-neutral text-center break-words">{ret.name}</span>
+                  </button>
                 ))}
+              </div>
+              <form onSubmit={handleSearch} className="search-bar mb-4 flex gap-2">
+                <input
+                  type="text"
+                  placeholder="Search for products..."
+                  value={query}
+                  onChange={e => setQuery(e.target.value)}
+                  className="flex-1 px-4 py-2 border rounded"
+                />
+                <button type="submit" disabled={loading} className="px-4 py-2 bg-rose-600 text-white rounded hover:bg-rose-700">Search</button>
+              </form>
+              <div className="search-results">
+                {loading && <ParrotLoader text="Searching for products..." />}
+                {!loading && searched && filteredResults.length === 0 && <p>No results found.</p>}
+                <div className="search-results-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                  {filteredResults.map(item => (
+                    <ItemCard
+                      key={item.id}
+                      id={item.id}
+                      image={item.image_url}
+                      name={item.name}
+                      price={typeof item.price === 'number' ? item.price : Number(item.price)}
+                    />
+                  ))}
+                </div>
               </div>
             </div>
           </div>

@@ -63,7 +63,7 @@ const Navbar = () => {
               <li><a href="/admin" className="text-white hover:text-rose-400 font-medium transition-colors">Admin</a></li>
             )}
             <li className="relative">
-              <button className="navbar-user-icon w-10 h-10 rounded-full bg-accent flex items-center justify-center text-white text-xl hover:bg-green-600 transition" onClick={handleUserIconClick} aria-label="User menu">
+              <button className="navbar-user-icon w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-white text-xl hover:bg-rose-600 transition" onClick={handleUserIconClick} aria-label="User menu">
                 <span role="img" aria-label="user">👤</span>
               </button>
               {showDropdown && (

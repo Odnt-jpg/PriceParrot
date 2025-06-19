@@ -5,7 +5,8 @@ import { fetchCart } from '../../utils/wishlistCartFuncs';
 import { aggregateCartByStore } from '../../utils/cartAggregator';
 import StoreCard from '../../components/storecard/storecard';
 import { formatProductName } from '../../utils/formatter';
-import { haversine, getClosestBranchDistance } from '../../utils/locationUtils';
+import { haversine, getClosestBranchDistance, fetchRetailerAddresses } from '../../utils/locationUtils';
+import { getRetailerLogoById } from '../../utils/retailerLogoUtils';
 
 const Cart = () => {
   const [cartItems, setCartItems] = useState([]);
@@ -13,8 +14,9 @@ const Cart = () => {
   const [error, setError] = useState(null);
   const [recommendedStores, setRecommendedStores] = useState([]);
   const [selectedStore, setSelectedStore] = useState(null);
-  const [sortMode, setSortMode] = useState('price'); // 'price' or 'proximity'
+  const [sortMode, setSortMode] = useState(null); // null = 'Best Fit', 'price' or 'proximity'
   const [originalStores, setOriginalStores] = useState([]); // Save aggregator order
+  const [storeLogos, setStoreLogos] = useState({});
 
   // Auto-logout if session expired (e.g., after 1 hour)
   useEffect(() => {
@@ -85,29 +87,55 @@ const Cart = () => {
   };
 
   useEffect(() => {
-    if (!originalStores.length) return;
+    if (!originalStores.length) {
+      console.log('No originalStores, skipping proximity logic');
+      return;
+    }
     if (sortMode === 'proximity') {
+      console.log('Proximity sort triggered');
       navigator.geolocation?.getCurrentPosition(
-        pos => {
+        async pos => {
           const { latitude, longitude } = pos.coords;
-          const storesWithDistance = originalStores.map(store => {
-            if (Array.isArray(store.addresses) && store.addresses.length > 0) {
-              const { minDist, closestBranch } = getClosestBranchDistance(latitude, longitude, store.addresses);
+          console.log('User geolocation:', { latitude, longitude });
+          // Fetch addresses for all stores in parallel
+          const addressPromises = originalStores.map(store => {
+            console.log('Fetching addresses for store:', store.name, 'with id:', store.id);
+            return store.id ? fetchRetailerAddresses(store.id) : Promise.resolve([]);
+          });
+          const allAddresses = await Promise.all(addressPromises);
+          console.log('All fetched addresses:', allAddresses);
+          const storesWithDistance = originalStores.map((store, idx) => {
+            const addresses = allAddresses[idx];
+            console.log('Checking store for proximity:', {
+              name: store.name,
+              addresses,
+              latitude: store.latitude,
+              longitude: store.longitude
+            });
+            if (Array.isArray(addresses) && addresses.length > 0) {
+              const { minDist, closestBranch } = getClosestBranchDistance(latitude, longitude, addresses);
+              console.log('Result for addresses:', { minDist, closestBranch });
               return { ...store, distance: minDist, closestBranch };
             } else if (store.latitude && store.longitude) {
-              return { ...store, distance: haversine(latitude, longitude, store.latitude, store.longitude), closestBranch: null };
+              const dist = haversine(latitude, longitude, store.latitude, store.longitude);
+              console.log('Result for lat/lng:', { dist });
+              return { ...store, distance: dist, closestBranch: null };
             }
+            console.log('No valid location data for store:', store.name);
             return { ...store, distance: null, closestBranch: null };
           });
+          console.log('Stores with computed distances:', storesWithDistance);
           storesWithDistance.sort((a, b) => {
             if (a.distance != null && b.distance != null) return a.distance - b.distance;
             if (a.distance != null) return -1;
             if (b.distance != null) return 1;
             return 0;
           });
+          console.log('Stores after sorting by distance:', storesWithDistance);
           setRecommendedStores(storesWithDistance);
         },
-        () => {
+        err => {
+          console.log('Geolocation error:', err);
           setRecommendedStores([...originalStores]);
         }
       );
@@ -118,6 +146,34 @@ const Cart = () => {
       setRecommendedStores([...originalStores]);
     }
   }, [cartItems, sortMode, originalStores]);
+
+  // Fetch retailer logos for recommended stores
+  useEffect(() => {
+    async function fetchLogos() {
+      const logos = {};
+      for (const store of recommendedStores) {
+        if (store.id && !logos[store.id]) {
+          logos[store.id] = await getRetailerLogoById(store.id);
+        }
+      }
+      setStoreLogos(logos);
+    }
+    if (recommendedStores.length > 0) fetchLogos();
+  }, [recommendedStores]);
+
+  // Helper to get all top stores for each sort
+  function getTopStoresBySort(stores) {
+    const bestFit = stores.length > 0 ? [stores[0].name] : [];
+    const cheapest = [...stores].sort((a, b) => a.total - b.total)[0]?.name;
+    const closest = [...stores].filter(s => s.distance != null).sort((a, b) => a.distance - b.distance)[0]?.name;
+    return {
+      bestFit,
+      cheapest: cheapest ? [cheapest] : [],
+      closest: closest ? [closest] : []
+    };
+  }
+
+  const topStores = getTopStoresBySort(recommendedStores);
 
   return (
     <>
@@ -138,8 +194,15 @@ const Cart = () => {
               <>
                 <ul>
                   {cartItems.map(item => (
-                    <li key={item.id || item.product_id} className="flex justify-between items-center py-2 border-b">
-                      <span>{formatProductName(item.name || item.product_name)}</span>
+                    <li key={item.id || item.product_id} className="flex justify-between items-center py-2 border-b gap-3">
+                      <div className="flex items-center gap-3">
+                        <img
+                          src={item.image_url || 'https://www.svgrepo.com/show/508699/landscape-placeholder.svg'}
+                          alt={item.name || item.product_name}
+                          className="w-12 h-12 object-contain rounded shadow"
+                        />
+                        <span>{formatProductName(item.name || item.product_name)}</span>
+                      </div>
                       <span className="font-semibold">
                         {selectedStore && getStorePrice(item, selectedStore) !== null
                           ? `$${getStorePrice(item, selectedStore).toFixed(2)}`
@@ -194,30 +257,37 @@ const Cart = () => {
               <div className="text-gray-500">No recommendations yet.</div>
             ) : (
               <div className="grid gap-4">
-                {recommendedStores.map((store, idx) => (
-                  <StoreCard
-                    key={store.name}
-                    image={store.image || 'https://www.svgrepo.com/show/508699/landscape-placeholder.svg'}
-                    name={store.name}
-                    price={store.total}
-                    id={store.id}
-                    locations={Array.isArray(store.addresses) ? store.addresses.filter(addr => addr.latitude && addr.longitude) : []}
-                    className={`w-full ${selectedStore === store.name ? 'bg-sky-100' : 'bg-white'}`}
-                    onClick={() => setSelectedStore(store.name)}
-                  >
-                    {idx === 0 && sortMode === null && (
-                      <div className="text-xs text-rose-600 font-bold mb-1">Best Fit</div>
-                    )}
-                    {store.distance != null && (
-                      <div className="text-xs text-gray-500 mt-1">
-                        {`Distance: ${store.distance.toFixed(1)} km`}
-                        {store.closestBranch && store.closestBranch.address && (
-                          <span> (Closest: {store.closestBranch.branch_name ? store.closestBranch.branch_name + ' - ' : ''}{store.closestBranch.address})</span>
-                        )}
-                      </div>
-                    )}
-                  </StoreCard>
-                ))}
+                {recommendedStores.map((store, idx) => {
+                  let borderClass = '';
+                  let flavorArr = [];
+                  // Check if this store is top for any sort
+                  if (topStores.bestFit.includes(store.name)) {
+                    borderClass += ' border-4 border-rose-500';
+                    flavorArr.push('Best Fit: This store offers the best overall value for your cart!');
+                  }
+                  if (topStores.cheapest.includes(store.name)) {
+                    borderClass += borderClass.includes('border-4') ? ' border-green-500' : ' border-4 border-green-500';
+                    flavorArr.push('Cheapest: This store has the lowest total price for your cart!');
+                  }
+                  if (topStores.closest.includes(store.name)) {
+                    borderClass += borderClass.includes('border-4') ? ' border-blue-500' : ' border-4 border-blue-500';
+                    flavorArr.push('Closest: This store is nearest to your location!');
+                  }
+                  return (
+                    <StoreCard
+                      key={store.name}
+                      image={storeLogos[store.id] || store.image || 'https://www.svgrepo.com/show/508699/landscape-placeholder.svg'}
+                      name={store.name}
+                      price={store.total}
+                      id={store.id}
+                      locations={Array.isArray(store.addresses) ? store.addresses.filter(addr => addr.latitude && addr.longitude) : []}
+                      className={`w-full ${selectedStore === store.name ? 'bg-sky-100' : 'bg-white'} ${borderClass}`}
+                      onClick={() => setSelectedStore(store.name)}
+                      flavorText={flavorArr.length > 0 ? flavorArr.join(' | ') : ''}
+                      distance={store.distance}
+                    />
+                  );
+                })}
               </div>
             )}
           </div>

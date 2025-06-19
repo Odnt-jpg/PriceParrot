@@ -161,10 +161,10 @@ function Home() {
     if (showLoader) return <ParrotLoader text="Loading..." />;
 
     return (
-        <div className="min-h-screen flex flex-col bg-accent">
+        <div className="min-h-screen flex flex-col ">
             <Navbar />
             {/* Grabber Section */}
-            <div className="w-full flex flex-col bg-gray-50 pb-8">
+            <div className="w-full flex flex-col bg-gray-50 pb-8 drop-shadow-lg">
                 <div className="flex flex-col md:flex-row items-center justify-center gap-8 py-8 px-4 md:px-12 max-w-6xl mx-auto w-full">
                     {/* Left: Logo Image */}
                     <div className="flex-1 flex justify-center items-center">
@@ -172,10 +172,14 @@ function Home() {
                     </div>
                     {/* Right: Welcome Text */}
                     <div className="flex-1 flex flex-col items-center md:items-start text-center md:text-left">
-                        <h1 className="text-green-700 font-bold text-4xl mb-2 tracking-wide" style={{ fontFamily: 'Raleway, sans-serif' }}>WELCOME TO PRICE PARROT</h1>
-                        <p className="text-lg text-gray-700 mb-6">Your one-stop solution for the cheapest prices</p>
+                        <h1 className="text-4xl mb-2 tracking-wide font-bold text-primary">
+                            WELCOME TO <span className="text-secondary font-extrabold" style={{fontFamily: 'Farabee, Raleway, sans-serif'}}>PRICE PARROT</span>
+                        </h1>
+                        <span className="text-lg mb-6 text-neutral">
+                            Your one-stop solution for the cheapest prices <span className="text-secondary font-semibold">islandwide</span>
+                        </span>
                         <div className="w-full max-w-md mx-auto relative mb-6">
-                            <div className="flex rounded-lg shadow-lg border border-gray-200 bg-white overflow-hidden focus-within:ring-2 focus-within:ring-rose-400">
+                            <div className="flex rounded-lg shadow-lg border border-gray-200 bg-white overflow-hidden focus-within:ring-2 focus-within:ring-rose-400 drop-shadow-xl">
                                 <input
                                     type="text"
                                     placeholder="Search for products..."
@@ -224,7 +228,7 @@ function Home() {
             <div className="h-12 md:h-16" />
             <main className="flex-1">
                 {/* Featured Products */}
-                <section className="mb-12 bg-white pt-4">
+                <section className="mb-12 bg-white pt-4 drop-shadow-lg">
                     <h2 className="text-2xl font-semibold text-gray-800 mb-6 px-6 ">Featured Products</h2>
                     {error ? (
                         <div className="bg-red-100 border-l-4 border-red-500 text-red-700 p-4">
@@ -260,7 +264,7 @@ function Home() {
                 </section>
 
                 {/* Trending Products */}
-                <section className="mb-12 bg-white pt-4">
+                <section className="mb-12 bg-white pt-4 drop-shadow-lg">
                     <h2 className="text-2xl font-semibold text-gray-800 mb-6 px-6">Trending Products</h2>
                   
                     <Carousel
@@ -289,7 +293,7 @@ function Home() {
                 </section>
 
                 {/* Recently Viewed Products */}
-                <section className="mb-12 bg-white pt-4">
+                <section className="mb-12 bg-white pt-4 drop-shadow-lg">
                     <h2 className="text-2xl font-semibold text-gray-800 mb-6 px-6">Recently Viewed Products</h2>
                     {recentlyViewed.length === 0 ? (
                         <div className="text-gray-500 col-span-3">No recently viewed products.</div>
@@ -322,7 +326,7 @@ function Home() {
 
                 {/* Wishlist Products */}
                 {user && wishlist.length > 0 && (
-                    <section className="mb-12">
+                    <section className="mb-12  bg-white pt-4 drop-shadow-lg">
                         <h2 className="text-2xl font-semibold text-gray-800 mb-6">Your Wishlist</h2>
                         <Carousel
                             items={[...deduplicateAndAggregatePrices(wishlist).slice(0, 7), { showAllCard: true }]}

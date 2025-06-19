@@ -56,3 +56,27 @@ export function getClosestBranchDistance(userLat, userLng, addresses) {
   }
   return { minDist, closestBranch };
 }
+
+/**
+ * Fetches an array of addresses with latitude and longitude for a retailer by ID.
+ * @param {string|number} retailerId
+ * @returns {Promise<Array<{latitude: number, longitude: number, [key: string]: any}>>}
+ */
+export async function fetchRetailerAddresses(retailerId) {
+  if (!retailerId) return [];
+  try {
+    const res = await fetch(`/api/retailer-addresses/${retailerId}`);
+    if (!res.ok) return [];
+    const data = await res.json();
+    console.log('fetchRetailerAddresses response:', data);
+    // Expecting an array of address objects with latitude and longitude
+    return Array.isArray(data)
+      ? data
+          .filter(addr => !isNaN(Number(addr.latitude)) && !isNaN(Number(addr.longitude)))
+          .map(addr => ({ ...addr, latitude: Number(addr.latitude), longitude: Number(addr.longitude) }))
+      : [];
+  } catch (err) {
+    console.error('fetchRetailerAddresses error:', err);
+    return [];
+  }
+}

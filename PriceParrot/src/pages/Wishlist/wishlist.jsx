@@ -4,7 +4,7 @@ import Navbar from '../../components/navbar/navbar';
 import ParrotLoader from '../../components/ParrotLoader';
 import Footer from '../../components/Footer';
 import {
-  fetchWishlist,addToWishlist,removeFromWishlist,addMultipleToCart
+  fetchWishlistPage,addToWishlist,removeFromWishlist,addMultipleToCart
 } from '../../utils/wishlistCartFuncs';
 import { formatProductName } from '../../utils/formatter';
 
@@ -49,7 +49,7 @@ const Wishlist = () => {
           setLoading(false);
           return;
         }
-        const data = await fetchWishlist(user.id);
+        const data = await fetchWishlistPage(user.id);
         setWishlist(data);
         console.log('Wishlist data:', data); // Debugging line
       } catch (err) {

@@ -38,7 +38,7 @@ router.get('/api/retailer/:id', async (req, res) => {
   }
 });
 
-
+// Returns all retailers in the database
 router.get('/api/retailers', async (req, res) => {
   try {
     const [rows] = await db.query(
@@ -74,4 +74,51 @@ router.get('/api/retailers', async (req, res) => {
     res.status(500).json({ error: 'Internal server error.' });
   }
 });
+
+// GET /api/retailers/logo/:id - Get a retailer's logo by retailer id
+router.get('/api/retailers/logo/:id', async (req, res) => {
+  const { id } = req.params;
+  try {
+    const [rows] = await db.query(
+      'SELECT logo_url FROM retailers WHERE id = ?',
+      [id]
+    );
+    if (rows.length === 0) {
+      return res.status(404).json({ error: 'Retailer not found.' });
+    }
+    res.json({ logo_url: rows[0].logo_url });
+  } catch (err) {
+    console.error('Database error:', err);
+    res.status(500).json({ error: 'Internal server error.' });
+  }
+});
+
+// GET /api/retailer-addresses - Get all retailer addresses with lat/lng
+router.get('/api/retailer-addresses', async (req, res) => {
+  try {
+    const [rows] = await db.query(
+      'SELECT address, latitude, longitude FROM retailer_addresses'
+    );
+    res.json(rows);
+  } catch (err) {
+    console.error('Error fetching retailer addresses:', err);
+    res.status(500).json({ error: 'Internal server error.' });
+  }
+});
+
+// GET /api/retailer-addresses/:id - Get addresses, latitude, and longitude for a specific retailer
+router.get('/api/retailer-addresses/:id', async (req, res) => {
+  const { id } = req.params;
+  try {
+    const [rows] = await db.query(
+      'SELECT address, latitude, longitude FROM retailer_addresses WHERE retailer_id = ?',
+      [id]
+    );
+    res.json(rows);
+  } catch (err) {
+    console.error('Error fetching retailer addresses by id:', err);
+    res.status(500).json({ error: 'Internal server error.' });
+  }
+});
+
 module.exports = router;

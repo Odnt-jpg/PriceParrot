@@ -197,8 +197,8 @@ async function runAllProfiles() {
 }
 
 // Schedule the scraper to run at 8am and 5pm every day
-schedule.scheduleJob('0 8 * * *', runAllProfiles); // 8:00 AM
-schedule.scheduleJob('0 17 * * *', runAllProfiles); // 5:00 PM
+schedule.scheduleJob('0 8 * * *', runAllProfiles); 
+schedule.scheduleJob('0 17 * * *', runAllProfiles);
 
 // If run directly, execute once and exit
 if (process.argv[1] === fileURLToPath(import.meta.url)) {

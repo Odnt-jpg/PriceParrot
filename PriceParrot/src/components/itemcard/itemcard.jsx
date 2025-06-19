@@ -15,7 +15,7 @@ const ItemCard = ({ image, name, price, id, className = '', onClick }) => {
       onClick={handleClick}
       style={{ cursor: 'pointer' }}
     >
-      <div className="aspect-w-1 aspect-h-1 bg-gray-200 overflow-hidden">
+      <div className="aspect-w-1 aspect-h-1 bg-white overflow-hidden">
         <img 
           src={image} 
           alt={name}

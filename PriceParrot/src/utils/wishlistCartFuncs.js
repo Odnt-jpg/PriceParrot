@@ -5,13 +5,20 @@ const getToken = () => localStorage.getItem('token');
 // Wishlist functions
 export const fetchWishlist = async (userId) => {
   const token = getToken();
+  const res = await fetch(`/api/products/wishlist/${userId}`, {
+    headers: { 'Authorization': `Bearer ${token}` }
+  });
+  if (!res.ok) throw new Error('Failed to fetch wishlist');
+  return await res.json();
+};
+export const fetchWishlistPage = async (userId) => {
+  const token = getToken();
   const res = await fetch(`/api/users/wishlist/${userId}`, {
     headers: { 'Authorization': `Bearer ${token}` }
   });
   if (!res.ok) throw new Error('Failed to fetch wishlist');
   return await res.json();
 };
-
 export const addToWishlist = async (productId) => {
   const token = getToken();
   const user = JSON.parse(localStorage.getItem('user'));

@@ -6,8 +6,9 @@ import '../../App.css';
 import '../../index.css';
 import { formatProductName } from '../../utils/formatter.js';
 import { addToCart, addToWishlist } from '../../utils/wishlistCartFuncs.js';
-import { getRetailerLogo } from '../../utils/retailerLogos';
+import { getRetailerLogoById } from '../../utils/retailerLogoUtils';
 import ParrotLoader from '../../components/ParrotLoader';
+import { fetchRetailerAddresses, haversine, getClosestBranchDistance } from '../../utils/locationUtils';
 
 const ItemDisplay = () => {
     const { id } = useParams();
@@ -20,8 +21,12 @@ const ItemDisplay = () => {
         const stored = localStorage.getItem('user');
         return stored ? JSON.parse(stored) : null;
     });
+    const [proximityData, setProximityData] = useState({}); // { [retailerId]: [addressObj, ...] }
+
     const [showPopup, setShowPopup] = useState(false);
     const [popupMessage, setPopupMessage] = useState('');
+    const [retailerLogos, setRetailerLogos] = useState({}); // State to hold retailer logos for each price entry
+    const [sortedProximityPrices, setSortedProximityPrices] = useState([]);
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -51,20 +56,36 @@ const ItemDisplay = () => {
         }
     }, [sortType]);
 
+    useEffect(() => {
+        if (sortType === 'proximity' && userLocation && item && Array.isArray(item.prices)) {
+            // For each retailer, fetch their addresses and find the closest branch
+            Promise.all(item.prices.map(async (p) => {
+                if (!p.retailer_id) return { ...p, minDist: null };
+                const addresses = await fetchRetailerAddresses(p.retailer_id);
+                const { minDist, closestBranch } = getClosestBranchDistance(userLocation.lat, userLocation.lng, addresses);
+                return { ...p, minDist, closestBranch };
+            })).then(pricesWithDist => {
+                // Sort by minDist (nulls last)
+                pricesWithDist.sort((a, b) => {
+                    if (a.minDist == null && b.minDist == null) return 0;
+                    if (a.minDist == null) return 1;
+                    if (b.minDist == null) return -1;
+                    return a.minDist - b.minDist;
+                });
+                setSortedProximityPrices(pricesWithDist);
+            });
+        }
+    }, [sortType, userLocation, item]);
+
     let sortedPrices = [];
     if (item && Array.isArray(item.prices)) {
-        sortedPrices = [...item.prices];
-        if (sortType === 'price') {
-            sortedPrices.sort((a, b) => a.price - b.price);
-        } else if (sortType === 'proximity' && userLocation) {
-            sortedPrices.sort((a, b) => {
-                if (a.latitude && a.longitude && b.latitude && b.longitude) {
-                    const distA = Math.sqrt((a.latitude - userLocation.lat) ** 2 + (a.longitude - userLocation.lng) ** 2);
-                    const distB = Math.sqrt((b.latitude - userLocation.lat) ** 2 + (b.longitude - userLocation.lng) ** 2);
-                    return distA - distB;
-                }
-                return 0;
-            });
+        if (sortType === 'proximity' && userLocation) {
+            sortedPrices = sortedProximityPrices.length > 0 ? sortedProximityPrices : [...item.prices];
+        } else {
+            sortedPrices = [...item.prices];
+            if (sortType === 'price') {
+                sortedPrices.sort((a, b) => a.price - b.price);
+            }
         }
     }
 
@@ -152,27 +173,31 @@ const ItemDisplay = () => {
     // Helper to calculate distance in km
     function getDistanceKm(lat1, lon1, lat2, lon2) {
         if (lat1 == null || lon1 == null || lat2 == null || lon2 == null) return null;
-        const R = 6371;
-        const dLat = ((lat2 - lat1) * Math.PI) / 180;
-        const dLon = ((lon2 - lon1) * Math.PI) / 180;
-        const a =
-            Math.sin(dLat / 2) * Math.sin(dLat / 2) +
-            Math.cos((lat1 * Math.PI) / 180) *
-            Math.cos((lat2 * Math.PI) / 180) *
-            Math.sin(dLon / 2) * Math.sin(dLon / 2);
-        const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-        return R * c;
+        return haversine(lat1, lon1, lat2, lon2);
     }
+
+    useEffect(() => {
+        if (item && Array.isArray(item.prices)) {
+            item.prices.forEach(p => {
+                if (p.retailer_id && !retailerLogos[p.retailer_id]) {
+                    getRetailerLogoById(p.retailer_id).then(logoUrl => {
+                        setRetailerLogos(prev => ({ ...prev, [p.retailer_id]: logoUrl }));
+                    });
+                }
+            });
+        }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [item]);
 
     if (isLoading) return <ParrotLoader text="Loading item details..." />;
     if (error) return <div className="text-center text-red-600 mt-10">Error: {error}</div>;
     if (!item) return <div className="text-center text-red-600 mt-10">Item not found</div>;
 
     return (
-        <div className="min-h-screen flex flex-col">
+        <div className="min-h-screen flex flex-col ">
             <Navbar />
-            <main className="flex-1">
-                <div className="item-display-page bg-gray-100  pb-16">
+            <main className="flex-1 ">
+                <div className="item-display-page  pb-16">
                     <div className="max-w-6xl mx-auto px-4 pt-6 min-h-screen">
                         {showPopup && (
                             <div style={{position: 'fixed', top: 80, left: '50%', transform: 'translateX(-50%)', zIndex: 1000}} className="bg-green-500 text-white px-6 py-3 rounded shadow-lg animate-bounce">
@@ -186,6 +211,7 @@ const ItemDisplay = () => {
                             ← Back
                         </button>
                         <div className="item-details-container bg-white shadow-lg rounded-2xl p-8 flex flex-col md:flex-row gap-10">
+                            
                             {/* Left Side */}
                             <div className="flex-1 flex flex-col items-center">
                                 <img
@@ -234,28 +260,30 @@ const ItemDisplay = () => {
                                         </button>
                                     </div>
                                 )}
-                                <div className="bg-gray-50 rounded-xl shadow-inner p-6">
+                                <div className="bg-gray-300 rounded-2xl shadow-xl p-8 ">
                                     <h2 className="text-xl font-semibold mb-4 text-gray-700 text-right">Prices from Retailers:</h2>
                                     <ul className="space-y-4">
                                         {sortedPrices.map((p, idx) => {
-                                            const logo = getRetailerLogo(p.retailer_name);
+                                            const logo = retailerLogos[p.retailer_id] || '';
                                             let distance = null;
-                                            if (userLocation && p.latitude && p.longitude) {
+                                            if (sortType === 'proximity' && p.minDist != null) {
+                                                distance = p.minDist;
+                                            } else if (userLocation && p.latitude && p.longitude) {
                                                 distance = getDistanceKm(userLocation.lat, userLocation.lng, p.latitude, p.longitude);
                                             }
                                             return (
                                                 <li
                                                     key={idx}
-                                                    className="flex justify-between items-center px-4 py-3 bg-white rounded-xl shadow-md border"
+                                                    className="flex justify-between items-center px-4 py-3 bg-white/90 rounded-2xl shadow-lg "
                                                 >
                                                     <div className="flex items-center gap-3 min-w-0">
                                                         {logo && (
-                                                            <img src={logo} alt={p.retailer_name} className="h-10 w-10 object-contain rounded bg-gray-100 border" />
+                                                            <img src={logo} alt={p.retailer_name} className="h-10 w-10 object-contain rounded-2xl bg-gray-100" />
                                                         )}
                                                         <span className="font-bold text-blue-700 truncate">{p.retailer_name || p.name || `Retailer ${p.retailer_id || ''}`}</span>
                                                     </div>
                                                     <div className="flex flex-col items-end min-w-0">
-                                                        <span className="text-lg text-gray-700 font-medium">${typeof p.price === 'number' ? p.price.toFixed(2) : p.price}</span>
+                                                        <span className="text-lg text-gray-700 font-medium" style = {{fontFamily : "Farabee, sans serif"}}>${typeof p.price === 'number' ? p.price.toFixed(2) : p.price}</span>
                                                         {distance !== null && (
                                                             <span className="text-xs text-gray-500 mt-1">{distance.toFixed(2)} km away</span>
                                                         )}

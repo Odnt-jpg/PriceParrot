@@ -5,7 +5,6 @@ import ItemDisplay from './pages/item/itemdisplay.jsx';
 import Search from './pages/Search/search.jsx';
 import Wishlist from './pages/Wishlist/wishlist.jsx';
 import Cart from './pages/Cart/cart.jsx';
-import BestFit from './pages/BestFit/bestfit.jsx';
 import StoreCard from './components/storecard/storecard';
 import StorePage from './pages/Store/storepage.jsx';
 import AdminPage from './pages/Admin/admin.jsx'; 
@@ -40,10 +39,7 @@ function App() {
             path="/cart" 
             element={<Cart />} 
           />
-          <Route 
-            path="/bestfit" 
-            element={<BestFit />} 
-          />
+          
           <Route
             path="/storecard-test"
             element={

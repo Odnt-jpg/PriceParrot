@@ -1,4 +1,4 @@
-const express = require('express');
+const express = require ('express');
 const db = require('../db'); 
 
 const router = express.Router();
@@ -80,10 +80,10 @@ router.get('/search', async (req, res) => {
   }
 });
 
-// Get item details by ID 
+// Get product details by ID 
 router.get('/:id', async (req, res) => {
   const { id } = req.params;
-  const query = `SELECT p.*, pr.price, pr.retailer_id, r.name as retailer_name, pr.product_url FROM products p
+  const query = `SELECT p.*, pr.price, pr.retailer_id,r.id as retailer_id, r.name as retailer_name, pr.product_url FROM products p
                  LEFT JOIN product_retailers pr ON p.id = pr.product_id
                  LEFT JOIN retailers r ON pr.retailer_id = r.id
                  WHERE p.id = ?`;
@@ -188,6 +188,82 @@ router.post('/sort-products', async (req, res) => {
     res.json({ bestOffers, totalPrice, totalDistance });
   } catch (err) {
     console.error(err);
+    res.status(500).json({ error: 'Internal server error.' });
+  }
+});
+
+// GET /api/products/wishlist/:userId - Get prices, image, name, and id of items on a user's wishlist
+router.get('/wishlist/:userId', async (req, res) => {
+  const { userId } = req.params;
+  const query = `
+    SELECT 
+      p.id, 
+      p.name, 
+      p.image_url, 
+      MIN(pr.price) AS cheapest_price
+    FROM wishlist w
+    JOIN products p ON w.product_id = p.id
+    LEFT JOIN product_retailers pr ON p.id = pr.product_id
+    WHERE w.user_id = ?
+    GROUP BY p.id, p.name, p.image_url
+    ORDER BY p.name ASC
+  `;
+  try {
+    const [results] = await db.query(query, [userId]);
+    res.status(200).json(results);
+  } catch (err) {
+    console.error('Database error:', err);
+    return res.status(500).json({ error: 'Internal server error.' });
+  }
+});
+
+// GET /api/reviews/:productId - Fetch all reviews for a product
+router.get('/reviews/:productId', async (req, res) => {
+  const { productId } = req.params;
+  try {
+    const [rows] = await db.query(
+      `SELECT r.*, u.first_name, u.last_name FROM reviews r
+       JOIN users u ON r.user_id = u.id
+       WHERE r.product_id = ?
+       ORDER BY r.created_at DESC`,
+      [productId]
+    );
+    res.json(rows);
+  } catch (err) {
+    console.error('Database error:', err);
+    res.status(500).json({ error: 'Internal server error.' });
+  }
+});
+
+// POST /api/reviews - Add a review
+router.post('/reviews', async (req, res) => {
+  const { user_id, product_id, retailer_id, rating, comment } = req.body;
+  if (!user_id || !product_id || !retailer_id || !rating) {
+    return res.status(400).json({ error: 'Missing required fields.' });
+  }
+  try {
+    await db.query(
+      `INSERT INTO reviews (user_id, product_id, retailer_id, rating, comment) VALUES (?, ?, ?, ?, ?)`,
+      [user_id, product_id, retailer_id, rating, comment || null]
+    );
+    res.json({ success: true });
+  } catch (err) {
+    console.error('Database error:', err);
+    res.status(500).json({ error: 'Internal server error.' });
+  }
+});
+
+// DELETE /api/reviews/:id - Remove a review by id
+router.delete('/reviews/:id', async (req, res) => {
+  const { id } = req.params;
+  try {
+    const [result] = await db.query('DELETE FROM reviews WHERE id = ?', [id]);
+    if (result.affectedRows === 0) {
+      return res.status(404).json({ error: 'Review not found.' });
+    }
+    res.json({ success: true });
+  } catch (err) {
+    console.error('Database error:', err);
     res.status(500).json({ error: 'Internal server error.' });
   }
 });
