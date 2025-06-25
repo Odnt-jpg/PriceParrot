@@ -2,7 +2,8 @@ const express = require('express');
 const bcrypt = require('bcrypt');
 const db = require('../db'); // Import your database connection
 const jwt = require('jsonwebtoken');
-const SECRET_KEY = process.env.JWT_SECRET || '5230958904590';
+require('dotenv').config();
+const SECRET_KEY = process.env.JWT_SECRET;
 
 const router = express.Router();
 
