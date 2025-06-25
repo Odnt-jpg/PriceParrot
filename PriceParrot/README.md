@@ -7,8 +7,8 @@ A full-stack application for price comparison and product reviews.
 ## Getting Started
 
 ### 1. Prerequisites
-- [Node.js](https://nodejs.org/) (v16+ recommended)
-- [MySQL](https://www.mysql.com/) 
+- [Node.js](https://nodejs.org/)
+- [MySQL](https://www.mysql.com/)
 
 
 ### 2. Set Up Environment Variables
@@ -16,7 +16,7 @@ A full-stack application for price comparison and product reviews.
   ```
   cp .env.example .env
   ```
-- Edit `.env` with your database credentials and a strong JWT secret.
+.
 
 ### 3. Set Up the Database
 - Open a terminal and run:
@@ -47,7 +47,7 @@ A full-stack application for price comparison and product reviews.
   ```
 
 ### 8. Access the App
-- Open your browser and go to the URL shown in the terminal (e.g., `http://localhost:3000` or `http://localhost:3002`).
+- Open your browser and go to the URL shown in the terminal (e.g., `http://localhost:3000`).
 
 ---
 
