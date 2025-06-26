@@ -81,3 +81,16 @@ export const fetchCart = async (userId) => {
   if (!res.ok) throw new Error('Failed to fetch wishlist');
   return await res.json();
 };
+
+export const removeFromCart = async (productId) => {
+  const token = getToken();
+  const res = await fetch('/api/products/cart/delete', {
+    method: 'DELETE',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${token}`
+    },
+    body: JSON.stringify({ product_id: productId })
+  });
+  return res;
+};

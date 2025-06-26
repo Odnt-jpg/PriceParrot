@@ -13,6 +13,10 @@ const AdminPage = () => {
   const [selectedTable, setSelectedTable] = useState('');
   const [tableData, setTableData] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
+  const [showForm, setShowForm] = useState(false);
+  const [formMode, setFormMode] = useState('add'); // 'add' or 'edit'
+  const [formData, setFormData] = useState({});
+  const [editRowId, setEditRowId] = useState(null);
   const rowsPerPage = 15; // You can adjust this as needed
   const navigate = useNavigate();
 
@@ -114,6 +118,62 @@ const AdminPage = () => {
   const totalPages = Math.ceil(totalRows / rowsPerPage);
   const paginatedData = tableData.slice((currentPage - 1) * rowsPerPage, currentPage * rowsPerPage);
 
+  // Add/Edit form handlers
+  const handleShowAddForm = () => {
+    setFormMode('add');
+    setFormData({});
+    setShowForm(true);
+  };
+  const handleShowEditForm = (row, idCol) => {
+    setFormMode('edit');
+    setFormData(row);
+    setEditRowId(row[idCol]);
+    setShowForm(true);
+  };
+  const handleFormChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+  const handleFormSubmit = async (e) => {
+    e.preventDefault();
+    if (!selectedTable) return;
+    const idCol = Object.keys(tableData[0])[0];
+    let url = `/api/table/${selectedTable}`;
+    let method = 'POST';
+    if (formMode === 'edit') {
+      url += `/${editRowId}`;
+      method = 'PUT';
+    }
+    const res = await fetch(url, {
+      method,
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(formData)
+    });
+    if (res.ok) {
+      setShowForm(false);
+      // Refresh table
+      fetch(`/api/table/${selectedTable}`)
+        .then(res => res.json())
+        .then(setTableData);
+      // Scroll to the table section after save
+      setTimeout(() => {
+        const tableSection = document.querySelector('.admin-section.bg-white');
+        if (tableSection) tableSection.scrollIntoView({ behavior: 'smooth' });
+      }, 100);
+    }
+  };
+  const handleDelete = async (row) => {
+    if (!selectedTable) return;
+    const idCol = Object.keys(tableData[0])[0];
+    if (window.confirm('Are you sure you want to delete this row?')) {
+      const res = await fetch(`/api/table/${selectedTable}/${row[idCol]}`, { method: 'DELETE' });
+      if (res.ok) {
+        fetch(`/api/table/${selectedTable}`)
+          .then(res => res.json())
+          .then(setTableData);
+      }
+    }
+  };
+
   return (
     <>
       <Navbar />
@@ -153,6 +213,7 @@ const AdminPage = () => {
                     {Object.keys(tableData[0]).map(col => (
                       <th key={col} className="px-4 py-2 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider border-b">{col}</th>
                     ))}
+                    <th className="px-4 py-2 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider border-b">Actions</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -161,6 +222,10 @@ const AdminPage = () => {
                       {Object.values(row).map((val, j) => (
                         <td key={j} className="px-4 py-2 border-b text-sm text-gray-800">{val}</td>
                       ))}
+                      <td className="px-2 py-2 border-b text-sm">
+                        <button className="text-blue-600 mr-2" onClick={() => handleShowEditForm(row, Object.keys(tableData[0])[0])}>Edit</button>
+                        <button className="text-red-600" onClick={() => handleDelete(row)}>Delete</button>
+                      </td>
                     </tr>
                   ))}
                 </tbody>
@@ -193,9 +258,43 @@ const AdminPage = () => {
               </div>
             </div>
           )}
+          {/* Add Button */}
+          {selectedTable && tableData.length > 0 && (
+            <button
+              className="mb-4 bg-blue-600 text-white px-4 py-2 rounded shadow hover:bg-blue-700"
+              onClick={handleShowAddForm}
+            >
+              Add Row
+            </button>
+          )}
         </section>
-        <Footer />
+        {/* Add/Edit Form Modal */}
+        {showForm && (
+          <div className="fixed inset-0 bg-black bg-opacity-30 flex items-center justify-center z-50">
+            <form className="bg-white p-6 rounded shadow-lg min-w-[300px]" onSubmit={handleFormSubmit}>
+              <h3 className="text-lg font-bold mb-4">{formMode === 'add' ? 'Add Row' : 'Edit Row'}</h3>
+              {Object.keys(tableData[0] || {}).filter(col => !/date|time|created_at|updated_at/i.test(col)).map(col => (
+                <div key={col} className="mb-2">
+                  <label className="block text-sm font-medium mb-1">{col}</label>
+                  <input
+                    name={col}
+                    value={formData[col] || ''}
+                    onChange={handleFormChange}
+                    className="border rounded px-2 py-1 w-full"
+                    disabled={formMode === 'edit' && col === Object.keys(tableData[0])[0]}
+                  />
+                </div>
+              ))}
+              <div className="flex gap-2 mt-4">
+                <button type="submit" className="bg-green-600 text-white px-4 py-2 rounded">Save</button>
+                <button type="button" className="bg-gray-300 px-4 py-2 rounded" onClick={() => setShowForm(false)}>Cancel</button>
+              </div>
+            </form>
+          </div>
+        )}
+        
       </div>
+      <Footer />
     </>
   );
 };

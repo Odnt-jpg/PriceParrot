@@ -1,85 +1,36 @@
 [
   {
-    "name": "pringles potato chips mix 3 units",
-    "original_name": "Pringles Potato Chips Mix 3 Units / 158 g / 5.5 oz",
+    "name": "members selection cheddar cheese sauce",
+    "original_name": "Member's Selection Cheddar Cheese Sauce 3.03 kg / 107 oz",
+    "price": "1989.00",
+    "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/9/3/1/e/931e98f086dd9e88f73fc67e69c3ba454460120a_PreparedFoods_25444_01.jpg",
+    "product_url": "https://www.pricesmart.com/en-jm/product/member-selection-cheddar-cheese-sauce-3-03-kg-107-oz-25444/25444"
+  },
+  {
+    "name": "kraft cheez whiz 2 units",
+    "original_name": "Kraft Cheez Whiz 2 Units / 425 g / 15 oz",
+    "price": "1349.00",
+    "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/4/7/4/f/474fa3ed8e0b0dd35e8242e3a5048aa60531ae17_Condiments_24970_01.jpg",
+    "product_url": "https://www.pricesmart.com/en-jm/product/kraft-cheez-whiz-2-units-425-g-15-oz-24970/24970"
+  },
+  {
+    "name": "just about foods organic chia seeds",
+    "original_name": "Just About Foods Organic Chia Seeds 907 g / 2 lb",
     "price": "1399.00",
-    "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/c/0/6/d/c06da56f5a6307d49646b310051665e8a21a1adb_Chips_485582_01.jpg",
-    "product_url": "https://www.pricesmart.com/en-jm/product/pringles-potato-chips-mix-3-units-158-g-5-5-oz-485582/485582"
+    "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/5/9/2/e/592eb99e204fefa03ea24623ae478d2f71550600_Nuts_Seeds_474004_01.jpg",
+    "product_url": "https://www.pricesmart.com/en-jm/product/just-about-foods-organic-chia-seeds-907-g-2-lb-474004/474004"
   },
   {
-    "name": "town house assorted flavor crackers 3 units",
-    "original_name": "Town House Assorted Flavor Crackers 3 Units",
-    "price": "2299.00",
-    "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/9/6/9/7/9697821b7c73364b6597ad4306dc6ef7f0c4c66b_Cookies_490717_01.jpg",
-    "product_url": "https://www.pricesmart.com/en-jm/product/town-house-assorted-flavor-crackers-3-units-490717/490717"
-  },
-  {
-    "name": "united with earth date and almond rolls",
-    "original_name": "United With Earth Date and Almond Rolls 340 g / 12 oz",
-    "price": "1499.00",
-    "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/3/b/8/2/3b82dee96c1a0d05fabdff839ab8cff41a3df1cb_DriedFruits_470098_01.jpg",
-    "product_url": "https://www.pricesmart.com/en-jm/product/united-with-earth-date-and-almond-rolls-340-g-12-oz-470098/470098"
-  },
-  {
-    "name": "miracle reconstituted low fat milk 12 units",
-    "original_name": "Miracle Reconstituted Low Fat Milk 12 Units / 1 L / 33.81 oz",
-    "price": "4659.00",
-    "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/2/c/0/b/2c0b1112ac4fecb38dc34da35d60b6282419ee3b_Milk_495383_01.jpg",
-    "product_url": "https://www.pricesmart.com/en-jm/product/miracle-reconstituted-low-fat-milk-12-units-1-l-33-81-oz-495383/495383"
-  },
-  {
-    "name": "special k red berries cereal",
-    "original_name": "Special K Red Berries Cereal 1.07 kg / 2 lb",
-    "price": "2299.00",
-    "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/e/f/2/4/ef2464485c4c7e820c9cadc2b632d147b79c690d_Cereals_490252_01.jpg",
-    "product_url": "https://www.pricesmart.com/en-jm/product/special-k-Red-Berries-1-07-kg-2-lb-490252/490252"
-  },
-  {
-    "name": "select harvest honey and cinnamon glazed almonds",
-    "original_name": "Select Harvest Honey and Cinnamon Glazed Almonds 680 g / 1 lb",
-    "price": "1749.00",
-    "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/e/9/6/5/e9653bade890bf082c405c541f0e6cdecda044ca_Snacks_475249_01.jpg",
-    "product_url": "https://www.pricesmart.com/en-jm/product/select-harvest-honey-and-cinnamon-glazed-almonds-680-g-1-lb-475249/475249"
-  },
-  {
-    "name": "campoverde spinach mango apple and pineapple mix",
-    "original_name": "Campoverde Spinach, Mango, Apple and Pineapple Mix 907 g / 2 lb",
-    "price": "1919.00",
-    "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/1/3/9/9/1399a492b9d7e3e69d06348d49150307fd454afc_FrozenFood_600579_01.jpg",
-    "product_url": "https://www.pricesmart.com/en-jm/product/campoverde-spinach-mango-apple-and-pineapple-mix-907-g-2-lb-600579/600579"
-  },
-  {
-    "name": "campoverde carrot blueberry banana and mandarin mix",
-    "original_name": "Campoverde Carrot, Blueberry, Banana and Mandarin Mix 907 g / 2 lb",
-    "price": "1899.00",
-    "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/d/1/b/6/d1b6b44368c7b0ab7a107d09650d4d2bb756f222_FrozenFood_600573_01.jpg",
-    "product_url": "https://www.pricesmart.com/en-jm/product/campoverde-carrot-blueberry-banana-and-mandarin-mix-907-g-2-lb-600573/600573"
-  },
-  {
-    "name": "kirkland signature dried blueberries",
-    "original_name": "Kirkland Signature Dried Blueberries 567 g / 1 lb",
-    "price": "3199.00",
-    "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/6/e/b/e/6ebec58ffd61dc55b7e10377b1b4b7c04c5a177c_DriedFruits_968318_01.jpg",
-    "product_url": "https://www.pricesmart.com/en-jm/product/kirkland-signature-dried-blueberries-567-g-1-lb-968318/968318"
-  },
-  {
-    "name": "charles chocolates ping pong chocolate covered peanuts 50 units",
-    "original_name": "Charles Chocolates Ping Pong Chocolate Covered Peanuts 50 Units / 100 g",
-    "price": "1499.00",
-    "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/9/a/0/0/9a00d0a77eeaa5034fc6007502b06232cde50bde_Candys_494041_01.jpg",
-    "product_url": "https://www.pricesmart.com/en-jm/product/charles-chocolates-ping-pong-chocolate-coated-peanuts-50-units-100-g-494041/494041"
-  },
-  {
-    "name": "lucozade carbonated energy drink 12 units 250 ml",
-    "original_name": "Lucozade Carbonated Energy Drink 12 Units / 250 mL",
-    "price": "2299.00",
-    "image_url": "https://www.pricesmart.com/en-jm/category/Groceries/G10D03?page=1",
-    "product_url": "https://www.pricesmart.com/en-jm/product/lucozade-carbonated-energy-drink-12-units-250-ml-495337/495337"
+    "name": "bombolo biscotti mini tartlets filled with sweet wild berry and vanilla flavor",
+    "original_name": "Bombolo Biscotti Mini Tartlets Filled with Sweet Wild Berry and Vanilla Flavor",
+    "price": "1251.31",
+    "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/3/f/6/1/3f61e7af2792aa57e060d5b53b36a168fcbacc6c_FreshCookies_494629_01.jpg",
+    "product_url": "https://www.pricesmart.com/en-jm/product/bombolo-biscotti-mini-tartlets-filled-with-sweet-wild-berry-and-vanilla-flavor-494629/494629"
   },
   {
     "name": "members selection cold extracted extra virgin olive oil",
     "original_name": "Member's Selection Cold Extracted Extra Virgin Olive Oil 2 L",
-    "price": "3999.00",
+    "price": "4129.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/8/f/d/9/8fd92703f614aae165a9b73b20ef5813a36c15ed_Oils_388043_02.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/members-selection-cold-extracted-extra-virgin-olive-oil-2-l-388043/388043"
   },
@@ -91,6 +42,13 @@
     "product_url": "https://www.pricesmart.com/en-jm/product/members-selection-creamy-mayonnaise-with-natural-flavor-3-78-l-128-oz-781060/781060"
   },
   {
+    "name": "members selection boneless salmon portions with skin",
+    "original_name": "Member's Selection Frozen Boneless Salmon Portions with Skin 680 g / 1.5 lb",
+    "price": "3779.00",
+    "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/7/e/5/8/7e58fa4516eee661c879a94d79392dd29a7ec709_SeafoodandFish_98995_01.jpg",
+    "product_url": "https://www.pricesmart.com/en-jm/product/members-selection-frozen-boneless-salmon-portions-with-skin-680-g-1-5-lb-98995/98995"
+  },
+  {
     "name": "members selection unsweetened vanilla almond beverage 6 units 946 ml",
     "original_name": "Member's Selection Unsweetened Vanilla Almond Beverage 6 Units / 946 mL / 32 oz",
     "price": "2079.00",
@@ -100,7 +58,7 @@
   {
     "name": "members selection shredded mozzarella cheese",
     "original_name": "Member's Selection Shredded Mozzarella Cheese 2.26 kg / 5 lb",
-    "price": "2329.00",
+    "price": "2369.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/9/1/e/b/91eb459d99b802b3bf1341bd90507b49b483f5ec_Dairy_99908_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/members-selection-shredded-mozzarella-cheese-2-26-kg-5-lb-99908/99908"
   },
@@ -114,16 +72,9 @@
   {
     "name": "members selection premium smoked turkey breast 2 units",
     "original_name": "Member's Selection Premium Smoked Turkey Breast 2 Units / 340 g / 12 oz",
-    "price": "1369.00",
+    "price": "1429.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/7/a/2/4/7a24f80ad3c5c41b96d8d8a6a8587d9003c287ae_DeliMeats_98935_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/members-selection-premium-smoked-turkey-breast-2-units-340-g-12-oz-98935/98935"
-  },
-  {
-    "name": "members selection chai latte spice powder mix",
-    "original_name": "Member's Selection Chai Latte Spice Powder Mix 1.58 kg / 56 oz",
-    "price": "3799.00",
-    "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/7/2/5/a/725a1c670ff3e106cf6061527af94542c9670623_Beverage_540617_01.jpg",
-    "product_url": "https://www.pricesmart.com/en-jm/product/members-selection-chai-latte-spice-powder-mix-1-58-kg-56-oz-40617/540617"
   },
   {
     "name": "members selection pecan halves shellfree and unsalted",
@@ -131,13 +82,6 @@
     "price": "2349.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/0/6/4/a/064ade9549b20aa6c56410feb64a60a1b1fc5e4f_Snacks_333905_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/members-selection-pecans-907-g-32-oz-333905/333905"
-  },
-  {
-    "name": "members selection california sliced almonds for recipes and toppings",
-    "original_name": "Member's Selection California Sliced Almonds - For Recipes and Toppings 907 g / 32 oz",
-    "price": "2299.00",
-    "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/6/9/a/0/69a09413ff1bd7c924d523ed0252eecd2d07c9f2_Snacks_333712_01.jpg",
-    "product_url": "https://www.pricesmart.com/en-jm/product/members-selection-california-sliced-almonds-for-recipes-and-toppings-907-g-32-oz-333712/333712"
   },
   {
     "name": "members selection tuna in water 6 units",
@@ -149,14 +93,14 @@
   {
     "name": "members selection organic virgin coconut oil",
     "original_name": "Member's Selection Organic Virgin Coconut Oil 1.65 L / 56 oz",
-    "price": "2599.00",
+    "price": "2799.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/2/c/3/8/2c386688dd1976f69996da16a773addaf1278d0d_CookingOil_669654_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/members-selection-organic-virgin-coconut-oil-1-65-l-56-oz-669654/669654"
   },
   {
     "name": "members selection organic extra virgin olive oil",
     "original_name": "Member's Selection Organic Extra Virgin Olive Oil 2L / 67 oz",
-    "price": "4849.00",
+    "price": "4899.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/e/4/0/4/e404e8bdbd67949707241cf3da3256ab6e5c5115_Oils_388073_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/members-selection-organic-extra-virgin-olive-oil-2l-67-oz-388073/388073"
   },
@@ -184,7 +128,7 @@
   {
     "name": "members selection skinless boneless salmon fillets vacuum packaged",
     "original_name": "Member's Selection Frozen Skinless Boneless Salmon Fillets Vacuum Packaged",
-    "price": "7177.49",
+    "price": "6925.46",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/d/9/f/4/d9f44e4a3de2d34ec96d3a76f9da3b81005b2637_SeafoodandFish_178449_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/members-selection-frozen-skinless-boneless-salmon-fillets-vacuum-packaged-178449/178449"
   },
@@ -208,6 +152,13 @@
     "price": "6349.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/e/2/8/d/e28d32103fcc374b4c7c501f8ae1abd5b9b53812_Meat_43550_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/members-selection-angus-beef-patties-15-units-151-g-5-3-oz-43550/43550"
+  },
+  {
+    "name": "members selection freshly made assorted doughnuts 12 units",
+    "original_name": "Member's Selection Freshly Made Assorted Doughnuts 12 Units",
+    "price": "1216.52",
+    "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/9/8/5/c/985cf6d416a4b2d0ebaf87ecc33c94a7c2d67760_Donuts_227994_01.jpg",
+    "product_url": "https://www.pricesmart.com/en-jm/product/members-selection-freshly-made-assorted-doughnuts-12-units-227994/227994"
   },
   {
     "name": "members selection parmesan wedge",
@@ -282,21 +233,14 @@
   {
     "name": "members selection crunchy peanut butter",
     "original_name": "Member's Selection Crunchy Peanut Butter 1.13 kg / 40 oz",
-    "price": "979.00",
+    "price": "969.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/4/4/f/c/44fc786246bab75a5e1cec470426c8aeac0435ba_Spreads_25018_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/members-selection-crunchy-peanut-butter-1-13-kg-40-oz-25018/25018"
   },
   {
-    "name": "members selection skin on boneless salmon fillet vacuum packed",
-    "original_name": "Member's Selection Frozen Skin On Boneless Salmon Fillet Vacuum Packed",
-    "price": "5113.90",
-    "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/6/7/c/c/67cc03f5eff24cbb2867d7b1e22cba9c37ab2be8_SeafoodandFish_298650_01.jpg",
-    "product_url": "https://www.pricesmart.com/en-jm/product/members-selection-frozen-skin-on-boneless-salmon-fillet-vacuum-packed-298650/298650"
-  },
-  {
     "name": "members selection extra light olive oil",
     "original_name": "Member's Selection Extra Light Olive Oil 2 L / 67 oz",
-    "price": "3049.00",
+    "price": "3099.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/a/2/f/8/a2f8b6f559b9128b672490c99648cf3c3132c320_CookingOils_387935_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/members-selection-extra-light-olive-oil-2-l-67-oz-387935/387935"
   },
@@ -317,23 +261,16 @@
   {
     "name": "members selection premium turkey breast 2 units",
     "original_name": "Member's Selection Premium Turkey Breast 2 Units / 340 g / 12 oz",
-    "price": "1369.00",
+    "price": "1429.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/6/7/c/3/67c344ed271d4fdd422424f3955adc20bdb37f63_DeliMeats_98934_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/members-selection-premium-turkey-breast-2-units-340-g-12-oz-98934/98934"
   },
   {
     "name": "members selection creamy peanut butter",
     "original_name": "Member's Selection Creamy Peanut Butter 1.13 kg / 40 oz",
-    "price": "979.00",
+    "price": "969.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/e/8/b/9/e8b9ccca88bf63e355a889abc70701be7c3a8916_Bakiing_25017_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/members-selection-creamy-peanut-butter-1-13-kg-40-oz-25017/25017"
-  },
-  {
-    "name": "members selection cheddar cheese sauce",
-    "original_name": "Member's Selection Cheddar Cheese Sauce 3.03 kg / 107 oz",
-    "price": "1989.00",
-    "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/9/3/1/e/931e98f086dd9e88f73fc67e69c3ba454460120a_PreparedFoods_25444_01.jpg",
-    "product_url": "https://www.pricesmart.com/en-jm/product/member-selection-cheddar-cheese-sauce-3-03-kg-107-oz-25444/25444"
   },
   {
     "name": "members selection unsalted butter 2 units",
@@ -387,14 +324,14 @@
   {
     "name": "members selection breaded mozzarella sticks",
     "original_name": "Member’s Selection Breaded Mozzarella Sticks 2.04 kg / 4.5 lb",
-    "price": "2799.00",
+    "price": "2899.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/f/2/3/a/f23acebd4ccb95de30f75dda880ea1353aebe41e_Appetizers_43527_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/members-selection-breaded-mozzarella-sticks-2-04-kg-4-5-lb-43527/43527"
   },
   {
     "name": "members selection breaded mozzarella sticks",
     "original_name": "Member’s Selection Breaded Mozzarella Sticks 2.04 kg / 4.5 lb",
-    "price": "2799.00",
+    "price": "2899.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/2/5/3/8/253829bdc1f45b92a861cf4390933bda6d289944_FrozenFoods_43528_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/members-selection-breaded-mozzarella-sticks-2-04-kg-4-5-lb-43528/43528"
   },
@@ -436,7 +373,7 @@
   {
     "name": "members selection mild cheddar cheese",
     "original_name": "Member's Selection Mild Cheddar Cheese 907 g / 2 lb",
-    "price": "1179.00",
+    "price": "1189.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/6/4/e/1/64e1398bbf32755ec6f99324b7b6bec72cd29c0c_Dairyy_99902_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/members-selection-mild-cheddar-cheese-907-g-2-lb-99902/99902"
   },
@@ -471,7 +408,7 @@
   {
     "name": "members selection 100 pure sunflower oil 132 gal",
     "original_name": "Member's Selection 100% Pure Sunflower Oil 5 L / 1.32 gal",
-    "price": "2899.00",
+    "price": "2699.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/4/d/2/6/4d263f34e2749f3bdf8233f85df5e7d670770f6f_Oils_167401_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/members-selection-100-pure-sunflower-oil-5-l-1-32-gal-167401/167401"
   },
@@ -513,7 +450,7 @@
   {
     "name": "members selection shredded mozzarella cheese",
     "original_name": "Member's Selection Shredded Mozzarella Cheese 1.36 kg / 3 lb",
-    "price": "1729.00",
+    "price": "1749.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/f/2/6/5/f265c1c7357a0d198cac347720f97010f4972e27_DairyandEggs_98938_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/members-selection-shredded-mozzarella-cheese-1-36-kg-3-lb-98938/98938"
   },
@@ -530,6 +467,13 @@
     "price": "2999.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/7/b/e/d/7bedafcba0b15e6d705ce2053aeeb31a755a6547_Snacks_299532_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/members-selection-organic-fruit-and-nut-trail-mix-snack-and-energy-boost-737-g-26-oz-299532/299532"
+  },
+  {
+    "name": "members selection premium freshly baked carrot cake",
+    "original_name": "Member's Selection Premium Freshly Baked Carrot Cake",
+    "price": "1086.09",
+    "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/f/e/9/b/fe9b6a6677f7489c6c31ba572e95eb950705e5c9_Cakes_258401_01.jpg",
+    "product_url": "https://www.pricesmart.com/en-jm/product/members-selection-premium-freshly-baked-carrot-cake-258401/258401"
   },
   {
     "name": "members selection pepper jack cheese sliced",
@@ -555,7 +499,7 @@
   {
     "name": "members selection unsalted roasted mixed nuts",
     "original_name": "Member's Selection Unsalted Roasted Mixed Nuts 907 g / 2 lb",
-    "price": "3049.00",
+    "price": "2999.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/5/8/4/7/5847fd15bacdb54a2990b32bce77f8d995e776b2_SnacksS_16551_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/members-selection-unsalted-roasted-mixed-nuts-907-g-2-lb-16551/16551"
   },
@@ -565,13 +509,6 @@
     "price": "1729.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/4/a/9/7/4a97a8347cc87442ab2dd6fefeae2a804a4db03c_Dairyy_29043_01.jpeg",
     "product_url": "https://www.pricesmart.com/en-jm/product/members-selection-havarti-cheese-680-g-1-5-lb-29043/29043"
-  },
-  {
-    "name": "members selection sliced muenster cheese",
-    "original_name": "Member's Selection Sliced Muenster Cheese 680 g / 1.5 lb",
-    "price": "1729.00",
-    "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/2/2/e/3/22e3751a75d35ac1161c99d0bb98f6cb68a87f77_Dairyy_29044_01.jpg",
-    "product_url": "https://www.pricesmart.com/en-jm/product/members-selection-sliced-muenster-cheese-680-g-1-5-lb-29044/29044"
   },
   {
     "name": "members selection cocktail peanuts",
@@ -688,7 +625,7 @@
   {
     "name": "members selection american singles",
     "original_name": "Member's Selection American Singles 907 g / 2 lb",
-    "price": "1079.00",
+    "price": "1089.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/0/a/c/6/0ac6b7e2f8944a21bf2e5bab0381099e1683c129_Dairy_99945_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/members-selection-american-singles-907-g-2-lb-99945/99945"
   },
@@ -728,6 +665,13 @@
     "product_url": "https://www.pricesmart.com/en-jm/product/members-selection-fresh-baked-cheesecake-15-to-20-slices-312963/312963"
   },
   {
+    "name": "members selection small freshly baked croissants 18 units",
+    "original_name": "Member's Selection Small Freshly Baked Croissants 18 Units",
+    "price": "1329.57",
+    "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/f/f/4/2/ff4200d147dd991dd8b5804138fc95beff25e2e1_Pastries_415588_01.jpg",
+    "product_url": "https://www.pricesmart.com/en-jm/product/members-selection-small-freshly-baked-croissants-18-units-415588/415588"
+  },
+  {
     "name": "members selection fresh baked mocha chocolate cake 23 to 28 slices",
     "original_name": "Member's Selection Fresh Baked Mocha Chocolate Cake 23 to 28 Slices",
     "price": "2433.91",
@@ -765,7 +709,7 @@
   {
     "name": "members selection pasteurized american cheese",
     "original_name": "Member's Selection Pasteurized American Cheese 1.36 kg / 3 lb",
-    "price": "1679.00",
+    "price": "1699.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/6/5/c/5/65c596668221bd41617e5b42b3d51561dca9e5f7_DairyandEggs_99943_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/members-selection-pasteurized-american-cheese-1-36-kg-3-lb-99943/99943"
   },
@@ -800,7 +744,7 @@
   {
     "name": "members selection salted fish bone in",
     "original_name": "Member's Selection Salted Fish Bone In Tray",
-    "price": "1652.33",
+    "price": "1719.73",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/6/a/f/0/6af0a6fa7f8720259d1bce087e7cf6643b84a28b_SeafoodandFish_757065_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/members-selection-salted-fish-bone-in-tray-757065/757065"
   },
@@ -838,6 +782,13 @@
     "price": "1349.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/c/b/8/2/cb823b53314a0953f1344237fb57ba0b935f313f_CannedFruits_24686_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/members-selection-peach-halves-3-units-820-g-28-9-oz-24686/24686"
+  },
+  {
+    "name": "members selection freshly baked oatmeal and raisins cookies 12 units",
+    "original_name": "Member's Selection Freshly Baked Oatmeal and Raisins Cookies 12 Units",
+    "price": "436.90",
+    "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/8/2/5/a/825a62d97934cbf596d1027ae0c01e585a6d2c85_Cookies_464067_01.jpg",
+    "product_url": "https://www.pricesmart.com/en-jm/product/members-selection-fresh-baked-oatmeal-raisins-cookies-12-units-464067/464067"
   },
   {
     "name": "members selection whole almonds",
@@ -884,7 +835,7 @@
   {
     "name": "members selection chicken breast boneless skinless",
     "original_name": "Member's Selection Chilled Chicken Breast Boneless & Skinless Bag",
-    "price": "8977.52",
+    "price": "9011.50",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/2/4/4/3/24431fc2dea45fbee6c8031fad51f6e6739eebcd_Poultry_335300_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/members-selection-chilled-chicken-breast-boneless-skinless-bag-335300/335300"
   },
@@ -905,7 +856,7 @@
   {
     "name": "members selection mixed fruit",
     "original_name": "Member's Selection Mixed Fruit 2.2 kg / 5 lb",
-    "price": "2699.00",
+    "price": "2799.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/6/d/9/8/6d988a21e35c7e05b7110dae1f8e659c79bbd8b4_FrozenFood_43570_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/members-selection-mixed-fruit-2-2-kg-5-lb-43570/43570"
   },
@@ -989,7 +940,7 @@
   {
     "name": "hersheys chocolate syrup 2 units",
     "original_name": "Hershey's Chocolate Syrup 2 Units / 1.36 kg / 48 oz",
-    "price": "1979.00",
+    "price": "2349.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/d/7/5/5/d755783f7d19ec164c9f63b8c7208192fa33aa37_Spreads_219226_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/hersheys-chocolate-syrup-2-units-1-36-kg-48-oz-219226/219226"
   },
@@ -1024,28 +975,28 @@
   {
     "name": "angela mia pizza sauce",
     "original_name": "Angela Mia Pizza Sauce 3 kg / 6.61 lb",
-    "price": "1829.00",
+    "price": "1849.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/5/b/5/1/5b5139303606fa305d51181c91b27f2a5ab2246b_pizzasauce_38866_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/angela-mia-pizza-sauce-3-kg-6-61-lb-38866/38866"
   },
   {
     "name": "president feta crumbled",
     "original_name": "President Feta Crumbled 680 g / 1.5 lb",
-    "price": "1499.00",
+    "price": "1529.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/5/9/4/7/59475055ce30879f1285dd4fc92044fb4da5a41d_Dairyy_298508_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/president-feta-crumbled-680-g-1-5-lb-298508/298508"
   },
   {
     "name": "members selection short ribs",
     "original_name": "Member's Selection Chilled Short Ribs, Tray Pack",
-    "price": "2371.87",
+    "price": "2409.65",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/6/f/e/c/6fecfc43d788052f31c957c9dca2ec934daa7a49_215082_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/members-selection-chilled-short-ribs-tray-pack-215082/215082"
   },
   {
     "name": "snickers twix milky way and 3 musketeers chocolate minis variety",
     "original_name": "Snickers, Twix, Milky Way And 3 Musketeers Chocolate Minis Variety Pack 868 g / 30.63 oz",
-    "price": "1749.00",
+    "price": "2289.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/d/4/5/6/d4565daa6a6e737cbeb81e7e0d3670c8baa19592_ChocolateCandy_472774_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/snickers-twix-milky-way-and-3-musketeers-chocolate-minis-variety-pack-868-g-30-63-oz-472774/472774"
   },
@@ -1073,14 +1024,14 @@
   {
     "name": "members selection fresh beef stew boneless",
     "original_name": "Member's Selection Fresh Beef Stew Boneless Tray Pack",
-    "price": "2197.84",
+    "price": "2207.04",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/d/0/7/c/d07c3d059cdc81a0579a9ed7eac2ea7f4fe170a4_meat_215073_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/members-selection-fresh-beef-stew-boneless-tray-pack-215073/215073"
   },
   {
     "name": "belgioioso spreadable mascarpone cheese",
     "original_name": "Belgioioso Spreadable Mascarpone Cheese 453 g / 1 lb",
-    "price": "1029.00",
+    "price": "1049.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/0/5/9/d/059d00520c2bb48456eb6b97c2b093e0f4939729_Dairy_259314_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/belgioioso-spreadable-mascarpone-cheese-453-g-1-lb-259314/259314"
   },
@@ -1108,7 +1059,7 @@
   {
     "name": "kraft cagefree eggs mayonnaise 2 units 887 ml",
     "original_name": "Kraft Cage-free Eggs Mayonnaise 2 Units / 887 mL / 30 oz",
-    "price": "1479.00",
+    "price": "1799.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/5/1/e/0/51e0878a0a9dbc73ff63b35af887c5d9f75dd914_Condiments_772097_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/kraft-cage-free-eggs-mayonnaise-2-units-887-ml-30-oz-772097/772097"
   },
@@ -1122,7 +1073,7 @@
   {
     "name": "nature valley protein chewy bars 26 units",
     "original_name": "Nature Valley Protein Chewy Bars 26 Units / 40 g",
-    "price": "2719.00",
+    "price": "3399.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/1/6/e/3/16e348dadee9bf7b54afdb352bc01ca0840641d6_Snacks_22388_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/nature-valley-barras-masticables-de-proteina-26-unidades-40-g-22388/22388"
   },
@@ -1246,16 +1197,9 @@
     "product_url": "https://www.pricesmart.com/en-jm/product/vlasic-hamburger-dill-chips-734-g-25-89-oz-16100/16100"
   },
   {
-    "name": "members selection pasta alfredo with chicken freshly prepared",
-    "original_name": "Member's Selection Pasta Alfredo with Chicken Freshly Prepared",
-    "price": "1129.57",
-    "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/d/c/b/0/dcb030fbf3b9bdcd1d376b6af07b00dbd65dcee7_ReadytoEat_439099_01.jpg",
-    "product_url": "https://www.pricesmart.com/en-jm/product/members-selection-pasta-alfredo-with-chicken-freshly-prepared-439099/439099"
-  },
-  {
     "name": "kraft slowsimmered original barbecue sauce",
     "original_name": "Kraft Slow-Simmered Original Barbecue Sauce 2.3 kg",
-    "price": "1759.00",
+    "price": "1769.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/c/f/1/d/cf1d31f2f7329a00a4b9111db101e28fa7a15f7d_Condiments_50630_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/kraft-slow-simmered-original-barbecue-sauce-2-3-kg-50630/50630"
   },
@@ -1290,7 +1234,7 @@
   {
     "name": "mccain super potato wedges",
     "original_name": "McCain Super Potato Wedges 2 kg / 4.4 lb",
-    "price": "1259.00",
+    "price": "1499.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/3/e/a/3/3ea3d6bc6f8f013d5d073c09e82e6fc792c7752f_FrozenFood_202065_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/mccain-super-potato-wedges-2-kg-4-4-lb-202065/202065"
   },
@@ -1304,7 +1248,7 @@
   {
     "name": "mariani dried cranberries",
     "original_name": "Mariani Dried Cranberries 1.13 kg / 40 oz",
-    "price": "27900.00",
+    "price": "2799.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/e/f/9/9/ef99769273e9984fa4b3278a9b266808b64c3e7a_Snacks_430631_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/mariani-dried-cranberries-1-13-kg-40-oz-430631/430631"
   },
@@ -1339,7 +1283,7 @@
   {
     "name": "tyson turkey ham 2 units",
     "original_name": "Tyson Turkey Ham 2 Units / 340 g / 12 oz",
-    "price": "1249.00",
+    "price": "1269.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/d/7/d/6/d7d6607b48c9ac958705d0993e0dcafc676a76f1_Deli_468082_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/tyson-turkey-ham-2-units-340-g-12-oz-468082/468082"
   },
@@ -1395,14 +1339,14 @@
   {
     "name": "badia complete seasoning herbs and spices mix",
     "original_name": "Badia Complete Seasoning - Herbs and Spices Mix 793.8 g / 1.75 lb",
-    "price": "1199.00",
+    "price": "949.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/5/4/8/9/5489766c31e994ddeecbebc89a6244e7568439ca_Condiments_5512_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/badia-complete-seasoning-herbs-and-spices-mix-793-8-g-1-75-lb-5512/5512"
   },
   {
     "name": "hebrew national beef hot dog 3 units",
     "original_name": "Hebrew National Beef Hot Dog 3 Units / 340 g / 12 oz",
-    "price": "1747.00",
+    "price": "4499.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/1/8/3/6/1836500ac0b87a0348897877fc466f6e075c1634_DeliMeats_342804_01.png",
     "product_url": "https://www.pricesmart.com/en-jm/product/hebrew-national-beef-hot-dog-3-units-340-g-12-oz-342804/342804"
   },
@@ -1456,13 +1400,6 @@
     "product_url": "https://www.pricesmart.com/en-jm/product/honey-bunches-of-oats-sweetened-cereal-with-oats-and-honey-1-36-kg-3-lb-14288/14288"
   },
   {
-    "name": "angies boom chicka pop sweet and salty popcorn",
-    "original_name": "Angie's Boom Chicka Pop Sweet and Salty Popcorn 652 g / 23 oz",
-    "price": "1999.00",
-    "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/d/5/8/9/d589de644f2a80e00df3b9592a5c99150cc2a1bb_Snacks_438695_01.jpg",
-    "product_url": "https://www.pricesmart.com/en-jm/product/angies-boom-chicka-pop-sweet-and-salty-popcorn-652-g-23-oz-438695/438695"
-  },
-  {
     "name": "badia granulated garlic",
     "original_name": "Badia Granulated Garlic 680 g / 24 oz",
     "price": "1849.00",
@@ -1472,7 +1409,7 @@
   {
     "name": "eggo waffles 40 units",
     "original_name": "Eggo Waffles 40 Units / 35 g / 1.2 oz",
-    "price": "2449.00",
+    "price": "2059.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/2/8/e/e/28ee048acb8a3d7240bf4fd500eaaabd88e61a27_FrozenFood_317731_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/eggo-waffles-40-units-35-g-1-2-oz-317731/317731"
   },
@@ -1521,7 +1458,7 @@
   {
     "name": "mccain supercrisps fries",
     "original_name": "McCain Supercrisps Fries 2 kg / 4.4 lb",
-    "price": "1449.00",
+    "price": "1219.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/0/8/5/8/08580bd349942f5ae7c5949f110c07900a5929d6_FrozenFoods_600432_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/mccain-supercrisps-fries-2-kg-4-4-lb-600432/600432"
   },
@@ -1549,14 +1486,14 @@
   {
     "name": "act ii microwave oven popcorn 32 units",
     "original_name": "Act II Microwave Oven Popcorn 32 Units / 78 g / 2.75 oz",
-    "price": "2229.00",
+    "price": "2779.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/e/c/7/c/ec7c97a1734045c36145ebc25a0c1811eac8cc3b_Popcorn_476768_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/act-ii-microwave-oven-popcorn-32-units-78-g-2-75-oz-476768/476768"
   },
   {
     "name": "mariani californian organic raisins",
     "original_name": "Mariani Californian Organic Raisins 907 g / 32 oz",
-    "price": "1389.00",
+    "price": "1649.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/5/b/f/d/5bfd2fb61903785b56e5e8e438882fa7a439413f_Snacks_433174_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/mariani-californian-organic-raisins-907-g-32-oz-433174/433174"
   },
@@ -1570,7 +1507,7 @@
   {
     "name": "dietz watson honey turkey breast",
     "original_name": "Dietz & Watson Honey Turkey Breast 454 g / 16 oz",
-    "price": "1849.00",
+    "price": "1899.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/5/f/7/a/5f7a459f8f07857db76b2e644430086932dfd7f3_DeliMeats_479040_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/dietz-watson-honey-turkey-breast-454-g-16-oz-479040/479040"
   },
@@ -1584,7 +1521,7 @@
   {
     "name": "heinz tomato paste",
     "original_name": "Heinz Tomato Paste 3.15 kg / 7 lb",
-    "price": "1499.00",
+    "price": "1549.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/f/3/3/0/f33024f59fcf4b278603a5fb643de31d753a33b6_CannedTomatoes_480332_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/heinz-tomato-paste-3-15-kg-7-lb-480332/480332"
   },
@@ -1617,6 +1554,13 @@
     "product_url": "https://www.pricesmart.com/en-jm/product/heinz-sweet-relish-2-units-769-ml-26-oz-410643/410643"
   },
   {
+    "name": "mistic orange juice with carrot 2 units",
+    "original_name": "Mistic Orange Juice with Carrot 2 Units / 2.54 L / 85.8 oz",
+    "price": "1499.00",
+    "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/f/a/0/0/fa00d4a73eab708952eda1f5c0d6a7f9fcd73943_Beverages_474561_01.jpg",
+    "product_url": "https://www.pricesmart.com/en-jm/product/mistic-orange-juice-with-carrot-2-units-2-54-l-85-8-oz-474561/474561"
+  },
+  {
     "name": "smuckers strawberry jam 2 units",
     "original_name": "Smucker's Strawberry Jam 2 Units / 907 g / 32 oz",
     "price": "1639.00",
@@ -1626,7 +1570,7 @@
   {
     "name": "happy village organic sun dried figs",
     "original_name": "Happy Village Organic Sun Dried Figs 1.13 kg / 40 oz",
-    "price": "3399.00",
+    "price": "2790.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/c/9/4/f/c94fcb7a69da5a68163a50c3abcfaa17fe58f28d_Snacks_5046_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/happy-village-organic-sun-dried-figs-1-13-kg-40-oz-5046/5046"
   },
@@ -1675,14 +1619,14 @@
   {
     "name": "philadelphia cream cheese",
     "original_name": "Philadelphia Cream Cheese 13.6 kg / 30 lb",
-    "price": "18469.00",
+    "price": "9247.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/7/3/4/b/734b1e996cbf6cb977f6e179f70fddbb4c00f24e_Dairy_296752_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/philadelphia-cream-cheese-13-6-kg-30-lb-296752/296752"
   },
   {
     "name": "betty crocker vanilla and chocolate super moist cake mix 4 units",
     "original_name": "Betty Crocker Vanilla and Chocolate Super Moist Cake Mix 4 Units / 375 g / 13.25 oz",
-    "price": "1099.00",
+    "price": "1389.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/3/9/c/6/39c61c980a6d70267f9c4f616c9cd5d73f299869_Baking_467226_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/betty-crocker-vanilla-and-chocolate-super-moist-cake-mix-4-units-375-g-13-25-oz-467226/467226"
   },
@@ -1730,7 +1674,7 @@
   },
   {
     "name": "kraft macaroni and cheese 5 units",
-    "original_name": "Kraft Macaroni and Cheese 5 Units 206 g / 7.2 oz",
+    "original_name": "Kraft Macaroni and Cheese 5 Units / 206 g / 7.2 oz",
     "price": "1349.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/8/b/9/2/8b926a04e42e540350cc0a5b455dd58fad53bc60_PreparedFood_211808_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/kraft-macaroni-and-cheese-5-units-206-g-7-2-oz-211808/211808"
@@ -1752,7 +1696,7 @@
   {
     "name": "bisquick pancake baking mix",
     "original_name": "Bisquick Pancake & Baking Mix 2.72 kg / 6 lb",
-    "price": "1049.00",
+    "price": "1329.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/b/c/b/4/bcb4c22326040c0f0041eafba9120c8d1660d8c6_Baking_893_02.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/bisquick-pancake-baking-mix-2-72-kg-6-lb-893/893"
   },
@@ -1878,16 +1822,9 @@
   {
     "name": "tropicland stir fry vegetables",
     "original_name": "Tropicland Stir Fry Vegetables 2.26 kg / 5 lb",
-    "price": "2499.00",
+    "price": "2599.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/c/4/6/c/c46c5f16f2665dd021de182bb7cf3e81962b77da_FrozenFoods_600447_01.jpeg",
     "product_url": "https://www.pricesmart.com/en-jm/product/tropicland-stir-fry-vegetables-2-26-kg-5-lb-600447/600447"
-  },
-  {
-    "name": "members selection hand picked whole strawberries",
-    "original_name": "Member's Selection Hand Picked Whole Strawberries 2.26 kg / 5 lb",
-    "price": "2549.00",
-    "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/8/9/2/9/892952da0c75b2c8c8de7d6eb90678213408cc4f_FrozenFoods_43535_01.jpeg",
-    "product_url": "https://www.pricesmart.com/en-jm/product/members-selection-hand-picked-whole-strawberries-2-26-kg-5-lb-43535/43535"
   },
   {
     "name": "betty sweetened condensed milk 6 units",
@@ -1918,18 +1855,18 @@
     "product_url": "https://www.pricesmart.com/en-jm/product/grill-mates-montreal-chicken-seasoning-23-oz-652-g-19376/19376"
   },
   {
+    "name": "pringles potato chips mix 3 units",
+    "original_name": "Pringles Potato Chips Mix 3 Units / 158 g / 5.5 oz",
+    "price": "1399.00",
+    "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/c/0/6/d/c06da56f5a6307d49646b310051665e8a21a1adb_Chips_485582_01.jpg",
+    "product_url": "https://www.pricesmart.com/en-jm/product/pringles-potato-chips-mix-3-units-158-g-5-5-oz-485582/485582"
+  },
+  {
     "name": "wonderful roasted pistachios 24 units",
     "original_name": "Wonderful Roasted Pistachios 24 Units / 42 g / 1.5 oz",
     "price": "3149.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/e/3/e/c/e3ec961d6c37a180a0ebd961c8819e655d57b0bf_Snacks_210252_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/wonderful-roasted-pistachios-24-units-42-g-1-5-oz-210252/210252"
-  },
-  {
-    "name": "hannah threesome hummus",
-    "original_name": "Hannah Threesome Hummus 1.02 kg / 2.25 lb",
-    "price": "1849.00",
-    "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/1/b/f/5/1bf5d2a426dcf02521e68caccff301b3d1848f08_PreparedFoods_479110_01.jpg",
-    "product_url": "https://www.pricesmart.com/en-jm/product/hannah-threesome-hummus-1-02-kg-2-25-lb-479110/479110"
   },
   {
     "name": "bagelmania blueberry sliced bagels 6 units",
@@ -1944,6 +1881,13 @@
     "price": "2999.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/9/b/5/4/9b54fc7f873eb1f6b696c8ad3dc2970ea01d39b1_Beverages_454454_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/galvanina-italian-sparkling-mineral-water-24-units-500-ml-16-9-oz-454454/454454"
+  },
+  {
+    "name": "town house assorted flavor crackers 3 units",
+    "original_name": "Town House Assorted Flavor Crackers 3 Units",
+    "price": "2299.00",
+    "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/9/6/9/7/9697821b7c73364b6597ad4306dc6ef7f0c4c66b_Cookies_490717_01.jpg",
+    "product_url": "https://www.pricesmart.com/en-jm/product/town-house-assorted-flavor-crackers-3-units-490717/490717"
   },
   {
     "name": "silk almond beverage with vanilla flavor 6 units 946 ml",
@@ -1962,7 +1906,7 @@
   {
     "name": "red grape seedless",
     "original_name": "Red Grape Seedless 907 g / 2 lb",
-    "price": "2249.00",
+    "price": "1849.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/9/c/e/d/9cedb9cd8284e9a61f0afbde7249cc0211f112bc_FruitsandVegetables_235385_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/red-grape-seedless-907-g-2-lb-235385/235385"
   },
@@ -2044,13 +1988,6 @@
     "product_url": "https://www.pricesmart.com/en-jm/product/silk-unsweetened-original-2-units-1-89-l-64-oz-589898/589898"
   },
   {
-    "name": "blacks family sweet potato chips",
-    "original_name": "Black's Family Sweet Potato Chips 510 g / 18 oz",
-    "price": "1599.00",
-    "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/5/7/c/f/57cf6ae3db3bb6f680c883ffa66c102b949a123c_Snack_Foods_2932_01.jpg",
-    "product_url": "https://www.pricesmart.com/en-jm/product/blacks-family-sweet-potato-chips-510-g-18-oz-2932/2932"
-  },
-  {
     "name": "motts 100 organic apple juice without added sugar",
     "original_name": "Mott's 100% Organic Apple Juice without Added Sugar 3.78 L / 128 oz",
     "price": "1599.00",
@@ -2060,14 +1997,14 @@
   {
     "name": "push pop assorted pops 24 units",
     "original_name": "Push Pop Assorted Pops 24 Units / 14 g / 0.5 oz",
-    "price": "2779.00",
+    "price": "2109.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/a/0/0/d/a00d47e32b459463bb137f073d91a9218aaae240_Candy_187890_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/push-pop-assorted-pops-24-units-14-g-0-5-oz-187890/187890"
   },
   {
     "name": "setton farms dark chocolate covered pistachios and cranberries",
     "original_name": "Setton Farms Dark Chocolate Covered Pistachios and Cranberries 680 g / 24 oz",
-    "price": "2499.00",
+    "price": "2299.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/b/7/8/a/b78a28cd1bff33fea6ba04904623051073f59fc5_Chocolate_453828_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/setton-farms-dark-chocolate-covered-pistachios-and-cranberries-680-g-24-oz-453828/453828"
   },
@@ -2109,7 +2046,7 @@
   {
     "name": "hickory house smoked salmon 2 units",
     "original_name": "Hickory House Smoked Salmon 2 Units / 227 g / 8 oz",
-    "price": "3849.00",
+    "price": "3869.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/8/b/a/a/8baa2a1763172026b161b7449aec5a1b82fa1f7d_Seafood_757069_01.jpeg",
     "product_url": "https://www.pricesmart.com/en-jm/product/hickory-house-smoked-salmon-2-units-227-g-8-oz-757069/757069"
   },
@@ -2121,6 +2058,13 @@
     "product_url": "https://www.pricesmart.com/en-jm/product/gwaltney-chicken-hot-dogs-1-36-kg-48-oz-247716/247716"
   },
   {
+    "name": "united with earth date and almond rolls",
+    "original_name": "United With Earth Date and Almond Rolls 340 g / 12 oz",
+    "price": "1499.00",
+    "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/3/b/8/2/3b82dee96c1a0d05fabdff839ab8cff41a3df1cb_DriedFruits_470098_01.jpg",
+    "product_url": "https://www.pricesmart.com/en-jm/product/united-with-earth-date-and-almond-rolls-340-g-12-oz-470098/470098"
+  },
+  {
     "name": "tumbis fried plantain strips 2 units",
     "original_name": "Tumbis Fried Plantain Strips 2 Units / 350 g",
     "price": "1479.00",
@@ -2130,7 +2074,7 @@
   {
     "name": "nissin cup noodles chicken 12 units",
     "original_name": "Nissin Cup Noodles Chicken 12 Units / 64 g / 2.25 oz",
-    "price": "2009.00",
+    "price": "2019.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/0/0/f/7/00f70fd3a35f3113091750aa007226a4ef047b7f_PreparedFoods_167601_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/nissin-cup-noodles-chicken-12-units-64-g-2-25-oz-167601/167601"
   },
@@ -2165,14 +2109,14 @@
   {
     "name": "ferrero rocher box of chocolates filled with hazelnuts and chocolate cream 24 units",
     "original_name": "Ferrero Rocher Box of Chocolates Filled with Hazelnuts and Chocolate Cream 24 Units",
-    "price": "2899.00",
+    "price": "2999.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/3/4/a/f/34afe71360e7d74c2deda5d2a8de52ad5eec71b9_Candy_39533_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/ferrero-rocher-box-of-chocolates-filled-with-hazelnuts-and-chocolate-cream-24-units-39533/39533"
   },
   {
     "name": "vidalia onion and honey mustard dressing",
     "original_name": "Vidalia Onion and Honey Mustard Dressing 1 L / 33.8 oz",
-    "price": "969.00",
+    "price": "989.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/c/0/1/1/c0117c55439407b0a06900b3fabbb5e01760a1de_Condiments_108098_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/vidalia-onion-and-honey-mustard-dressing-1-l-33-8-oz-108098/108098"
   },
@@ -2186,7 +2130,7 @@
   {
     "name": "nabisco original ritz crackers 18 units",
     "original_name": "Nabisco Original Ritz Crackers 18 Units / 97 g / 3.42 oz",
-    "price": "2199.00",
+    "price": "2099.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/0/0/9/7/009764182ca2e7f8215cd3c53cf8d2fbc0600f5f_Snacks_387173_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/nabisco-original-ritz-crackers-18-units-97-g-3-42-oz-387173/387173"
   },
@@ -2212,13 +2156,6 @@
     "product_url": "https://www.pricesmart.com/en-jm/product/lillan-frozen-oxtail-bag-1-kg-2-2-lb-337131/337131"
   },
   {
-    "name": "maggi season up all purpose seasoning 2 units",
-    "original_name": "Maggi Season Up! All Purpose Seasoning 2 Units / 430 g / 15.2 oz",
-    "price": "1599.00",
-    "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/8/0/c/2/80c2906b65c033489890c24c4cd5555eb1fc07b3_CondimentsSpices_325682_01.jpg",
-    "product_url": "https://www.pricesmart.com/en-jm/product/maggi-season-up-all-purpose-seasoning-2-units-430-g-15-2-oz-325682/325682"
-  },
-  {
     "name": "garofalo organic penne rigate 4 units",
     "original_name": "Garofalo Organic Penne Rigate 4 Units / 500 g / 1.1 lb",
     "price": "1499.00",
@@ -2228,7 +2165,7 @@
   {
     "name": "seven french fry 38 case",
     "original_name": "Seven French Fry 3/8 Case 10 kg / 22 lb",
-    "price": "2949.00",
+    "price": "3099.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/3/7/d/2/37d2bcd8ef87cb52a06083827b88380d89a8b192_FrozenFood_600490_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/seven-french-fry-3-8-case-10-kg-22-lb-600490/600490"
   },
@@ -2256,14 +2193,14 @@
   {
     "name": "best dressed whole chicken",
     "original_name": "Best Dressed Frozen Whole Chicken Bag",
-    "price": "16124.98",
+    "price": "16095.42",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/2/e/3/2/2e32b91a72c8ed33236598a6b93e54565a426b95_247912_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/best-dressed-frozen-whole-chicken-bag-247912/247912"
   },
   {
     "name": "wata water 24 units 600 ml",
     "original_name": "Wata Water 24 Units / 600 mL / 20 oz",
-    "price": "1129.00",
+    "price": "1169.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/2/1/3/a/213ac6af3c3c6f7a71802450056f647ce0226076_Beverages_260549_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/wata-water-24-units-600-ml-20-ml-260549/260549"
   },
@@ -2338,13 +2275,6 @@
     "product_url": "https://www.pricesmart.com/en-jm/product/members-selection-original-flavor-barbecue-sauce-2-2-kg-5-lb-50670/50670"
   },
   {
-    "name": "food with purpose go aloe sparkling aloe beverage in assorted flavors no added sugar 12 units 250 ml",
-    "original_name": "Food With Purpose GO ALOE Sparkling Aloe Beverage in Assorted Flavors - No Added Sugar 12 Units / 250 mL / 8.5 oz",
-    "price": "1999.00",
-    "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/b/e/5/a/be5a3d80f69fa5ab743d3a8de7088f19455b64eb_SoftDrinks_470108_01.jpg",
-    "product_url": "https://www.pricesmart.com/en-jm/product/food-with-purpose-go-aloe-sparkling-aloe-beverage-in-assorted-flavors-no-added-sugar-12-units-250-ml-8-5-oz-470108/470108"
-  },
-  {
     "name": "worthy park golden crystal sugar",
     "original_name": "Worthy Park Golden Crystal Sugar 5 kg / 11 lb",
     "price": "1739.00",
@@ -2410,14 +2340,14 @@
   {
     "name": "members selection american cheese singles",
     "original_name": "Member's Selection American Cheese Singles 907 g / 2 lb",
-    "price": "1079.00",
+    "price": "1089.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/a/8/1/f/a81f3d92cc8dffab6615df1f6ecadb98f849b73d_Dairy_99946_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/members-selection-american-cheese-singles-907-g-2-lb-99946/99946"
   },
   {
     "name": "golden diamond thai jasmine rice",
     "original_name": "Golden Diamond Thai Jasmine Rice 5 kg",
-    "price": "2099.00",
+    "price": "2129.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/4/3/1/7/431711f42471defe1b79f3ba1c78b93bdf607231_358835_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/golden-diamond-thai-jasmine-rice-5-kg-358835/358835"
   },
@@ -2485,13 +2415,6 @@
     "product_url": "https://www.pricesmart.com/en-jm/product/royal-rose-flour-5-kg-11-lb-352653/352653"
   },
   {
-    "name": "members selection beef soup bone",
-    "original_name": "Member's Selection Chilled Beef Soup Bone, Tray Pack",
-    "price": "374.52",
-    "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/9/3/1/b/931b69eb97b68c3c880d1ba342fad96bdce0c5c8_215337_01.jpg",
-    "product_url": "https://www.pricesmart.com/en-jm/product/members-selection-chilled-beef-soup-bone-tray-pack-215337/215337"
-  },
-  {
     "name": "thai kitchen sweet chili sauce",
     "original_name": "Thai Kitchen Sweet Chili Sauce 1 L / 33.8 oz",
     "price": "1979.00",
@@ -2550,7 +2473,7 @@
   {
     "name": "serge island low fat milk 12 units",
     "original_name": "Serge Island Low Fat Milk 12 Units / 1 L / 34 oz",
-    "price": "5989.00",
+    "price": "5999.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/f/a/3/a/fa3a4c19daf06b5c1cd44d14e1d09546ee1b95ac_milk_246292_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/serge-island-low-fat-milk-12-units-1-l-34-oz-246292/246292"
   },
@@ -2571,7 +2494,7 @@
   {
     "name": "members selection skin on boneless trout fillet vacuum packaged",
     "original_name": "Member's Selection Frozen Skin On Boneless Trout Fillet Vacuum Packaged Bag",
-    "price": "5049.39",
+    "price": "4985.70",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/9/9/a/3/99a37e033d1e1f3640c10eb5357561ef09b3fa86_SeafoodandFish_295595_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/members-selection-frozen-skin-on-boneless-trout-fillet-vacuum-packaged-bag-295595/295595"
   },
@@ -2585,7 +2508,7 @@
   {
     "name": "best dressed chicken thighs boneless",
     "original_name": "Best Dressed Chilled Chicken Thighs Boneless Tray Pack",
-    "price": "2681.02",
+    "price": "2677.62",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/6/e/f/b/6efbfe593bba781adfda434aa322c9fbf00b6dd2_Poultry_214609_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/best-dressed-chilled-chicken-thighs-boneless-tray-pack-214609/214609"
   },
@@ -2606,7 +2529,7 @@
   {
     "name": "rainforest basa fillet case",
     "original_name": "Rainforest Frozen Basa Fillet Case 4.5 kg / 10 lb",
-    "price": "3899.00",
+    "price": "3999.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/0/4/e/0/04e02d7e32809a25cae202ea14a4bf1a8dc9dde2_345889_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/rainforest-frozen-basa-fillet-case-4-5-kg-10-lb-345889/345889"
   },
@@ -2627,7 +2550,7 @@
   {
     "name": "members selection sirloin steak",
     "original_name": "Member's Selection Chilled Sirloin Steak Tray Pack",
-    "price": "2300.12",
+    "price": "2287.12",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/c/d/6/5/cd652b1e8c3ef264078973e41c0f1d5c27bd3268_Meat_215091_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/members-selection-chilled-sirloin-steak-tray-pack-215091/215091"
   },
@@ -2655,7 +2578,7 @@
   {
     "name": "klim 1 growing up milk",
     "original_name": "Klim 1+ Growing Up Milk 1.6 kg / 56.5 oz",
-    "price": "3049.00",
+    "price": "2999.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/8/5/c/a/85ca4b9258cde4a380d677c3502545409cc7822f_Babyfood_170245_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/klim-1-growing-up-milk-1-6-g-56-5-oz-170245/170245"
   },
@@ -2669,7 +2592,7 @@
   {
     "name": "gala apple",
     "original_name": "Gala Apple 1.36 kg / 3 lb",
-    "price": "1499.00",
+    "price": "1549.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/f/4/7/9/f479bddb55e90ce1aeaeb0815924ad063397e03d_FruistandVegetables_13125_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/gala-apple-1-36-kg-3-lb-13125/13125"
   },
@@ -2704,7 +2627,7 @@
   {
     "name": "wata purified water 24 units 330 ml",
     "original_name": "Wata Purified Water 24 Units / 330 mL / 11.1 oz",
-    "price": "959.00",
+    "price": "999.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/f/a/8/1/fa81b0c2a28e4f0f4ab751eed23a887ae2e682ff_Water_267509_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/wata-purified-water-24-units-330-ml-11-1-oz-267509/267509"
   },
@@ -2718,7 +2641,7 @@
   {
     "name": "frito lay bold mix chips with assorted presentations 24 units",
     "original_name": "Frito Lay Bold Mix Chips with Assorted Presentations 24 Units",
-    "price": "2139.00",
+    "price": "2289.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/a/e/f/a/aefac36bea3915c0a556e325d44d9ae380a1a732_Snacks_449774_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/frito-lay-bold-mix-chips-with-assorted-presentations-24-units-449774/449774"
   },
@@ -2746,7 +2669,7 @@
   {
     "name": "pineapple",
     "original_name": "Pineapple",
-    "price": "2328.74",
+    "price": "2327.58",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/4/2/9/f/429f8156794f2326528843113d0ebcbf06cb0aab_FruitsandVegetables_215254_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/pineapple-215254/215254"
   },
@@ -2788,7 +2711,7 @@
   {
     "name": "nescafe instant coffee gold blend powder",
     "original_name": "Nescafe Instant Coffee Gold Blend Powder 212 g / 7.05 oz",
-    "price": "1849.00",
+    "price": "1819.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/5/b/a/0/5ba03910c51553b20f014250e49bd1461266784a_Coffee_168726_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/nescafe-gold-blend-coffee-212-lb-7-05-oz-168726/168726"
   },
@@ -2802,7 +2725,7 @@
   {
     "name": "members selection beef stir fry",
     "original_name": "Member's Selection Chilled Beef Stir Fry, Tray Pack",
-    "price": "2170.16",
+    "price": "2183.16",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/2/b/1/1/2b11d2edf3f266c4c445c9d40b54b1fb79e37832_215093_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/members-selection-chilled-beef-stir-fry-tray-pack-215093/215093"
   },
@@ -2844,7 +2767,7 @@
   {
     "name": "kraft easy mac and cheese cups 12 units",
     "original_name": "Kraft Easy Mac and Cheese Cups 12 Units 58 g / 2.05 oz",
-    "price": "3099.00",
+    "price": "2514.90",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/b/4/8/1/b481b3d63e61c63ff9f1159f36cb3150b5558e9d_Pasta_20263_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/kraft-easy-mac-and-cheese-cups-12-units-58-g-2-05-oz-20263/20263"
   },
@@ -2879,7 +2802,7 @@
   {
     "name": "frito lay classic mix 45 units",
     "original_name": "Frito Lay Classic Mix Pack 45 Units",
-    "price": "3499.00",
+    "price": "3699.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/e/0/d/2/e0d25e80c998a3e6bfbc8c627aa54be71343c944_Snacks_441902_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/frito-lay-classic-mix-pack-45-units-441902/441902"
   },
@@ -2907,7 +2830,7 @@
   {
     "name": "grace corned beef 3 units",
     "original_name": "Grace Corned Beef 3 units / 340 g / 12 oz",
-    "price": "1229.00",
+    "price": "1439.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/1/a/d/9/1ad9db092695b6009ceeccdca501a68c9636bdf9_Cannedfood_214070_01.png",
     "product_url": "https://www.pricesmart.com/en-jm/product/grace-corned-beef-3-units-340-g-12-oz-214070/214070"
   },
@@ -2921,7 +2844,7 @@
   {
     "name": "frito lay snack time mix 12 units",
     "original_name": "Frito Lay Snack Time Mix 12 Units",
-    "price": "1139.00",
+    "price": "1199.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/7/9/1/8/791836caaf857abe561bc1f4e7fb61c75cbdb24a_Chips_340916_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/frito-lay-snack-time-mix-12-units-340916/340916"
   },
@@ -2956,28 +2879,28 @@
   {
     "name": "capri sun variety juice 40 units 200 ml",
     "original_name": "Capri Sun Variety Juice 40 Units / 200 ml / 6.7 oz",
-    "price": "2459.00",
+    "price": "2539.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/9/3/e/6/93e669419fd64c20414cd77c399e6e09fc417a41_Juices_169074_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/capri-sun-variety-juice-40-units-200-ml-6-7-oz-169074/169074"
   },
   {
     "name": "trident seafoods salmon burger",
     "original_name": "Trident Seafoods Salmon Burger 1.36 kg / 3 lb",
-    "price": "4399.00",
+    "price": "4449.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/c/e/5/1/ce51498ca420355c132acc73ea6b9df99849c609_Frozenseafood_16594_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/trident-seafoods-salmon-burger-1-36-kg-3-lb-16594/16594"
   },
   {
     "name": "irish potato",
     "original_name": "Irish Potato 3.18 kg / 7 lb",
-    "price": "1599.00",
+    "price": "1699.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/e/f/7/a/ef7a03b8b5a5e75888736155482a80b0f0f1ff92_Update_353889_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/irish-potato-3-18-kg-7-lb-353889/353889"
   },
   {
     "name": "fresh red globe grapes",
     "original_name": "Fresh Red Globe Grapes",
-    "price": "1086.73",
+    "price": "2410.10",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/6/a/2/9/6a29e26dc91a7a0afd220eefa6711c85bf06e247_Fresh_Fruit_125576_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/fresh-red-globe-grapes-125576/125576"
   },
@@ -2991,7 +2914,7 @@
   {
     "name": "hong kong maiden chinese soy sauce",
     "original_name": "Hong Kong Maiden Chinese Soy Sauce 1.89 L",
-    "price": "689.00",
+    "price": "699.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/2/5/a/c/25ac9f4dae3a15b71cfceb16f8bb96e624332eb6_220553_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/hong-kong-maiden-chinese-soy-sauce-1-89-l-220553/220553"
   },
@@ -3033,7 +2956,7 @@
   {
     "name": "green seedless grapes",
     "original_name": "Green Seedless Grapes 907 g / 2 lb",
-    "price": "2549.00",
+    "price": "2529.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/8/d/1/4/8d14cf043808461e58a22045848d527449f1788a_FruitsandVegetables_235387_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/green-grape-seedless-907-g-2-lb-235387/235387"
   },
@@ -3054,7 +2977,7 @@
   {
     "name": "fresh pork chops bone in",
     "original_name": "Fresh Pork Chops Bone In Tray Pack",
-    "price": "2504.21",
+    "price": "2507.81",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/7/2/f/3/72f3d9b87fa21b196e333287b8c928bd099320d3_meat_214958_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/fresh-pork-chops-bone-in-tray-pack-214958/214958"
   },
@@ -3096,21 +3019,21 @@
   {
     "name": "members selection pork stew bone in",
     "original_name": "Member´s Selection Chilled Pork Stew, Bone In, Tray Pack",
-    "price": "2174.64",
+    "price": "2181.04",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/6/e/d/1/6ed1d91a1174a380190f9ccf88b974b1f6588583_Meat_214959_01.png",
     "product_url": "https://www.pricesmart.com/en-jm/product/members-selection-chilled-pork-stew-bone-in-tray-pack-214959/214959"
   },
   {
     "name": "members selection pork stew boneless",
     "original_name": "Member's Selection Chilled Pork Stew, Boneless, Tray Pack",
-    "price": "2081.53",
+    "price": "2077.63",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/7/0/0/8/70085889dd20fbf10d652663b66e21771174515f_214969_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/members-selection-chilled-pork-stew-boneless-tray-pack-214969/214969"
   },
   {
     "name": "members selection asparagus",
     "original_name": "Member's Selection Asparagus 454 g / 1 lb",
-    "price": "1649.00",
+    "price": "1399.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/1/3/9/5/1395491b23af4b8daef5f18e512b4a31ee0a10d1_FruitsandVegetables_313160_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/members-selection-asparagus-454-g-1-lb-313160/313160"
   },
@@ -3127,6 +3050,13 @@
     "price": "1159.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/f/9/b/f/f9bff184894f95950f0d2b84d45e5a25e41f3a3e_Juices_369779_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/tru-juice-variety-juice-3-units-1-l-33-8-oz-369779/369779"
+  },
+  {
+    "name": "coconut water",
+    "original_name": "Coconut Water 3.89 L / 131.5 oz",
+    "price": "2949.00",
+    "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/4/6/7/b/467bbd9fdc0a2ebaa173a3ffe6fa8332a2b898dc_361911_01.jpg",
+    "product_url": "https://www.pricesmart.com/en-jm/product/coconut-water-3-89-l-131-5-oz-361911/361911"
   },
   {
     "name": "grace corned beef 6 units",
@@ -3152,14 +3082,14 @@
   {
     "name": "members selection beef chuck steak bone in",
     "original_name": "Member's Selection Chilled Beef Chuck Steak, Bone In, Tray Pack",
-    "price": "2079.73",
+    "price": "2069.49",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/7/3/c/1/73c18508a1fc8253af6bf0b43342e50edfe9841a_274152_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/members-selection-chilled-beef-chuck-steak-bone-in-tray-pack-274152/274152"
   },
   {
     "name": "cherries",
     "original_name": "Cherries 454 g / 1 lb",
-    "price": "1599.00",
+    "price": "1299.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/c/d/e/9/cde95bff2c507c9339d62fe624c30502461798b6_FruitsandVegetables_235609_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/cherries-454-g-1-lb-235609/235609"
   },
@@ -3201,7 +3131,7 @@
   {
     "name": "mccain breaded onion rings 2 units",
     "original_name": "McCain Breaded Onion Rings 2 Units / 397 g / 14 oz",
-    "price": "1447.00",
+    "price": "997.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/2/6/b/8/26b8ebb498777e9da0378a84988621b183859bea_FrozenFood_600536_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/mccain-breaded-onion-rings-2-units-397-g-14-oz-600536/600536"
   },
@@ -3215,7 +3145,7 @@
   {
     "name": "seedless green grapes",
     "original_name": "Seedless Green Grapes",
-    "price": "2528.61",
+    "price": "2559.20",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/6/2/1/f/621fd97a28adc51d991452d3d3b9777fc5cc0612_FruitsandVegetables_125577_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/seedless-green-grapes-125577/125577"
   },
@@ -3244,7 +3174,7 @@
     "name": "reggae jammin seasoned beef burger 15 units",
     "original_name": "Reggae Jammin Seasoned Beef Burger 15 Units / 85 g / 3 oz",
     "price": "2799.00",
-    "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/8/2/e/a/82ea97dd98ef6e998cca9b4e92d9518eab327c9a_FrozenFood_214567_01.jpg",
+    "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/0/9/8/c/098cafc6ad5458c918f197c0dd7845954a64ac23_FrozenFoood_214567_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/reggae-jammin-seasoned-beef-burger-15-units-85-g-3-oz-214567/214567"
   },
   {
@@ -3283,6 +3213,13 @@
     "product_url": "https://www.pricesmart.com/en-jm/product/chobani-low-fat-greek-yogurt-16-units-128-g-4-5-oz-468274/468274"
   },
   {
+    "name": "arizona assorted flavor energy drink 12 units 340 ml",
+    "original_name": "AriZona Assorted Flavor Energy Drink 12 Units / 340 mL",
+    "price": "2999.00",
+    "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/a/7/6/f/a76f70967168776ec31bb948f6b449c3b6a70723_Beverages_491219_01.jpg",
+    "product_url": "https://www.pricesmart.com/en-jm/product/arizona-assorted-flavor-energy-drink-12-units-340-ml-491219/491219"
+  },
+  {
     "name": "national hardo white sliced bread",
     "original_name": "National Hardo White Sliced Bread 907 g",
     "price": "499.00",
@@ -3292,7 +3229,7 @@
   {
     "name": "tetley peppermint tea 120 units",
     "original_name": "Tetley Peppermint Tea 120 Units / 1.6 g",
-    "price": "1119.00",
+    "price": "1259.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/f/7/3/9/f7397090ae03a843c9310bfd2ecb02908035c810_Tea_199814_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/tetley-peppermint-tea-120-units-1-6-g-199814/199814"
   },
@@ -3341,14 +3278,14 @@
   {
     "name": "grace coconut milk cans 6 units 400 ml",
     "original_name": "Grace Coconut Milk Cans 6 Units / 400 mL / 14 oz",
-    "price": "1789.00",
+    "price": "1799.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/b/4/0/0/b400992a5e34b9ba84b251f6f7de9e6b82af129f_Milk_237765_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/grace-coconut-milk-cans-6-units-400-ml-14-oz-237765/237765"
   },
   {
     "name": "yellow onion",
     "original_name": "Yellow Onion 4.54 kg / 10 lb",
-    "price": "2499.00",
+    "price": "2849.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/a/8/4/6/a846e07dd0202b8f9cbf7f65d2a0e00b6adf5057_Cebolla_Amarilla.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/yellow-onion-4-54-kg-10-lb-361056/361056"
   },
@@ -3418,7 +3355,7 @@
   {
     "name": "snackitos icepops natural and artificial flavor pops assorted flavors 60 units 88 ml",
     "original_name": "Snackitos IcePops Natural and Artificial Flavor Pops, Assorted Flavors 60 Units / 88 mL / 3 oz",
-    "price": "1519.00",
+    "price": "1499.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/9/f/5/e/9f5ef79df2cdcf291c1c39d4fca6618fe997ad26_Candys_454208_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/snackitos-icepops-natural-and-artificial-flavor-pops-assorted-flavors-60-units-88-ml-3-oz-454208/454208"
   },
@@ -3442,6 +3379,13 @@
     "price": "3470.40",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/b/c/9/0/bc90180222b7ffc96d4af2ef77b9573da0f9fbe2_poultry_214569_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/best-dressed-fresh-chicken-breast-boneless-skinless-tray-pack-214569/214569"
+  },
+  {
+    "name": "members selection freshly baked assorted vanilla and chocolate muffins 6 units",
+    "original_name": "Member's Selection Freshly Baked Assorted Vanilla and Chocolate Muffins 6 Units",
+    "price": "981.74",
+    "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/0/c/9/2/0c92e74557a8a29400524afdc60c9b528e63e150_Muffin_64343_01.jpg",
+    "product_url": "https://www.pricesmart.com/en-jm/product/members-selection-freshly-baked-assorted-vanilla-and-chocolate-muffins-6-units-64343/64343"
   },
   {
     "name": "pringles harvest blends 3 units",
@@ -3481,7 +3425,7 @@
   {
     "name": "wesson vegetable soybean oil",
     "original_name": "Wesson Vegetable Soybean Oil 4.73 L / 160 oz",
-    "price": "4079.00",
+    "price": "3299.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/c/0/d/7/c0d79f941fe5550911cee98ae44d3dbd2e4e46f9_CookingOilss_615230_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/wesson-vegetable-soybean-oil-4-73-l-160-oz-615230/615230"
   },
@@ -3521,13 +3465,6 @@
     "product_url": "https://www.pricesmart.com/en-jm/product/grace-mackerel-in-tomato-sauce-10-units-155-g-5-5-oz-339661/339661"
   },
   {
-    "name": "sambazon dragon fruit juice",
-    "original_name": "Sambazon Dragon Fruit Juice 1.89 L / 64 oz",
-    "price": "2099.00",
-    "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/4/1/8/f/418f59c0f9313414a0845a9e56a8cf816bd46e05_Beverages_468195_01.jpg",
-    "product_url": "https://www.pricesmart.com/en-jm/product/sambazon-dragon-fruit-juice-1-89-l-64-oz-468195/468195"
-  },
-  {
     "name": "lucozade orange energy drink 12 units 360 ml",
     "original_name": "Lucozade Orange Energy Drink 12 units / 360 mL / 12.1 oz",
     "price": "2849.00",
@@ -3551,7 +3488,7 @@
   {
     "name": "best dressed fresh chicken thigh bone",
     "original_name": "Best Dressed Fresh Chicken Thigh Bone Tray Pack",
-    "price": "1858.14",
+    "price": "1856.14",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/a/8/9/5/a8952021aca930b15b153fb2117708dd36461a00_poultry_214615_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/best-dressed-fresh-chicken-thigh-bone-tray-pack-214615/214615"
   },
@@ -3579,7 +3516,7 @@
   {
     "name": "lester gordon sweet potato",
     "original_name": "Lester Gordon Sweet Potato 3 kg / 6.6 lb",
-    "price": "2199.00",
+    "price": "1849.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/c/b/f/d/cbfd953f71557d56445ac16a5df970dff9adb92b_FruitsVegetables_480408_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/lester-gordon-sweet-potato-3-kg-6-6-lb-480408/480408"
   },
@@ -3593,7 +3530,7 @@
   {
     "name": "wata purified water 4 units 13 gal",
     "original_name": "Wata Purified Water 4 units / 5 L / 1.3 gal",
-    "price": "839.00",
+    "price": "879.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/a/7/b/2/a7b2b0cbe72330934854d3004e4c1487ba910489_Beverages_359462_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/wata-purified-water-4-units-5-l-1-3-gal-359462/359462"
   },
@@ -3621,7 +3558,7 @@
   {
     "name": "grace kennedy streaky bacon 2 units",
     "original_name": "Grace Kennedy Streaky Bacon 2 Units / 500 g / 1.1 lb",
-    "price": "2599.00",
+    "price": "2199.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/4/f/f/1/4ff13f7be5412ce4e5660831e9c542cfc1443099_DeliMeats_379232_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/grace-kennedy-streaky-bacon-2-units-500-g-1-1-lb-379232/379232"
   },
@@ -3635,7 +3572,7 @@
   {
     "name": "fresh watermelon",
     "original_name": "Fresh Watermelon",
-    "price": "2052.14",
+    "price": "2107.62",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/7/6/a/4/76a40484d9e2e35c7bd7c1574e81cb5342ba1c90_FruitsandVegetables_172884_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/fresh-watermelon-172884/172884"
   },
@@ -3663,7 +3600,7 @@
   {
     "name": "boca veggie burger 12 units",
     "original_name": "Boca Veggie Burger 12 Units / 71 g / 2.5 oz",
-    "price": "1999.00",
+    "price": "2149.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/6/f/8/b/6f8b5ed38239373efdd7422bcbcc2493b4ce0a1b_FrozenFood_324692_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/boca-veggie-burger-12-units-71-g-2-5-oz-324692/324692"
   },
@@ -3691,14 +3628,14 @@
   {
     "name": "herrs red hot potatoes chips 12 units",
     "original_name": "Herr's Red Hot Potatoes Chips 12 Units / 28 g / 1 oz",
-    "price": "1329.00",
+    "price": "1399.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/5/1/a/3/51a319ecdb79f6fb9c6162e5c85fc794ff62ea49_Snnacks_379041_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/herrs-red-hot-potatoes-chips-12-units-28-g-1-oz-379041/379041"
   },
   {
     "name": "best dressed fresh chicken wings",
     "original_name": "Best Dressed Fresh Chicken Wings Tray Pack",
-    "price": "2818.27",
+    "price": "2828.64",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/d/8/2/3/d8230827a47e87f1aedf3da9a96b0510f20c4a8e_Poultry_214620_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/best-dressed-fresh-chicken-wings-tray-pack-214620/214620"
   },
@@ -3796,7 +3733,7 @@
   {
     "name": "hass avocado 5 units",
     "original_name": "Hass Avocado 5 Units",
-    "price": "1999.00",
+    "price": "1899.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/d/4/6/9/d46928f720b1fe7f78931880a6b96224bd9da83d_FruitsandVegetables_298151_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/hass-avocado-5-units-298151/298151"
   },
@@ -3810,7 +3747,7 @@
   {
     "name": "best dressed chicken whole 2 units",
     "original_name": "Best Dressed Chilled Chicken Whole 2 Units",
-    "price": "3558.24",
+    "price": "3542.06",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/2/2/0/0/220030d268809126efbd50a738816b7028fa651e_380249_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/best-dressed-chilled-chicken-whole-2-units-380249/380249"
   },
@@ -3838,16 +3775,9 @@
   {
     "name": "fresh red apples",
     "original_name": "Fresh Red Apples 1.36 kg / 3 lb",
-    "price": "1449.00",
+    "price": "1399.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/9/8/8/6/9886981797aafaf68321c1e25700f167b5f407f7_FruitsandVegetables_29896_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/fresh-red-apples-1-36-kg-3-lb-29896/29896"
-  },
-  {
-    "name": "black seedless grapes",
-    "original_name": "Black Seedless Grapes",
-    "price": "2583.97",
-    "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/1/2/3/b/123b13161e5bf8288747443f7c57b951f54f22ca_FruitsandVegetables_169909_01.jpg",
-    "product_url": "https://www.pricesmart.com/en-jm/product/black-seedless-grapes-169909/169909"
   },
   {
     "name": "rainforest jamaican bammy 3 units",
@@ -3887,16 +3817,9 @@
   {
     "name": "kc dinner mint 250 units",
     "original_name": "KC Dinner Mint 250 Units / 4.32 g / 0.15 oz",
-    "price": "1789.00",
+    "price": "1799.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/3/f/a/a/3faaaa89e934cab0cd65630c7651361d28e95fdd_GumandMints_233551_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/kc-dinner-mint-250-units-4-32-g-0-15-oz-233551/233551"
-  },
-  {
-    "name": "romaine lettuce",
-    "original_name": "Romaine Lettuce 1 kg / 2.2 lb",
-    "price": "849.00",
-    "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/d/3/2/6/d3261a62695e7290c9aab4bb71ffce5d11fc3571_Lechuga_Romana.jpg",
-    "product_url": "https://www.pricesmart.com/en-jm/product/romaine-lettuce-1-kg-2-2-lb-393893/393893"
   },
   {
     "name": "carnation evaporated milk 6 units 250 ml",
@@ -3906,32 +3829,18 @@
     "product_url": "https://www.pricesmart.com/en-jm/product/carnation-evaporated-milk-6-units-250-ml-8-4-oz-222540/222540"
   },
   {
-    "name": "trujuice guava and pineapple 1 gal",
-    "original_name": "Tru-Juice Guava and Pineapple 3.78 L / 1 gal",
-    "price": "1239.00",
-    "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/4/4/5/8/4458f7c9626d8d822fa1fdec10a98e56a7e5ceb7_Beverages_385644_01.jpg",
-    "product_url": "https://www.pricesmart.com/en-jm/product/tru-juice-guava-and-pineapple-3-78-l-1-gal-385644/385644"
-  },
-  {
     "name": "whole red snapper",
     "original_name": "Frozen Whole Red Snapper",
-    "price": "2909.72",
+    "price": "2922.91",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/7/a/e/7/7ae7146ec881b7c74cb46e2ce7d937ef0fd21908_seafood_215011_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/frozen-whole-red-snapper-215011/215011"
   },
   {
     "name": "irish potato",
     "original_name": "Irish Potato 6.80 kg / 15 lb",
-    "price": "3149.00",
+    "price": "3199.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/6/1/0/b/610bdc7af8daf96b020d8bd6bdf1e2eb37a3fa7f_Papa_361058_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/irish-potato-6-80-kg-15-lb-361058/361058"
-  },
-  {
-    "name": "tomato plum",
-    "original_name": "Tomato Plum 1 kg / 2.2 lb",
-    "price": "599.00",
-    "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/a/8/d/e/a8de3cf6d6751f9dbfebb3d1bf5a54aeab476690_FruitsVegetables_483407_01.jpg",
-    "product_url": "https://www.pricesmart.com/en-jm/product/tomato-plum-1-kg-2-2-lb-483407/483407"
   },
   {
     "name": "dg old jamaican ginger beer 24 units 5914 ml",
@@ -3943,7 +3852,7 @@
   {
     "name": "fresh broccoli crowns",
     "original_name": "Fresh Broccoli Crowns",
-    "price": "999.00",
+    "price": "1069.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/6/5/8/3/65831a5ed3a211c40007ce3a5a674871ebd3a61c_FruitsandVegetables_153525_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/fresh-broccoli-crowns-153525/153525"
   },
@@ -4062,7 +3971,7 @@
   {
     "name": "oscar mayer turkey bacon 3 units",
     "original_name": "Oscar Mayer Turkey Bacon 3 Units / 340 g / 12 oz",
-    "price": "2449.00",
+    "price": "2499.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/2/2/9/1/2291a4b93849bb558471af63f8650e65f53c254b_DeliMeats_468093_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/oscar-mayer-turkey-bacon-3-units-340-g-12-oz-468093/468093"
   },
@@ -4132,7 +4041,7 @@
   {
     "name": "rainforest basa fillet",
     "original_name": "Rainforest Frozen Basa Fillet Bag 908 g / 2 lb",
-    "price": "949.00",
+    "price": "969.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/4/e/c/1/4ec1216cdb4c83cf26a524e64bbe79320c097f01_seafood_348393_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/rainforest-frozen-basa-fillet-bag-908-g-2-lb-348393/348393"
   },
@@ -4181,7 +4090,7 @@
   {
     "name": "fillet mignon",
     "original_name": "Chilled Fillet Mignon Tray Pack",
-    "price": "4520.67",
+    "price": "4554.66",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/d/d/6/5/dd65a7637adce66b36923f41a49e73e9357a6fad_Meat_274383_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/chilled-fillet-mignon-tray-pack-274383/274383"
   },
@@ -4198,5 +4107,96 @@
     "price": "899.00",
     "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/1/0/4/a/104a1bb65a3ea14022affdf9334e1f881747c4b0_Cannedfood_123057_01.jpg",
     "product_url": "https://www.pricesmart.com/en-jm/product/brunswick-tuna-in-oil-6-pack-142-g-5-oz-123057/123057"
+  },
+  {
+    "name": "cooks mate rolled oats",
+    "original_name": "Cook's Mate Rolled Oats 2 kg / 70.5 oz",
+    "price": "989.00",
+    "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/4/c/9/4/4c94a9bb585767167027773c6c2186984403eb93_BreakfastCereals_375999_01.jpg",
+    "product_url": "https://www.pricesmart.com/en-jm/product/cooks-mate-rolled-oats-2-kg-70-5-oz-375999/375999"
+  },
+  {
+    "name": "members selection freshly baked guava and cheese puff pastry 6 units",
+    "original_name": "Member's Selection Freshly Baked Guava and Cheese Puff Pastry 6 Units",
+    "price": "1329.57",
+    "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/e/a/f/6/eaf6f9cdc819de0b552e4a453d3e70f3752d5270_Pastries_407873_01.jpg",
+    "product_url": "https://www.pricesmart.com/en-jm/product/members-selection-freshly-baked-guava-and-cheese-puff-pastry-6-units-407873/407873"
+  },
+  {
+    "name": "lasco enriched milk powder 10 units",
+    "original_name": "Lasco Enriched Milk Powder 10 Units / 80 g / 2.8 oz",
+    "price": "1599.00",
+    "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/4/6/c/e/46ce23d293e745956147ad5648cbb3a35f636614_Milk_246175_01.jpg",
+    "product_url": "https://www.pricesmart.com/en-jm/product/lasco-enriched-milk-powder-10-units-80-g-2-8-oz-246175/246175"
+  },
+  {
+    "name": "anjous pears",
+    "original_name": "Anjous Pears 1.36 kg / 3 lb",
+    "price": "1679.00",
+    "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/4/7/a/3/47a3ff797bcfacc8df3b6663d39284e22d42017f_FruitsandVegetables_305820_01.jpg",
+    "product_url": "https://www.pricesmart.com/en-jm/product/anjous-pears-1-36-kg-3-lb-305820/305820"
+  },
+  {
+    "name": "ting grapefruit soda 24 units 591 ml",
+    "original_name": "Ting Grapefruit Soda 24 units / 591 mL / 20 oz",
+    "price": "2759.00",
+    "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/8/c/b/6/8cb6f0ff07e6b707000b2e2edb6898ccbd91c2a2_328762_01.jpg",
+    "product_url": "https://www.pricesmart.com/en-jm/product/ting-grapefruit-soda-24-units-591-ml-20-oz-328762/328762"
+  },
+  {
+    "name": "ovaltine cookies 15 units",
+    "original_name": "Ovaltine Cookies 15 units / 38 g",
+    "price": "1019.00",
+    "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/9/3/7/a/937aeeb43a1690df5c21ffb0e3e0571c42160d9e_276720_01.jpg",
+    "product_url": "https://www.pricesmart.com/en-jm/product/ovaltine-cookies-15-units-38-g-276720/276720"
+  },
+  {
+    "name": "solo refreshing drink with 22 apple juice 24 units 250 ml",
+    "original_name": "Solo Refreshing Drink with 22 % Apple Juice 24 Units / 250 ml / 8 oz",
+    "price": "3269.00",
+    "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/3/9/d/b/39db81d708d874d765df1c6571bc0994770d26bc_Beverages_184871_01.jpg",
+    "product_url": "https://www.pricesmart.com/en-jm/product/solo-refreshing-drink-with-22-apple-juice-24-units-250-ml-8-oz-184871/184871"
+  },
+  {
+    "name": "creamery rum raisin ice cream 1 gal",
+    "original_name": "Creamery Rum Raisin Ice Cream 3.78 L / 1 gal",
+    "price": "1849.00",
+    "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/4/2/c/b/42cbf34cc6e134620cdb2188cf1185950e43a545_IceCream_484377_01.jpg",
+    "product_url": "https://www.pricesmart.com/en-jm/product/creamery-rum-raisin-ice-cream-3-78-l-1-gal-484377/484377"
+  },
+  {
+    "name": "lawrys garlic salt",
+    "original_name": "Lawry's Garlic Salt 935 g / 33 oz",
+    "price": "2249.00",
+    "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/c/9/a/3/c9a3f524e73898ef92158a11e418d299a30b9f81_Condiments_222013_01.jpg",
+    "product_url": "https://www.pricesmart.com/en-jm/product/lawrys-garlic-salt-935-g-33-oz-222013/222013"
+  },
+  {
+    "name": "brunswick sardines in water 5 units",
+    "original_name": "Brunswick Sardines in Water 5 Units / 84 g",
+    "price": "1149.00",
+    "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/1/9/7/a/197a7ffb7ead4a1e6d955c9a9382f4a676c6b764_123062_01.PNG",
+    "product_url": "https://www.pricesmart.com/en-jm/product/brunswick-sardines-in-water-5-units-84-g-123062/123062"
+  },
+  {
+    "name": "kendel corned beef 6 units",
+    "original_name": "Kendel Corned Beef 6 Units / 198 g / 7 oz",
+    "price": "1869.00",
+    "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/0/5/0/3/0503a3d8ea1299dfc1593c7f5c627be60dc4dfd5_CannedFood_378329_01.jpg",
+    "product_url": "https://www.pricesmart.com/en-jm/product/kendel-corned-beef-6-units-198-g-7-oz-378329/378329"
+  },
+  {
+    "name": "nissin cup of noodle beef 12 units",
+    "original_name": "Nissin Cup of Noodle Beef 12 Units / 64 g / 2.25 oz",
+    "price": "1999.00",
+    "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/3/f/c/c/3fcc467e4a20dcd68b68a6b2b48a6cbf95b7d518_PreparedFoods_167581_01.jpg",
+    "product_url": "https://www.pricesmart.com/en-jm/product/nissin-cup-of-noodle-beef-12-units-64-g-2-25-oz-167581/167581"
+  },
+  {
+    "name": "serge monster milk assorted 12 units",
+    "original_name": "Serge Monster Milk Assorted 12 units / 200 g",
+    "price": "1259.00",
+    "image_url": "https://d31f1ehqijlcua.cloudfront.net/n/e/5/d/5/e5d55f06154fa06b19f43fc3a3970da911f72e04_318253_01.jpg",
+    "product_url": "https://www.pricesmart.com/en-jm/product/serge-monster-milk-assorted-12-units-200-g-318253/318253"
   }
 ]

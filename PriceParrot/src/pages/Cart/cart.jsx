@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './cart.css';
 import Navbar from '../../components/navbar/navbar';
-import { fetchCart } from '../../utils/wishlistCartFuncs';
+import { fetchCart, removeFromCart } from '../../utils/wishlistCartFuncs';
 import { aggregateCartByStore } from '../../utils/cartAggregator';
 import StoreCard from '../../components/storecard/storecard';
 import { formatProductName } from '../../utils/formatter';
@@ -175,6 +175,27 @@ const Cart = () => {
 
   const topStores = getTopStoresBySort(recommendedStores);
 
+  // Remove item from cart with confirmation and backend call
+  const handleRemove = async (itemId) => {
+    if (window.confirm('Are you sure you want to remove this item from your cart?')) {
+      try {
+        const res = await removeFromCart(itemId);
+        if (res.ok) {
+          // Refresh cart from backend
+          const user = JSON.parse(localStorage.getItem('user'));
+          if (user && user.id) {
+            const data = await fetchCart(user.id);
+            setCartItems(data);
+          }
+        } else {
+          alert('Failed to remove item from cart.');
+        }
+      } catch (err) {
+        alert('Error removing item from cart.');
+      }
+    }
+  };
+
   return (
     <>
       <Navbar />
@@ -203,11 +224,21 @@ const Cart = () => {
                         />
                         <span>{formatProductName(item.name || item.product_name)}</span>
                       </div>
-                      <span className="font-semibold">
-                        {selectedStore && getStorePrice(item, selectedStore) !== null
-                          ? `$${getStorePrice(item, selectedStore).toFixed(2)}`
-                          : 'N/A'}
-                      </span>
+                      <div className="flex items-center gap-2">
+                        <span className="font-semibold">
+                          {selectedStore && getStorePrice(item, selectedStore) !== null
+                            ? `$${getStorePrice(item, selectedStore).toFixed(2)}`
+                            : 'N/A'}
+                        </span>
+                        <button
+                          className="remove-btn text-red-600 text-xl font-bold px-2 hover:text-red-800 focus:outline-none"
+                          title="Remove from cart"
+                          aria-label="Remove from cart"
+                          onClick={() => handleRemove(item.id || item.product_id)}
+                        >
+                          ×
+                        </button>
+                      </div>
                     </li>
                   ))}
                 </ul>

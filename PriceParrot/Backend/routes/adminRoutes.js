@@ -5,6 +5,12 @@ const mysql = require('mysql2');
 const fs = require('fs');
 const path = require('path');
 
+// Helper to convert ISO date to MySQL DATETIME format
+function toMySQLDateTime(date) {
+  if (!date) return null;
+  return new Date(date).toISOString().slice(0, 19).replace('T', ' ');
+}
+
 // Get all table names
 router.get('/api/tables', async (req, res) => {
   try {
@@ -31,12 +37,20 @@ router.get('/api/table/:name', async (req, res) => {
 router.post('/api/table/:name', (req, res) => {
   const table = mysql.escapeId(req.params.name);
   const data = req.body;
+  // Convert any date fields to MySQL format
+  ['created_at', 'updated_at'].forEach(field => {
+    if (data[field]) data[field] = toMySQLDateTime(data[field]);
+  });
   const columns = Object.keys(data).map(k => mysql.escapeId(k)).join(', ');
   const values = Object.values(data);
   const placeholders = values.map(() => '?').join(', ');
 
-  db.query(`INSERT INTO ${table} (${columns}) VALUES (${placeholders})`, values, (err, result) => {
-    if (err) return res.status(500).json({ error: err.message });
+  db.query(`INSERT INTO ${table} (${columns}) VALUES (${placeholders})`, values, function(err, result) {
+    if (err) {
+      res.status(500).json({ error: err.message });
+      return;
+    }
+    console.log(`Row added to table ${req.params.name}:`, data);
     res.json({ success: true, insertId: result.insertId });
   });
 });
@@ -46,11 +60,19 @@ router.put('/api/table/:name/:id', (req, res) => {
   const table = mysql.escapeId(req.params.name);
   const id = req.params.id;
   const data = req.body;
+  // Convert any date fields to MySQL format
+  ['created_at', 'updated_at'].forEach(field => {
+    if (data[field]) data[field] = toMySQLDateTime(data[field]);
+  });
   const updates = Object.keys(data).map(k => `${mysql.escapeId(k)} = ?`).join(', ');
   const values = Object.values(data);
 
-  db.query(`UPDATE ${table} SET ${updates} WHERE id = ?`, [...values, id], (err, result) => {
-    if (err) return res.status(500).json({ error: err.message });
+  db.query(`UPDATE ${table} SET ${updates} WHERE id = ?`, [...values, id], function(err, result) {
+    if (err) {
+      res.status(500).json({ error: err.message });
+      return;
+    }
+    console.log(`Row updated in table ${req.params.name} (id=${id}):`, data);
     res.json({ success: true });
   });
 });
@@ -60,8 +82,12 @@ router.delete('/api/table/:name/:id', (req, res) => {
   const table = mysql.escapeId(req.params.name);
   const id = req.params.id;
 
-  db.query(`DELETE FROM ${table} WHERE id = ?`, [id], (err, result) => {
-    if (err) return res.status(500).json({ error: err.message });
+  db.query(`DELETE FROM ${table} WHERE id = ?`, [id], function(err, result) {
+    if (err) {
+      res.status(500).json({ error: err.message });
+      return;
+    }
+    console.log(`Row deleted from table ${req.params.name} (id=${id})`);
     res.json({ success: true });
   });
 });
