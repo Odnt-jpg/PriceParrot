@@ -33437,3 +33437,31 @@ Fetching retailer details for ID: 3
 Fetching retailer details for ID: 3
 [2025-06-19T03:45:27.207Z] Server is up and running.
 [2025-06-19T03:45:27.652Z] Database connected successfully.
+[2025-06-26T09:12:59.826Z] Server is up and running.
+[2025-06-26T09:13:00.565Z] Database connection failed: 
+[2025-06-26T09:27:29.713Z] Server is up and running.
+[2025-06-26T09:27:30.049Z] Database connection failed: Access denied for user ''@'localhost' (using password: YES)
+[2025-06-26T09:30:00.421Z] Server is up and running.
+[2025-06-26T09:30:00.699Z] Database connection failed: Access denied for user ''@'localhost' (using password: YES)
+[2025-06-26T09:33:45.826Z] Server is up and running.
+[2025-06-26T09:33:46.281Z] Database connection failed: Access denied for user ''@'localhost' (using password: YES)
+[2025-06-26T09:35:01.888Z] Server is up and running.
+[2025-06-26T09:35:02.457Z] Database connection failed: Access denied for user ''@'localhost' (using password: YES)
+[2025-06-26T09:36:54.514Z] Server is up and running.
+[2025-06-26T09:36:56.379Z] Database connection failed: Access denied for user ''@'localhost' (using password: YES)
+[2025-06-26T09:38:14.682Z] Server is up and running.
+[2025-06-26T09:38:14.939Z] Database connection failed: Access denied for user ''@'localhost' (using password: YES)
+[2025-06-26T09:38:51.891Z] Server is up and running.
+[2025-06-26T09:38:52.364Z] Database connection failed: Access denied for user ''@'localhost' (using password: YES)
+[2025-06-26T09:42:12.797Z] Server is up and running.
+[2025-06-26T09:42:13.509Z] Database connection failed: Access denied for user ''@'localhost' (using password: YES)
+[2025-06-26T09:42:59.031Z] Server is up and running.
+[2025-06-26T09:42:59.338Z] Database connection failed: Access denied for user ''@'localhost' (using password: YES)
+[2025-06-26T09:43:58.588Z] Server is up and running.
+[2025-06-26T09:43:59.112Z] Database connection failed: Access denied for user ''@'localhost' (using password: YES)
+[2025-06-26T09:45:10.793Z] Server is up and running.
+[2025-06-26T09:45:11.039Z] Database connection failed: Access denied for user ''@'localhost' (using password: YES)
+[2025-06-26T09:47:05.172Z] Server is up and running.
+[2025-06-26T09:47:05.404Z] Database connection failed: Access denied for user ''@'localhost' (using password: YES)
+[2025-06-26T09:49:01.185Z] Server is up and running.
+[2025-06-26T09:49:01.692Z] Database connected successfully.
